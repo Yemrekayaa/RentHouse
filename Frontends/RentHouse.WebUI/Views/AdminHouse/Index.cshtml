@@ -1,0 +1,82 @@
+﻿@model List<RentHouse.Dto.HouseDtos.ResultHouseWithPriceDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+    string shortDesc = "";
+}
+<style>
+    .house-card {
+        width: 350px; 
+        margin: 5px;
+        margin-bottom: 1rem;
+        
+    }
+</style>
+
+<main class="app-main">
+
+    <div class="app-content mt-4">
+        <!--begin::Container-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card mb-4">
+                        <div class="card-header bg-body-secondary " data-bs-theme="dark">
+                            <h3 class="card-title float-star text-white">Evler</h3>
+                            <a class="btn btn-success float-end px-3" asp-action="CreateHouse"><span class="fa-solid fa-plus"></span> Ev Ekle</a>
+                        </div> <!-- /.card-header -->
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap justify-content-evenly">
+                                @foreach (var item in Model)
+                                {
+                                    {
+                                        var maxLength = 100;
+
+                                        shortDesc = @item.description.Length > maxLength ? (@item.description.Substring(0, maxLength) + "..") : @item.description;
+                                    }
+                                        <div class="card house-card">
+                                        <div class="position-absolute top-0 start-0 bg-dark text-white p-1 text-center fw-bold" style="font-size: 16px; min-width: 30px; height:32px; border-radius: 5px;">
+                                            #@item.houseID
+                                        </div>
+                                            <img src="@item.coverImageUrl" class="card-img-top" alt="Bungalov Resmi">
+                                            <div class="card-body">
+                                                <h5 class="card-title float-none">@item.name</h5>
+                                                <p class="card-text text-muted">@shortDesc</p>
+                                                <div class="d-flex justify-content-around my-2 flex-column flex-md-row">
+                                                    <div class="text-center text-md-start">
+                                                        <span class="fw-bold">@item.WeekdayPrice.ToString("0")₺</span>
+                                                        <small class="text-muted">/ Hafta İçi</small>
+                                                    </div>
+                                                    <div class="text-center text-md-start">
+                                                    <span class="fw-bold">@item.WeekendPrice.ToString("0")₺</span>
+                                                        <small class="text-muted">/ Hafta Sonu</small>
+                                                    </div>
+                                                </div>
+                                            <div class="d-flex btn-group flex-grow-1 mt-auto" role="group">
+                                                <button class="btn btn-outline-secondary btn-sm"><i class="fas fa-info-circle"></i> Detaylar</button>
+                                                <a class="btn btn-outline-primary btn-sm" asp-action="UpdateHouse" asp-route-id="@item.houseID"><i class="fas fa-edit"></i> Düzenle</a>
+                                                <a class="btn btn-outline-danger btn-sm" asp-action="DeleteHouse" asp-route-id="@item.houseID"><i class="fas fa-trash"></i> Sil</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   
+                                    
+                                }
+                            </div>
+                            
+                        </div> <!-- /.card-body -->
+                        <div class="card-footer clearfix">
+                            <ul class="pagination pagination-sm m-0 float-end">
+                                <li class="page-item"> <a class="page-link" href="#">«</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">1</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">2</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">3</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">»</a> </li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div> <!--end::Container-->
+    </div> <!--end::App Content-->
+</main> 

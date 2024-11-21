@@ -1,0 +1,1969 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\RentHouse.WebUI.bundle.scp.css",
+      "PackagePath": "staticwebassets\\RentHouse.WebUI.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\AdminLTEFullLogo.png",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\AdminLTEFullLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\AdminLTELogo.png",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\AdminLTELogo.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\avatar.png",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\avatar.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\avatar2.png",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\avatar2.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\avatar3.png",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\avatar3.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\avatar4.png",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\avatar4.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\avatar5.png",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\avatar5.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\boxed-bg.jpg",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\boxed-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\boxed-bg.png",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\boxed-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\credit\\american-express.png",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\credit\\american-express.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\credit\\cirrus.png",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\credit\\cirrus.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\credit\\mastercard.png",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\credit\\mastercard.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\credit\\paypal.png",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\credit\\paypal.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\credit\\paypal2.png",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\credit\\paypal2.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\credit\\visa.png",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\credit\\visa.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\default-150x150.png",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\default-150x150.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\icons.png",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\icons.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\photo1.png",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\photo1.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\photo2.png",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\photo2.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\photo3.jpg",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\photo3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\photo4.jpg",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\photo4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\prod-1.jpg",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\prod-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\prod-2.jpg",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\prod-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\prod-3.jpg",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\prod-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\prod-4.jpg",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\prod-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\prod-5.jpg",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\prod-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\user1-128x128.jpg",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\user1-128x128.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\user2-160x160.jpg",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\user2-160x160.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\user3-128x128.jpg",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\user3-128x128.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\user4-128x128.jpg",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\user4-128x128.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\user5-128x128.jpg",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\user5-128x128.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\user6-128x128.jpg",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\user6-128x128.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\user7-128x128.jpg",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\user7-128x128.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\assets\\img\\user8-128x128.jpg",
+      "PackagePath": "staticwebassets\\admin\\dist\\assets\\img\\user8-128x128.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\css\\adminlte.css",
+      "PackagePath": "staticwebassets\\admin\\dist\\css\\adminlte.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\css\\adminlte.css.map",
+      "PackagePath": "staticwebassets\\admin\\dist\\css\\adminlte.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\css\\adminlte.min.css",
+      "PackagePath": "staticwebassets\\admin\\dist\\css\\adminlte.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\css\\adminlte.min.css.map",
+      "PackagePath": "staticwebassets\\admin\\dist\\css\\adminlte.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\css\\adminlte.rtl.css",
+      "PackagePath": "staticwebassets\\admin\\dist\\css\\adminlte.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\css\\adminlte.rtl.css.map",
+      "PackagePath": "staticwebassets\\admin\\dist\\css\\adminlte.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\css\\adminlte.rtl.min.css",
+      "PackagePath": "staticwebassets\\admin\\dist\\css\\adminlte.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\css\\adminlte.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\admin\\dist\\css\\adminlte.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\js\\adminlte.js",
+      "PackagePath": "staticwebassets\\admin\\dist\\js\\adminlte.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\js\\adminlte.js.map",
+      "PackagePath": "staticwebassets\\admin\\dist\\js\\adminlte.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\js\\adminlte.min.js",
+      "PackagePath": "staticwebassets\\admin\\dist\\js\\adminlte.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\js\\adminlte.min.js.map",
+      "PackagePath": "staticwebassets\\admin\\dist\\js\\adminlte.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\UI\\general.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\UI\\general.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\UI\\icons.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\UI\\icons.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\UI\\timeline.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\UI\\timeline.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\docs\\browser-support.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\docs\\browser-support.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\docs\\color-mode.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\docs\\color-mode.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\docs\\components\\main-header.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\docs\\components\\main-header.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\docs\\components\\main-sidebar.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\docs\\components\\main-sidebar.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\docs\\faq.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\docs\\faq.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\docs\\how-to-contribute.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\docs\\how-to-contribute.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\docs\\introduction.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\docs\\introduction.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\docs\\javascript\\treeview.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\docs\\javascript\\treeview.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\docs\\layout.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\docs\\layout.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\docs\\license.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\docs\\license.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\examples\\lockscreen.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\examples\\lockscreen.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\examples\\login-v2.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\examples\\login-v2.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\examples\\login.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\examples\\login.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\examples\\register-v2.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\examples\\register-v2.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\examples\\register.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\examples\\register.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\forms\\general.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\forms\\general.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\generate\\theme.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\generate\\theme.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\index.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\index2.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\index2.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\index3.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\index3.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\layout\\collapsed-sidebar.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\layout\\collapsed-sidebar.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\layout\\fixed-sidebar.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\layout\\fixed-sidebar.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\layout\\layout-custom-area.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\layout\\layout-custom-area.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\layout\\layout-rtl.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\layout\\layout-rtl.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\layout\\logo-switch.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\layout\\logo-switch.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\layout\\sidebar-mini.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\layout\\sidebar-mini.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\layout\\unfixed-sidebar.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\layout\\unfixed-sidebar.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\tables\\simple.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\tables\\simple.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\widgets\\cards.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\widgets\\cards.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\widgets\\info-box.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\widgets\\info-box.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\dist\\pages\\widgets\\small-box.html",
+      "PackagePath": "staticwebassets\\admin\\dist\\pages\\widgets\\small-box.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\index.html",
+      "PackagePath": "staticwebassets\\admin\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\AdminLTEFullLogo.png",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\AdminLTEFullLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\AdminLTELogo.png",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\AdminLTELogo.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\avatar.png",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\avatar.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\avatar2.png",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\avatar2.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\avatar3.png",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\avatar3.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\avatar4.png",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\avatar4.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\avatar5.png",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\avatar5.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\boxed-bg.jpg",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\boxed-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\boxed-bg.png",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\boxed-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\credit\\american-express.png",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\credit\\american-express.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\credit\\cirrus.png",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\credit\\cirrus.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\credit\\mastercard.png",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\credit\\mastercard.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\credit\\paypal.png",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\credit\\paypal.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\credit\\paypal2.png",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\credit\\paypal2.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\credit\\visa.png",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\credit\\visa.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\default-150x150.png",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\default-150x150.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\icons.png",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\icons.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\photo1.png",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\photo1.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\photo2.png",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\photo2.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\photo3.jpg",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\photo3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\photo4.jpg",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\photo4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\prod-1.jpg",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\prod-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\prod-2.jpg",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\prod-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\prod-3.jpg",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\prod-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\prod-4.jpg",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\prod-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\prod-5.jpg",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\prod-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\user1-128x128.jpg",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\user1-128x128.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\user2-160x160.jpg",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\user2-160x160.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\user3-128x128.jpg",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\user3-128x128.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\user4-128x128.jpg",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\user4-128x128.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\user5-128x128.jpg",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\user5-128x128.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\user6-128x128.jpg",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\user6-128x128.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\user7-128x128.jpg",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\user7-128x128.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\assets\\img\\user8-128x128.jpg",
+      "PackagePath": "staticwebassets\\admin\\src\\assets\\img\\user8-128x128.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\config\\assets.config.mjs",
+      "PackagePath": "staticwebassets\\admin\\src\\config\\assets.config.mjs"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\config\\astro.config.mjs",
+      "PackagePath": "staticwebassets\\admin\\src\\config\\astro.config.mjs"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\config\\postcss.config.mjs",
+      "PackagePath": "staticwebassets\\admin\\src\\config\\postcss.config.mjs"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\config\\rollup.config.js",
+      "PackagePath": "staticwebassets\\admin\\src\\config\\rollup.config.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\.eslintrc.json",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\.eslintrc.json"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\.prettierrc.js",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\.prettierrc.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\.tsconfig.json",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\.tsconfig.json"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\components\\_head.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\components\\_head.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\components\\_scripts.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\components\\_scripts.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\components\\dashboard\\_footer.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\components\\dashboard\\_footer.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\components\\dashboard\\_sidenav.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\components\\dashboard\\_sidenav.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\components\\dashboard\\_topbar.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\components\\dashboard\\_topbar.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\components\\docs\\browser-support.mdx",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\components\\docs\\browser-support.mdx"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\components\\docs\\color-mode.mdx",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\components\\docs\\color-mode.mdx"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\components\\docs\\components\\main-header.mdx",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\components\\docs\\components\\main-header.mdx"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\components\\docs\\components\\main-sidebar.mdx",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\components\\docs\\components\\main-sidebar.mdx"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\components\\docs\\faq.mdx",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\components\\docs\\faq.mdx"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\components\\docs\\how-to-contribute.mdx",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\components\\docs\\how-to-contribute.mdx"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\components\\docs\\introduction.mdx",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\components\\docs\\introduction.mdx"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\components\\docs\\license.mdx",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\components\\docs\\license.mdx"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\components\\javascript\\treeview.mdx",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\components\\javascript\\treeview.mdx"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\env.d.ts",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\env.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\UI\\general.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\UI\\general.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\UI\\icons.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\UI\\icons.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\UI\\timeline.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\UI\\timeline.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\docs\\browser-support.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\docs\\browser-support.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\docs\\color-mode.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\docs\\color-mode.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\docs\\components\\main-header.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\docs\\components\\main-header.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\docs\\components\\main-sidebar.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\docs\\components\\main-sidebar.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\docs\\faq.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\docs\\faq.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\docs\\how-to-contribute.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\docs\\how-to-contribute.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\docs\\introduction.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\docs\\introduction.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\docs\\javascript\\treeview.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\docs\\javascript\\treeview.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\docs\\layout.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\docs\\layout.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\docs\\license.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\docs\\license.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\examples\\lockscreen.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\examples\\lockscreen.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\examples\\login-v2.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\examples\\login-v2.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\examples\\login.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\examples\\login.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\examples\\register-v2.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\examples\\register-v2.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\examples\\register.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\examples\\register.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\forms\\general.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\forms\\general.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\generate\\theme.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\generate\\theme.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\index.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\index.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\index2.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\index2.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\index3.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\index3.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\layout\\collapsed-sidebar.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\layout\\collapsed-sidebar.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\layout\\fixed-sidebar.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\layout\\fixed-sidebar.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\layout\\layout-custom-area.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\layout\\layout-custom-area.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\layout\\layout-rtl.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\layout\\layout-rtl.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\layout\\logo-switch.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\layout\\logo-switch.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\layout\\sidebar-mini.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\layout\\sidebar-mini.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\layout\\unfixed-sidebar.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\layout\\unfixed-sidebar.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\tables\\simple.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\tables\\simple.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\widgets\\cards.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\widgets\\cards.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\widgets\\info-box.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\widgets\\info-box.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\html\\pages\\widgets\\small-box.astro",
+      "PackagePath": "staticwebassets\\admin\\src\\html\\pages\\widgets\\small-box.astro"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_app-content.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_app-content.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_app-footer.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_app-footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_app-header.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_app-header.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_app-main.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_app-main.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_app-sidebar.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_app-sidebar.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_app-wrapper.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_app-wrapper.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_bootstrap-variables.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_bootstrap-variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_callouts.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_callouts.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_cards.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_cards.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_compact-mode.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_compact-mode.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_direct-chat.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_direct-chat.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_docs.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_docs.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_info-box.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_info-box.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_miscellaneous.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_miscellaneous.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_progress-bars.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_progress-bars.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_root.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_root.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_small-box.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_small-box.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_table.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_table.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_timeline.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_timeline.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_toasts.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_toasts.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_variables-dark.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_variables-dark.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\adminlte.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\adminlte.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\mixins\\_animations.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\mixins\\_animations.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\mixins\\_scrollbar.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\mixins\\_scrollbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\pages\\_lockscreen.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\pages\\_lockscreen.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\pages\\_login_and_register.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\pages\\_login_and_register.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\parts\\_components.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\parts\\_components.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\parts\\_core.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\parts\\_core.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\parts\\_extra-components.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\parts\\_extra-components.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\parts\\_miscellaneous.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\parts\\_miscellaneous.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\scss\\parts\\_pages.scss",
+      "PackagePath": "staticwebassets\\admin\\src\\scss\\parts\\_pages.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\ts\\adminlte.ts",
+      "PackagePath": "staticwebassets\\admin\\src\\ts\\adminlte.ts"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\ts\\card-widget.ts",
+      "PackagePath": "staticwebassets\\admin\\src\\ts\\card-widget.ts"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\ts\\direct-chat.ts",
+      "PackagePath": "staticwebassets\\admin\\src\\ts\\direct-chat.ts"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\ts\\fullscreen.ts",
+      "PackagePath": "staticwebassets\\admin\\src\\ts\\fullscreen.ts"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\ts\\layout.ts",
+      "PackagePath": "staticwebassets\\admin\\src\\ts\\layout.ts"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\ts\\push-menu.ts",
+      "PackagePath": "staticwebassets\\admin\\src\\ts\\push-menu.ts"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\ts\\treeview.ts",
+      "PackagePath": "staticwebassets\\admin\\src\\ts\\treeview.ts"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\ts\\util\\index.ts",
+      "PackagePath": "staticwebassets\\admin\\src\\ts\\util\\index.ts"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\admin\\src\\utils\\index.js",
+      "PackagePath": "staticwebassets\\admin\\src\\utils\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\about.html",
+      "PackagePath": "staticwebassets\\carbook-master\\about.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\blog-single.html",
+      "PackagePath": "staticwebassets\\carbook-master\\blog-single.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\blog.html",
+      "PackagePath": "staticwebassets\\carbook-master\\blog.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\car-single.html",
+      "PackagePath": "staticwebassets\\carbook-master\\car-single.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\car.html",
+      "PackagePath": "staticwebassets\\carbook-master\\car.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\contact.html",
+      "PackagePath": "staticwebassets\\carbook-master\\contact.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\css\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\carbook-master\\css\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\css\\animate.css",
+      "PackagePath": "staticwebassets\\carbook-master\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\css\\aos.css",
+      "PackagePath": "staticwebassets\\carbook-master\\css\\aos.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\css\\bootstrap-datepicker.css",
+      "PackagePath": "staticwebassets\\carbook-master\\css\\bootstrap-datepicker.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\carbook-master\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\css\\bootstrap\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\carbook-master\\css\\bootstrap\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\css\\bootstrap\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\carbook-master\\css\\bootstrap\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\css\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\carbook-master\\css\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\css\\css\\mixins\\_text-hide.css",
+      "PackagePath": "staticwebassets\\carbook-master\\css\\css\\mixins\\_text-hide.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\css\\flaticon.css",
+      "PackagePath": "staticwebassets\\carbook-master\\css\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\css\\icomoon.css",
+      "PackagePath": "staticwebassets\\carbook-master\\css\\icomoon.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\css\\ionicons.min.css",
+      "PackagePath": "staticwebassets\\carbook-master\\css\\ionicons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\css\\jquery.timepicker.css",
+      "PackagePath": "staticwebassets\\carbook-master\\css\\jquery.timepicker.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\carbook-master\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\carbook-master\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\carbook-master\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\css\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\carbook-master\\css\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\css\\style.css",
+      "PackagePath": "staticwebassets\\carbook-master\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\flaticon\\backup.txt",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\flaticon\\backup.txt"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\flaticon\\font\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\flaticon\\font\\Flaticon.eot"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\flaticon\\font\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\flaticon\\font\\Flaticon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\flaticon\\font\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\flaticon\\font\\Flaticon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\flaticon\\font\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\flaticon\\font\\Flaticon.woff"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\flaticon\\font\\Flaticon.woff2",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\flaticon\\font\\Flaticon.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\flaticon\\font\\_flaticon.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\flaticon\\font\\_flaticon.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\flaticon\\font\\flaticon.css",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\flaticon\\font\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\flaticon\\font\\flaticon.html",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\flaticon\\font\\flaticon.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\flaticon\\license\\license.pdf",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\flaticon\\license\\license.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\icomoon\\icomoon.eot",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\icomoon\\icomoon.eot"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\icomoon\\icomoon.svg",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\icomoon\\icomoon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\icomoon\\icomoon.ttf",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\icomoon\\icomoon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\icomoon\\icomoon.woff",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\icomoon\\icomoon.woff"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\ionicons\\css\\_ionicons.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\ionicons\\css\\_ionicons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\ionicons\\css\\ionicons.min.css",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\ionicons\\css\\ionicons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\ionicons\\fonts\\ionicons.eot",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\ionicons\\fonts\\ionicons.eot"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\ionicons\\fonts\\ionicons.svg",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\ionicons\\fonts\\ionicons.svg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\ionicons\\fonts\\ionicons.ttf",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\ionicons\\fonts\\ionicons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\ionicons\\fonts\\ionicons.woff",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\ionicons\\fonts\\ionicons.woff"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\ionicons\\fonts\\ionicons.woff2",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\ionicons\\fonts\\ionicons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\open-iconic\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\open-iconic\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\open-iconic\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\open-iconic\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\open-iconic\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\open-iconic\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\open-iconic\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\open-iconic\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\fonts\\open-iconic\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\carbook-master\\fonts\\open-iconic\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\about.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\about.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\bg_1.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\bg_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\bg_2.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\bg_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\bg_3.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\bg_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\car-1.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\car-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\car-10.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\car-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\car-11.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\car-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\car-12.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\car-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\car-2.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\car-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\car-3.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\car-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\car-4.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\car-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\car-5.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\car-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\car-6.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\car-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\car-7.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\car-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\car-8.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\car-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\car-9.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\car-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\image_1.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\image_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\image_2.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\image_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\image_3.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\image_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\image_4.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\image_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\image_5.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\image_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\image_6.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\image_6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\loc.png",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\loc.png"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\person_1.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\person_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\person_2.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\person_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\person_3.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\person_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\images\\person_4.jpg",
+      "PackagePath": "staticwebassets\\carbook-master\\images\\person_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\index.html",
+      "PackagePath": "staticwebassets\\carbook-master\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\aos.js",
+      "PackagePath": "staticwebassets\\carbook-master\\js\\aos.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\bootstrap-datepicker.js",
+      "PackagePath": "staticwebassets\\carbook-master\\js\\bootstrap-datepicker.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\carbook-master\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\google-map.js",
+      "PackagePath": "staticwebassets\\carbook-master\\js\\google-map.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\carbook-master\\js\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\jquery-migrate-3.0.1.min.js",
+      "PackagePath": "staticwebassets\\carbook-master\\js\\jquery-migrate-3.0.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\jquery.animateNumber.min.js",
+      "PackagePath": "staticwebassets\\carbook-master\\js\\jquery.animateNumber.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\jquery.easing.1.3.js",
+      "PackagePath": "staticwebassets\\carbook-master\\js\\jquery.easing.1.3.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\carbook-master\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\carbook-master\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\jquery.stellar.min.js",
+      "PackagePath": "staticwebassets\\carbook-master\\js\\jquery.stellar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\jquery.timepicker.min.js",
+      "PackagePath": "staticwebassets\\carbook-master\\js\\jquery.timepicker.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\jquery.waypoints.min.js",
+      "PackagePath": "staticwebassets\\carbook-master\\js\\jquery.waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\main.js",
+      "PackagePath": "staticwebassets\\carbook-master\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\carbook-master\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\carbook-master\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\range.js",
+      "PackagePath": "staticwebassets\\carbook-master\\js\\range.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\scrollax.min.js",
+      "PackagePath": "staticwebassets\\carbook-master\\js\\scrollax.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\main.html",
+      "PackagePath": "staticwebassets\\carbook-master\\main.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\prepros-6.config",
+      "PackagePath": "staticwebassets\\carbook-master\\prepros-6.config"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\pricing.html",
+      "PackagePath": "staticwebassets\\carbook-master\\pricing.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\readme.txt",
+      "PackagePath": "staticwebassets\\carbook-master\\readme.txt"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_alert.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_badge.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_button-group.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_button-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_buttons.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_card.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_card.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_carousel.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_carousel.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_close.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_close.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_code.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_code.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_custom-forms.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_custom-forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_forms.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_functions.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_grid.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_images.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_images.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_input-group.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_jumbotron.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_jumbotron.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_list-group.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_media.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_media.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_mixins.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_modal.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_nav.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_navbar.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_pagination.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_popover.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_popover.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_print.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_print.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_progress.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_reboot.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_root.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_root.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_spinners.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_spinners.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_tables.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_toasts.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_toasts.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_tooltip.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_transitions.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_transitions.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_type.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_type.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_utilities.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\_variables.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_background-variant.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_background-variant.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_badge.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_deprecate.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_float.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_float.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_grid-framework.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_grid-framework.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_hover.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_hover.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_image.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_nav-divider.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_nav-divider.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_screen-reader.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_size.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_size.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_table-row.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_table-row.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_text-emphasis.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_text-emphasis.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_text-hide.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_text-hide.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\mixins\\_visibility.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\mixins\\_visibility.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\utilities\\_align.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\utilities\\_align.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\utilities\\_background.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\utilities\\_background.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\utilities\\_borders.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\utilities\\_borders.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\utilities\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\utilities\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\utilities\\_display.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\utilities\\_display.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\utilities\\_embed.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\utilities\\_embed.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\utilities\\_flex.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\utilities\\_flex.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\utilities\\_float.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\utilities\\_float.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\utilities\\_overflow.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\utilities\\_overflow.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\utilities\\_position.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\utilities\\_position.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\utilities\\_screenreaders.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\utilities\\_screenreaders.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\utilities\\_shadows.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\utilities\\_shadows.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\utilities\\_sizing.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\utilities\\_sizing.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\utilities\\_spacing.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\utilities\\_spacing.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\utilities\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\utilities\\_stretched-link.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\utilities\\_text.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\utilities\\_text.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\utilities\\_visibility.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\utilities\\_visibility.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\bootstrap\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\bootstrap\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\carbook-master\\scss\\style.scss"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\services.html",
+      "PackagePath": "staticwebassets\\carbook-master\\services.html"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\aboutus.jpg",
+      "PackagePath": "staticwebassets\\images\\aboutus.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\bg_1.jpg",
+      "PackagePath": "staticwebassets\\images\\bg_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\house\\big-1.jpg",
+      "PackagePath": "staticwebassets\\images\\house\\big-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\house\\big-2.jpg",
+      "PackagePath": "staticwebassets\\images\\house\\big-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\house\\big-3.jpg",
+      "PackagePath": "staticwebassets\\images\\house\\big-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\house\\big-4.jpg",
+      "PackagePath": "staticwebassets\\images\\house\\big-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\house\\big-5.jpg",
+      "PackagePath": "staticwebassets\\images\\house\\big-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\house\\big-6.jpg",
+      "PackagePath": "staticwebassets\\images\\house\\big-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\house\\cover-1.jpg",
+      "PackagePath": "staticwebassets\\images\\house\\cover-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\house\\cover-2.jpg",
+      "PackagePath": "staticwebassets\\images\\house\\cover-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\house\\cover-3.jpg",
+      "PackagePath": "staticwebassets\\images\\house\\cover-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\house\\cover-4.jpg",
+      "PackagePath": "staticwebassets\\images\\house\\cover-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\house\\cover-5.jpg",
+      "PackagePath": "staticwebassets\\images\\house\\cover-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\house\\cover-6.jpg",
+      "PackagePath": "staticwebassets\\images\\house\\cover-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\house\\cover-7.jpg",
+      "PackagePath": "staticwebassets\\images\\house\\cover-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\person_1.jpg",
+      "PackagePath": "staticwebassets\\images\\person_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\person_2.jpg",
+      "PackagePath": "staticwebassets\\images\\person_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\person_3.jpg",
+      "PackagePath": "staticwebassets\\images\\person_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\person_4.jpg",
+      "PackagePath": "staticwebassets\\images\\person_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\uploads\\big-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\big-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\uploads\\cover-3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\cover-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\uploads\\cover-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\cover-4.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RentHouse.WebUI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.RentHouse.WebUI.props",
+      "PackagePath": "build\\RentHouse.WebUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.RentHouse.WebUI.props",
+      "PackagePath": "buildMultiTargeting\\RentHouse.WebUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.RentHouse.WebUI.props",
+      "PackagePath": "buildTransitive\\RentHouse.WebUI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

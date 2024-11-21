@@ -1,0 +1,98 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+@await Component.InvokeAsync("_HeadUILayoutComponentPartial")
+  <body>
+    
+    @await Component.InvokeAsync("_NavbarUILayoutComponentPartial")
+    @await Component.InvokeAsync("_DefaultCoverComponentPartial")
+ 
+
+     <section class="ftco-section ftco-no-pt bg-light">
+    	<div class="container">
+    		<div class="row no-gutters">
+    			<div class="col-md-12	featured-top">
+    				<div class="row no-gutters">
+	  					<div class="col-md-4 d-flex align-items-center">
+	  						<form action="#" class="request-form ftco-animate bg-primary">
+		          		<h2>Evinizi bulun</h2>
+			    				<div class="form-group">
+			    					<label for="" class="label">Konum</label>
+			    					<input type="text" class="form-control" placeholder="Göl, Orman">
+			    				</div>
+			    				<div class="d-flex">
+			    					<div class="form-group mr-2">
+			                <label for="" class="label">Giriş Tarihi</label>
+			                <input type="text" class="form-control" id="book_pick_date" placeholder="Date">
+			              </div>
+			              <div class="form-group ml-2">
+			                <label for="" class="label">Çıkış Tarihi</label>
+			                <input type="text" class="form-control" id="book_off_date" placeholder="Date">
+			              </div>
+		              </div>
+			            <div class="form-group">
+			              <input type="submit" value="Rent A House Now" class="btn btn-secondary py-3 px-4">
+			            </div>
+			    			</form>
+	  					</div>
+	  					<div class="col-md-8 d-flex align-items-center">
+	  						<div class="services-wrap rounded-right w-100">
+	  							<h3 class="heading-section mb-4">Ev Kiralamanın En İyi Yolu</h3>
+	  							<div class="row d-flex mb-4">
+					          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+					            <div class="services w-100 text-center">
+				              	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
+				              	<div class="text w-100">
+					                <h3 class="heading mb-2">Choose Your Pickup Location</h3>
+				                </div>
+					            </div>      
+					          </div>
+					          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+					            <div class="services w-100 text-center">
+				              	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-handshake"></span></div>
+				              	<div class="text w-100">
+					                <h3 class="heading mb-2">Select the Best Deal</h3>
+					              </div>
+					            </div>      
+					          </div>
+					          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+					            <div class="services w-100 text-center">
+				              	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-rent"></span></div>
+				              	<div class="text w-100">
+					                <h3 class="heading mb-2">Reserve Your Rental House</h3>
+					              </div>
+					            </div>      
+					          </div>
+					        </div>
+					        <p><a href="#" class="btn btn-primary py-3 px-4">Reserve Your Perfect House</a></p>
+	  						</div>
+	  					</div>
+	  				</div>
+				</div>
+  		</div>
+    </section>
+
+
+    @await Component.InvokeAsync("_LastHousesComponentPartial")
+
+    @await Component.InvokeAsync("_AboutUsComponentPartial")
+
+    @await Component.InvokeAsync("_OurServicesComponentPartial")
+
+    @await Component.InvokeAsync("_TestimonialComponentPartial")
+
+    @await Component.InvokeAsync("_RecentBlogsComponentPartial")
+
+	@await Component.InvokeAsync("_StatisticsComponentPartial")
+
+    @await Component.InvokeAsync("_FooterUILayoutComponentPartial")
+
+    @await Component.InvokeAsync("_ScriptUILayoutComponentPartial")
+    
+  </body>
+</html>

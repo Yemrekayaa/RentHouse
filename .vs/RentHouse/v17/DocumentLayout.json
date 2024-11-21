@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8C287657-C78C-44A3-A020-D1D7ADEA6C90}|Frontends\\RentHouse.WebUI\\RentHouse.WebUI.csproj|c:\\users\\yunus emre\\source\\repos\\renthouse\\frontends\\renthouse.webui\\controllers\\admin\\adminlocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C287657-C78C-44A3-A020-D1D7ADEA6C90}|Frontends\\RentHouse.WebUI\\RentHouse.WebUI.csproj|solutionrelative:frontends\\renthouse.webui\\controllers\\admin\\adminlocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C287657-C78C-44A3-A020-D1D7ADEA6C90}|Frontends\\RentHouse.WebUI\\RentHouse.WebUI.csproj|c:\\users\\yunus emre\\source\\repos\\renthouse\\frontends\\renthouse.webui\\controllers\\admin\\adminfeaturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C287657-C78C-44A3-A020-D1D7ADEA6C90}|Frontends\\RentHouse.WebUI\\RentHouse.WebUI.csproj|solutionrelative:frontends\\renthouse.webui\\controllers\\admin\\adminfeaturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C287657-C78C-44A3-A020-D1D7ADEA6C90}|Frontends\\RentHouse.WebUI\\RentHouse.WebUI.csproj|c:\\users\\yunus emre\\source\\repos\\renthouse\\frontends\\renthouse.webui\\views\\adminlocation\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C287657-C78C-44A3-A020-D1D7ADEA6C90}|Frontends\\RentHouse.WebUI\\RentHouse.WebUI.csproj|solutionrelative:frontends\\renthouse.webui\\views\\adminlocation\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C287657-C78C-44A3-A020-D1D7ADEA6C90}|Frontends\\RentHouse.WebUI\\RentHouse.WebUI.csproj|c:\\users\\yunus emre\\source\\repos\\renthouse\\frontends\\renthouse.webui\\views\\adminlocation\\createlocationpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C287657-C78C-44A3-A020-D1D7ADEA6C90}|Frontends\\RentHouse.WebUI\\RentHouse.WebUI.csproj|solutionrelative:frontends\\renthouse.webui\\views\\adminlocation\\createlocationpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C287657-C78C-44A3-A020-D1D7ADEA6C90}|Frontends\\RentHouse.WebUI\\RentHouse.WebUI.csproj|c:\\users\\yunus emre\\source\\repos\\renthouse\\frontends\\renthouse.webui\\viewcomponents\\adminviewcomponents\\_createfeaturecomponentpartial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C287657-C78C-44A3-A020-D1D7ADEA6C90}|Frontends\\RentHouse.WebUI\\RentHouse.WebUI.csproj|solutionrelative:frontends\\renthouse.webui\\viewcomponents\\adminviewcomponents\\_createfeaturecomponentpartial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminFeatureController.cs",
+              "DocumentMoniker": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\Controllers\\Admin\\AdminFeatureController.cs",
+              "RelativeDocumentMoniker": "Frontends\\RentHouse.WebUI\\Controllers\\Admin\\AdminFeatureController.cs",
+              "ToolTip": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\Controllers\\Admin\\AdminFeatureController.cs",
+              "RelativeToolTip": "Frontends\\RentHouse.WebUI\\Controllers\\Admin\\AdminFeatureController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T18:44:10.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_CreateFeatureComponentPartial.cs",
+              "DocumentMoniker": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\ViewComponents\\AdminViewComponents\\_CreateFeatureComponentPartial.cs",
+              "RelativeDocumentMoniker": "Frontends\\RentHouse.WebUI\\ViewComponents\\AdminViewComponents\\_CreateFeatureComponentPartial.cs",
+              "ToolTip": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\ViewComponents\\AdminViewComponents\\_CreateFeatureComponentPartial.cs",
+              "RelativeToolTip": "Frontends\\RentHouse.WebUI\\ViewComponents\\AdminViewComponents\\_CreateFeatureComponentPartial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T18:36:37.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\Views\\AdminLocation\\Index.cshtml",
+              "RelativeDocumentMoniker": "Frontends\\RentHouse.WebUI\\Views\\AdminLocation\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\Views\\AdminLocation\\Index.cshtml",
+              "RelativeToolTip": "Frontends\\RentHouse.WebUI\\Views\\AdminLocation\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACUAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-21T17:11:48.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateLocationPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\Views\\AdminLocation\\CreateLocationPartial.cshtml",
+              "RelativeDocumentMoniker": "Frontends\\RentHouse.WebUI\\Views\\AdminLocation\\CreateLocationPartial.cshtml",
+              "ToolTip": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\Views\\AdminLocation\\CreateLocationPartial.cshtml",
+              "RelativeToolTip": "Frontends\\RentHouse.WebUI\\Views\\AdminLocation\\CreateLocationPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-21T17:09:40.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminLocationController.cs",
+              "DocumentMoniker": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\Controllers\\Admin\\AdminLocationController.cs",
+              "RelativeDocumentMoniker": "Frontends\\RentHouse.WebUI\\Controllers\\Admin\\AdminLocationController.cs",
+              "ToolTip": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\Controllers\\Admin\\AdminLocationController.cs",
+              "RelativeToolTip": "Frontends\\RentHouse.WebUI\\Controllers\\Admin\\AdminLocationController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAowDAAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T17:07:40.913Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

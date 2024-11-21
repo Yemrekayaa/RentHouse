@@ -1,0 +1,11 @@
+C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Domain\bin\Debug\net8.0\RentHouse.Domain.deps.json
+C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Domain\bin\Debug\net8.0\RentHouse.Domain.dll
+C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Domain\bin\Debug\net8.0\RentHouse.Domain.pdb
+C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Domain\obj\Debug\net8.0\RentHouse.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Domain\obj\Debug\net8.0\RentHouse.Domain.AssemblyInfoInputs.cache
+C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Domain\obj\Debug\net8.0\RentHouse.Domain.AssemblyInfo.cs
+C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Domain\obj\Debug\net8.0\RentHouse.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Domain\obj\Debug\net8.0\RentHouse.Domain.dll
+C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Domain\obj\Debug\net8.0\refint\RentHouse.Domain.dll
+C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Domain\obj\Debug\net8.0\RentHouse.Domain.pdb
+C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Domain\obj\Debug\net8.0\ref\RentHouse.Domain.dll
