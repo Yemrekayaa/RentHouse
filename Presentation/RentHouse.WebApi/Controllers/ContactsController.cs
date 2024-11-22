@@ -36,10 +36,10 @@ namespace RentHouse.WebApi.Controllers
             await Mediator.Send(command);
             return Ok();
         }
-        [HttpDelete]
-        public async Task<IActionResult> Remove([FromBody] RemoveContactCommand command)
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Remove(int id)
         {
-            await Mediator.Send(command);
+            await Mediator.Send(new RemoveContactCommand(id));
             return Ok();
         }
     }

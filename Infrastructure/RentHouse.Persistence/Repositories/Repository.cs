@@ -49,5 +49,10 @@ namespace RentHouse.Persistence.Repositories
             await _context.SaveChangesAsync();
         }
 
+        public async Task<int> GetCountAsync()
+        {
+            return await _dbSet.CountAsync();
+        }
+
     }
 }

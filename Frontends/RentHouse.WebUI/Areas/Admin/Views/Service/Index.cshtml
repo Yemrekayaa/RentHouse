@@ -1,0 +1,83 @@
+﻿@model List<RentHouse.Dto.ServiceDtos.ResultServiceDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
+}
+<style>
+    .service-card {
+        width: 350px;
+        margin: 5px;
+        margin-bottom: 1rem;
+    }
+</style>
+<main class="app-main">
+
+    <div class="app-content mt-4">
+        <!--begin::Container-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card mb-4">
+                        <div class="card-header bg-body-secondary " data-bs-theme="dark">
+                            <h3 class="card-title float-start text-white">Servis Düzenle</h3>
+                            <a class="btn btn-info float-end" href="https://icons.getbootstrap.com/" target="_blank"> İkon Listesi </a>
+                        </div> <!-- /.card-header -->
+                        <div class="card-body p-0">
+                            <div class="d-flex flex-wrap justify-content-evenly mt-3">
+                                @foreach(var item in Model)
+                                {
+                                    <div class="card service-card pt-3">
+                                    <div class="services services-2 w-100 text-center p-3">
+                                        
+                                        <div class="icon d-flex align-items-center justify-content-center"><span class="@item.iconUrl"></span></div>
+                                        
+                                            <div class="text">
+                                                <h3 style="font-size: 17px;" class="fw-bold">
+                                                    @item.title
+                                                </h3>                                               
+                                                <p class="text-muted">@item.description</p>
+                                                <button class="btn btn-primary w-100 " data-bs-toggle="modal" data-bs-target="#serviceUpdate" 
+                                                data-service-id="@item.serviceID" 
+                                                data-service-title="@item.title" 
+                                                data-service-description="@item.description"
+                                                data-service-iconurl="@item.iconUrl">
+                                                Düzenle
+                                                </button>
+                                            </div>
+                                        
+                                    </div>
+                                </div> 
+                                }
+                               
+
+                            </div>
+
+                        </div> <!-- /.card-body -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div> <!--end::Container-->
+    </div> <!--end::App Content-->
+</main>
+
+@await Html.PartialAsync("UpdateServicePartial", new RentHouse.Dto.ServiceDtos.UpdateServiceDto());
+
+<script>
+    $(document).ready(function () {
+        $('#serviceUpdate').on('show.bs.modal', function (event) {
+            console.log($('#test'));
+            var button = $(event.relatedTarget);
+            var serviceId = button.data('service-id');
+            var serviceTitle = button.data('service-title');
+            var serviceDescription = button.data('service-description');
+            var serviceIconUrl = button.data('service-iconurl');
+
+            $('#ServiceId').val(serviceId);
+            $('#ServiceTitle').val(serviceTitle);
+            $('#ServiceDescription').val(serviceDescription);
+            $('#ServiceIconUrl').val(serviceIconUrl);
+        });
+
+    });
+</script>

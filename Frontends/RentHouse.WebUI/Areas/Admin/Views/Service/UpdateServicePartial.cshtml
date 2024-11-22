@@ -1,0 +1,37 @@
+﻿@model RentHouse.Dto.ServiceDtos.UpdateServiceDto
+
+<div class="modal fade" id="serviceUpdate" tabindex="-1" aria-labelledby="serviceUpdateModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form method="post"  asp-controller="Service" asp-action="Update">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="serviceUpdateModal">Özellik Düzenle</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!--begin::Body-->
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <input type="hidden" asp-for="serviceID" id="ServiceId" />
+                            <label class="form-label">Servis Başlığı</label>
+                            <input class="form-control" type="text" asp-for="title" id="ServiceTitle">
+                            <label class="form-label">Servis Açıklaması</label>
+                            <input class="form-control" type="text" asp-for="description" id="ServiceDescription">
+                            <label class="form-label">Servis İkonu</label>
+                            <input class="form-control" type="text" asp-for="iconUrl" id="ServiceIconUrl">
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Çıkış</button>
+                    <button type="submit" class="btn btn-primary">Kaydet</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

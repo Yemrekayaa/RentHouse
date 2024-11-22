@@ -13,3 +13,4 @@ C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Application\obj\Debug\
 C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Application\obj\Debug\net8.0\refint\RentHouse.Application.dll
 C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Application\obj\Debug\net8.0\RentHouse.Application.pdb
 C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Application\obj\Debug\net8.0\ref\RentHouse.Application.dll
+C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Application\obj\Debug\net8.0\RentHouse.Application.sourcelink.json

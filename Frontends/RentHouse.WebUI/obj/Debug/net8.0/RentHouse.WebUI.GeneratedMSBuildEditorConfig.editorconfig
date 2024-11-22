@@ -26,68 +26,112 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Yunus Emre\source\repos\RentHouse\Frontends\RentHouse.WebUI
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/About/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWJvdXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Banner/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmFubmVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Default/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGVmYXVsdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Feature/CreateFeaturePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRmVhdHVyZVxDcmVhdGVGZWF0dXJlUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Feature/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRmVhdHVyZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Feature/UpdateFeaturePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRmVhdHVyZVxVcGRhdGVGZWF0dXJlUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/House/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG91c2VcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/House/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG91c2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/House/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG91c2VcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Layout/FooterPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTGF5b3V0XEZvb3RlclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Layout/HeaderPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTGF5b3V0XEhlYWRlclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Layout/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTGF5b3V0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Layout/NavbarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTGF5b3V0XE5hdmJhclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Layout/ScriptPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTGF5b3V0XFNjcmlwdFBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Layout/SidebarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTGF5b3V0XFNpZGViYXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Location/CreateLocationPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9jYXRpb25cQ3JlYXRlTG9jYXRpb25QYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Location/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9jYXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Location/UpdateLocationPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9jYXRpb25cVXBkYXRlTG9jYXRpb25QYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Service/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VydmljZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Service/UpdateServicePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VydmljZVxVcGRhdGVTZXJ2aWNlUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Shared/RemoveComponentPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXFJlbW92ZUNvbXBvbmVudFBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Testimonial/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGVzdGltb25pYWxcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Testimonial/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGVzdGltb25pYWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Testimonial/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGVzdGltb25pYWxcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Views/About/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Views/AdminFeature/Components/_CreateFeatureComponentPartial/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5GZWF0dXJlXENvbXBvbmVudHNcX0NyZWF0ZUZlYXR1cmVDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Views/AdminFeature/Components/_UpdateFeatureComponentPartial/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5GZWF0dXJlXENvbXBvbmVudHNcX1VwZGF0ZUZlYXR1cmVDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Views/AdminFeature/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5GZWF0dXJlXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Views/AdminHouse/CreateHouse.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Ib3VzZVxDcmVhdGVIb3VzZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Views/AdminHouse/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Ib3VzZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Views/AdminHouse/UpdateHouse.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Ib3VzZVxVcGRhdGVIb3VzZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Views/AdminLayout/AdminFooterPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5MYXlvdXRcQWRtaW5Gb290ZXJQYXJ0aWFsLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Views/AdminLayout/AdminHeaderPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5MYXlvdXRcQWRtaW5IZWFkZXJQYXJ0aWFsLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Views/AdminLayout/AdminNavbarPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5MYXlvdXRcQWRtaW5OYXZiYXJQYXJ0aWFsLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Views/AdminLayout/AdminScriptPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5MYXlvdXRcQWRtaW5TY3JpcHRQYXJ0aWFsLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Views/AdminLayout/AdminSidebarPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5MYXlvdXRcQWRtaW5TaWRlYmFyUGFydGlhbC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Views/AdminLayout/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5MYXlvdXRcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Views/AdminLocation/CreateLocationPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Mb2NhdGlvblxDcmVhdGVMb2NhdGlvblBhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Views/AdminLocation/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Mb2NhdGlvblxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Views/AdminShared/Components/_RemoveComponentPartial/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5TaGFyZWRcQ29tcG9uZW50c1xfUmVtb3ZlQ29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Views/Contact/Components/_FooterAddressComponentPartial/Default.cshtml]

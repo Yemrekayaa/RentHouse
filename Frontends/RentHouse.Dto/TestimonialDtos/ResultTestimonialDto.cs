@@ -1,6 +1,6 @@
 namespace RentHouse.Dto.TestimonialDtos
 {
-    public class ResultServiceDto
+    public class ResultTestimonialDto
     {
         public int testimonialID { get; set; }
         public string name { get; set; }

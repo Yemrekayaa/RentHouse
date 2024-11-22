@@ -26,5 +26,7 @@ namespace RentHouse.Persistence.Context
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<TagCloud> TagClouds { get; set; }
         public DbSet<Comment> Comments { get; set; }
+
+        public DbSet<Setting> Settings { get; set; }
     }
 }

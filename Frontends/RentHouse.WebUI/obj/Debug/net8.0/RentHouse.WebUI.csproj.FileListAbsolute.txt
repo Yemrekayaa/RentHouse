@@ -228,3 +228,4 @@ C:\Users\Yunus Emre\source\repos\RentHouse\Frontends\RentHouse.WebUI\obj\Debug\n
 C:\Users\Yunus Emre\source\repos\RentHouse\Frontends\RentHouse.WebUI\obj\Debug\net8.0\RentHous.25456276.Up2Date
 C:\Users\Yunus Emre\source\repos\RentHouse\Frontends\RentHouse.WebUI\bin\Debug\net8.0\RentHouse.Dto.dll
 C:\Users\Yunus Emre\source\repos\RentHouse\Frontends\RentHouse.WebUI\bin\Debug\net8.0\RentHouse.Dto.pdb
+C:\Users\Yunus Emre\source\repos\RentHouse\Frontends\RentHouse.WebUI\obj\Debug\net8.0\RentHouse.WebUI.sourcelink.json

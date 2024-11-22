@@ -1,0 +1,50 @@
+﻿@model RentHouse.Dto.TestimonialDtos.CreateTestimonialDto
+@{
+    ViewData["Title"] = "CreateHouse";
+    Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
+}
+
+<main class="app-main">
+
+    <div class="app-content mt-4">
+        <!--begin::Container-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card mb-4">
+                        <!--begin::Header-->
+                        <div class="card-header d-grid">
+                            <div class="card-title">Yeni Yorum</div>
+                            <div class="form-text">Yorumcu hakkında bilgileri eksiksiz doldurmalısınız. Kaydet butonuna basarak işlemi tamamlayabilirsiniz.</div>
+                        </div> <!--end::Header--> <!--begin::Form-->
+                        <form method="post" enctype="multipart/form-data">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label asp-for="name" class="form-label">İsim</label>
+                                    <input class="form-control" type="text" asp-for="name">
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="title" class="form-label">Ünvan</label>
+                                    <input class="form-control" type="text" asp-for="title">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="comment" class="form-label">Yorum</label>
+                                    <textarea class="form-control" asp-for="comment"></textarea>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="imageUrl" class="form-label">Resim</label>
+                                    <input class="form-control" type="text" asp-for="imageUrl">
+                                </div>
+
+                            </div> <!--end::Body--> <!--begin::Footer-->
+                            <div class="card-footer"> <button type="submit" class="btn btn-primary float-end">Kaydet</button> </div> <!--end::Footer-->
+                        </form> <!--end::Form-->
+                    </div>
+                </div>
+            </div>
+        </div> <!--end::Container-->
+    </div> <!--end::App Content-->
+</main>
+

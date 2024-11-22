@@ -1,29 +1,23 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 using RentHouse.Dto.DefaultDtos;
+using RentHouse.WebUI.Services;
 
 namespace RentHouse.WebUI.ViewComponents.DefaultViewComponents
 {
     public class _DefaultCoverComponentPartial : ViewComponent
     {
-        private readonly IHttpClientFactory _httpClientFactory;
+        private readonly ApiService _apiService;
 
-        public _DefaultCoverComponentPartial(IHttpClientFactory httpClientFactory)
+        public _DefaultCoverComponentPartial(ApiService apiService)
         {
-            _httpClientFactory = httpClientFactory;
+            _apiService = apiService;
         }
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:7224/api/Banners");
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<List<ResultBannerDto>>(jsonData);
-                return View(values);
-            }
-            return View();
+
+            var values = await _apiService.GetAsync<ResultBannerDto>("Banners/1");
+            return View(values);
         }
     }
 }

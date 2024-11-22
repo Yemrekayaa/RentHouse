@@ -1,0 +1,54 @@
+﻿@model RentHouse.Dto.BannerDtos.UpdateBannerDto
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
+}
+
+<main class="app-main">
+
+    <div class="app-content mt-4">
+        <!--begin::Container-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card mb-4">
+                        <div class="card-header bg-body-secondary " data-bs-theme="dark">
+                            <h3 class="card-title float-start text-white">Banner Düzenle</h3>
+                        </div> <!-- /.card-header -->
+                        <div class="card-body p-0">
+                            <form method="post" asp-controller="Banner" asp-action="Update">
+                                <input type="hidden" asp-for="BannerID" />
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <label asp-for="Title" class="form-label">Başlık</label>
+                                        <input class="form-control" type="text" asp-for="Title">
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label asp-for="Description" class="form-label">Açıklama</label>
+                                        <textarea class="form-control" asp-for="Description"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label asp-for="VideoDescription" class="form-label">Video Açıklama</label>
+                                        <input class="form-control" type="text" asp-for="VideoDescription">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label asp-for="VideoUrl" class="form-label">Video Linki</label>
+                                        <input class="form-control" type="text" asp-for="VideoUrl">
+                                    </div>
+
+                                </div> <!--end::Body--> <!--begin::Footer-->
+                                <div class="card-footer"> 
+                                    <button type="submit" class="btn btn-primary float-end">Kaydet</button> 
+                                    </div> <!--end::Footer-->
+                            </form> <!--end::Form-->
+
+                        </div> <!-- /.card-body -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div> <!--end::Container-->
+    </div> <!--end::App Content-->
+</main>
+

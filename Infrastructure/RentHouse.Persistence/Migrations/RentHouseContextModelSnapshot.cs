@@ -369,6 +369,24 @@ namespace RentHouse.Persistence.Migrations
                     b.ToTable("Services");
                 });
 
+            modelBuilder.Entity("RentHouse.Domain.Entities.Setting", b =>
+                {
+                    b.Property<int>("SettingID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SettingID"));
+
+                    b.Property<int>("BannerID")
+                        .HasColumnType("int");
+
+                    b.HasKey("SettingID");
+
+                    b.HasIndex("BannerID");
+
+                    b.ToTable("Settings");
+                });
+
             modelBuilder.Entity("RentHouse.Domain.Entities.SocialMedia", b =>
                 {
                     b.Property<int>("SocialMediaID")
@@ -506,6 +524,17 @@ namespace RentHouse.Persistence.Migrations
                         .IsRequired();
 
                     b.Navigation("House");
+                });
+
+            modelBuilder.Entity("RentHouse.Domain.Entities.Setting", b =>
+                {
+                    b.HasOne("RentHouse.Domain.Entities.Banner", "Banner")
+                        .WithMany()
+                        .HasForeignKey("BannerID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Banner");
                 });
 
             modelBuilder.Entity("RentHouse.Domain.Entities.TagCloud", b =>

@@ -1,29 +1,22 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 using RentHouse.Dto.AboutDtos;
+using RentHouse.WebUI.Services;
 
 namespace RentHouse.WebUI.ViewComponents.SharedViewComponents
 {
     public class _AboutUsComponentPartial : ViewComponent
     {
-        private readonly IHttpClientFactory _httpClientFactory;
+        private readonly ApiService _apiService;
 
-        public _AboutUsComponentPartial(IHttpClientFactory httpClientFactory)
+        public _AboutUsComponentPartial(ApiService apiService)
         {
-            _httpClientFactory = httpClientFactory;
+            _apiService = apiService;
         }
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:7224/api/Abouts");
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<List<ResultAboutDto>>(jsonData);
-                return View(values);
-            }
-            return View();
+            var value = await _apiService.GetAsync<ResultAboutDto>("Abouts/1");
+            return View(value);
         }
     }
 }
