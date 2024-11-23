@@ -15,8 +15,4 @@
     <ProjectReference Include="..\RentHouse.Domain\RentHouse.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Features\CQRS\Statistics\Queries\" />
-  </ItemGroup>
-
 </Project>

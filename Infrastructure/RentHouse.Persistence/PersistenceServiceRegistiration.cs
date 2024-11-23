@@ -11,7 +11,6 @@ namespace RentHouse.Persistence
         {
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped<IHouseRepository, HouseRepository>();
-            services.AddScoped<IBlogRepository, BlogRepository>();
             services.AddScoped<RentHouseContext>();
             return services;
         }

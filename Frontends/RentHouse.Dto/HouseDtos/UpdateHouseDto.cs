@@ -11,5 +11,8 @@ namespace RentHouse.Dto.HouseDtos
         public byte NumberOfRooms { get; set; }
         public byte NumberOfBeds { get; set; }
         public string BigImageUrl { get; set; }
+
+        public decimal WeekdayPrice { get; set; }
+        public decimal WeekendPrice { get; set; }
     }
 }

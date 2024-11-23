@@ -15,6 +15,8 @@ namespace RentHouse.Application.Features.CQRS.Houses.Commands.Create
         public byte NumberOfRooms { get; set; }
         public byte NumberOfBeds { get; set; }
         public string BigImageUrl { get; set; }
+        public decimal WeekdayPrice { get; set; }
+        public decimal WeekendPrice { get; set; }
 
         public class CreateHouseCommandHandler : IRequestHandler<CreateHouseCommand>
         {

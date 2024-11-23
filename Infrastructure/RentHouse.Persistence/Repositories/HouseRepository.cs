@@ -24,14 +24,6 @@ namespace RentHouse.Persistence.Repositories
             return await values.ToListAsync();
         }
 
-        public async Task<List<House>> GetHouseListWithPricingAsync(int? count = null)
-        {
-            var values = _context.Houses.Include(x => x.Location).Include(x => x.Pricing).AsQueryable();
-            if (count.HasValue)
-            {
-                values = values.OrderByDescending(x => x.HouseID).Take(count.Value);
-            }
-            return await values.ToListAsync();
-        }
+
     }
 }

@@ -8,6 +8,7 @@ using RentHouse.Application.Features.CQRS.Authors.Queries.GetList;
 namespace RentHouse.WebApi.Controllers
 {
     [Route("api/[controller]")]
+    [ApiExplorerSettings(GroupName = "RentHouse")]
     [ApiController]
     public class AuthorsController : BaseController
     {

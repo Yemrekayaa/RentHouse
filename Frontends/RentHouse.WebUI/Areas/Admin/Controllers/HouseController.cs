@@ -18,7 +18,7 @@ namespace RentHouse.WebUI.Areas.Admin.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var values = await _apiService.GetAsync<List<ResultHouseWithPriceDto>>("Houses/with-price");
+            var values = await _apiService.GetAsync<List<ResultHouseWithLocationDto>>("Houses/with-location");
             return View(values);
         }
         [HttpGet]

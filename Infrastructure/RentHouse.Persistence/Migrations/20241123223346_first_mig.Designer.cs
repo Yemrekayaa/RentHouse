@@ -12,8 +12,8 @@ using RentHouse.Persistence.Context;
 namespace RentHouse.Persistence.Migrations
 {
     [DbContext(typeof(RentHouseContext))]
-    [Migration("20241122020944_add_setting2")]
-    partial class add_setting2
+    [Migration("20241123223346_first_mig")]
+    partial class first_mig
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -92,87 +92,6 @@ namespace RentHouse.Persistence.Migrations
                     b.HasKey("BannerID");
 
                     b.ToTable("Banners");
-                });
-
-            modelBuilder.Entity("RentHouse.Domain.Entities.Blog", b =>
-                {
-                    b.Property<int>("BlogID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BlogID"));
-
-                    b.Property<int>("AuthorID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CategoryID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("CoverImageUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("CreateDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Title")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("BlogID");
-
-                    b.HasIndex("AuthorID");
-
-                    b.HasIndex("CategoryID");
-
-                    b.ToTable("Blogs");
-                });
-
-            modelBuilder.Entity("RentHouse.Domain.Entities.Category", b =>
-                {
-                    b.Property<int>("CategoryID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryID"));
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("CategoryID");
-
-                    b.ToTable("Categories");
-                });
-
-            modelBuilder.Entity("RentHouse.Domain.Entities.Comment", b =>
-                {
-                    b.Property<int>("CommentID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CommentID"));
-
-                    b.Property<int>("BlogID")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("CommentID");
-
-                    b.HasIndex("BlogID");
-
-                    b.ToTable("Comments");
                 });
 
             modelBuilder.Entity("RentHouse.Domain.Entities.Contact", b =>
@@ -276,6 +195,12 @@ namespace RentHouse.Persistence.Migrations
                     b.Property<byte>("NumberOfRooms")
                         .HasColumnType("tinyint");
 
+                    b.Property<decimal>("WeekdayPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WeekendPrice")
+                        .HasColumnType("decimal(18,2)");
+
                     b.HasKey("HouseID");
 
                     b.HasIndex("LocationID");
@@ -323,31 +248,6 @@ namespace RentHouse.Persistence.Migrations
                     b.HasKey("LocationID");
 
                     b.ToTable("Locations");
-                });
-
-            modelBuilder.Entity("RentHouse.Domain.Entities.Pricing", b =>
-                {
-                    b.Property<int>("PricingID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PricingID"));
-
-                    b.Property<int>("HouseID")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("WeekdayPrice")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("WeekendPrice")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("PricingID");
-
-                    b.HasIndex("HouseID")
-                        .IsUnique();
-
-                    b.ToTable("Pricings");
                 });
 
             modelBuilder.Entity("RentHouse.Domain.Entities.Service", b =>
@@ -412,27 +312,6 @@ namespace RentHouse.Persistence.Migrations
                     b.ToTable("SocialMedias");
                 });
 
-            modelBuilder.Entity("RentHouse.Domain.Entities.TagCloud", b =>
-                {
-                    b.Property<int>("TagCloudID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TagCloudID"));
-
-                    b.Property<int>("BlogID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Title")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("TagCloudID");
-
-                    b.HasIndex("BlogID");
-
-                    b.ToTable("TagClouds");
-                });
-
             modelBuilder.Entity("RentHouse.Domain.Entities.Testimonial", b =>
                 {
                     b.Property<int>("TestimonialID")
@@ -456,36 +335,6 @@ namespace RentHouse.Persistence.Migrations
                     b.HasKey("TestimonialID");
 
                     b.ToTable("Testimonials");
-                });
-
-            modelBuilder.Entity("RentHouse.Domain.Entities.Blog", b =>
-                {
-                    b.HasOne("RentHouse.Domain.Entities.Author", "Author")
-                        .WithMany("Blogs")
-                        .HasForeignKey("AuthorID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("RentHouse.Domain.Entities.Category", "Category")
-                        .WithMany("Blogs")
-                        .HasForeignKey("CategoryID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Author");
-
-                    b.Navigation("Category");
-                });
-
-            modelBuilder.Entity("RentHouse.Domain.Entities.Comment", b =>
-                {
-                    b.HasOne("RentHouse.Domain.Entities.Blog", "Blog")
-                        .WithMany("Comments")
-                        .HasForeignKey("BlogID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Blog");
                 });
 
             modelBuilder.Entity("RentHouse.Domain.Entities.House", b =>
@@ -518,17 +367,6 @@ namespace RentHouse.Persistence.Migrations
                     b.Navigation("House");
                 });
 
-            modelBuilder.Entity("RentHouse.Domain.Entities.Pricing", b =>
-                {
-                    b.HasOne("RentHouse.Domain.Entities.House", "House")
-                        .WithOne("Pricing")
-                        .HasForeignKey("RentHouse.Domain.Entities.Pricing", "HouseID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("House");
-                });
-
             modelBuilder.Entity("RentHouse.Domain.Entities.Setting", b =>
                 {
                     b.HasOne("RentHouse.Domain.Entities.Banner", "Banner")
@@ -540,34 +378,6 @@ namespace RentHouse.Persistence.Migrations
                     b.Navigation("Banner");
                 });
 
-            modelBuilder.Entity("RentHouse.Domain.Entities.TagCloud", b =>
-                {
-                    b.HasOne("RentHouse.Domain.Entities.Blog", "Blog")
-                        .WithMany("TagClouds")
-                        .HasForeignKey("BlogID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Blog");
-                });
-
-            modelBuilder.Entity("RentHouse.Domain.Entities.Author", b =>
-                {
-                    b.Navigation("Blogs");
-                });
-
-            modelBuilder.Entity("RentHouse.Domain.Entities.Blog", b =>
-                {
-                    b.Navigation("Comments");
-
-                    b.Navigation("TagClouds");
-                });
-
-            modelBuilder.Entity("RentHouse.Domain.Entities.Category", b =>
-                {
-                    b.Navigation("Blogs");
-                });
-
             modelBuilder.Entity("RentHouse.Domain.Entities.Feature", b =>
                 {
                     b.Navigation("HouseFeatures");
@@ -576,8 +386,6 @@ namespace RentHouse.Persistence.Migrations
             modelBuilder.Entity("RentHouse.Domain.Entities.House", b =>
                 {
                     b.Navigation("HouseFeatures");
-
-                    b.Navigation("Pricing");
                 });
 #pragma warning restore 612, 618
         }

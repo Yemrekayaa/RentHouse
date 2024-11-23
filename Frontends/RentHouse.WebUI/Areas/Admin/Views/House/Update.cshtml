@@ -58,7 +58,22 @@
                                     <label asp-for="CoverImageUrl" class="form-label">Küçük Resim Url</label>
                                     <input class="form-control" type="text" asp-for="CoverImageUrl">
                                 </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <label asp-for="WeekdayPrice" class="form-label">Hafta İçi Fiyat</label>
+                                        <div class="input-group">
+                                            <input type="number" class="form-control" asp-for="WeekdayPrice"> <span class="input-group-text">₺</span>
+                                        </div>
 
+                                    </div>
+                                    <div class="col">
+                                        <label asp-for="WeekendPrice" class="form-label">Hafta Sonu Fiyat</label>
+                                        <div class="input-group">
+                                            <input type="number" class="form-control" asp-for="WeekendPrice"><span class="input-group-text">₺</span>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div> <!--end::Body--> <!--begin::Footer-->
                             <div class="card-footer"> <button type="submit" class="btn btn-primary">Submit</button> </div> <!--end::Footer-->
                         </form> <!--end::Form-->

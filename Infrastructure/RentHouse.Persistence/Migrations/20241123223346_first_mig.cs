@@ -58,19 +58,6 @@ namespace RentHouse.Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Categories",
-                columns: table => new
-                {
-                    CategoryID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Categories", x => x.CategoryID);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Contacts",
                 columns: table => new
                 {
@@ -130,19 +117,6 @@ namespace RentHouse.Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Pricings",
-                columns: table => new
-                {
-                    PricingID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Pricings", x => x.PricingID);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Services",
                 columns: table => new
                 {
@@ -189,32 +163,21 @@ namespace RentHouse.Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Blogs",
+                name: "Settings",
                 columns: table => new
                 {
-                    BlogID = table.Column<int>(type: "int", nullable: false)
+                    SettingID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Title = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    AuthorID = table.Column<int>(type: "int", nullable: false),
-                    CoverImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    CategoryID = table.Column<int>(type: "int", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    BannerID = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Blogs", x => x.BlogID);
+                    table.PrimaryKey("PK_Settings", x => x.SettingID);
                     table.ForeignKey(
-                        name: "FK_Blogs_Authors_AuthorID",
-                        column: x => x.AuthorID,
-                        principalTable: "Authors",
-                        principalColumn: "AuthorID",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Blogs_Categories_CategoryID",
-                        column: x => x.CategoryID,
-                        principalTable: "Categories",
-                        principalColumn: "CategoryID",
+                        name: "FK_Settings_Banners_BannerID",
+                        column: x => x.BannerID,
+                        principalTable: "Banners",
+                        principalColumn: "BannerID",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -231,7 +194,9 @@ namespace RentHouse.Persistence.Migrations
                     Area = table.Column<int>(type: "int", nullable: false),
                     NumberOfRooms = table.Column<byte>(type: "tinyint", nullable: false),
                     NumberOfBeds = table.Column<byte>(type: "tinyint", nullable: false),
-                    BigImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    BigImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    WeekdayPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    WeekendPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -241,49 +206,6 @@ namespace RentHouse.Persistence.Migrations
                         column: x => x.LocationID,
                         principalTable: "Locations",
                         principalColumn: "LocationID",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Comments",
-                columns: table => new
-                {
-                    CommentID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    BlogID = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Comments", x => x.CommentID);
-                    table.ForeignKey(
-                        name: "FK_Comments_Blogs_BlogID",
-                        column: x => x.BlogID,
-                        principalTable: "Blogs",
-                        principalColumn: "BlogID",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "TagClouds",
-                columns: table => new
-                {
-                    TagCloudID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Title = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    BlogID = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_TagClouds", x => x.TagCloudID);
-                    table.ForeignKey(
-                        name: "FK_TagClouds_Blogs_BlogID",
-                        column: x => x.BlogID,
-                        principalTable: "Blogs",
-                        principalColumn: "BlogID",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -315,21 +237,6 @@ namespace RentHouse.Persistence.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Blogs_AuthorID",
-                table: "Blogs",
-                column: "AuthorID");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Blogs_CategoryID",
-                table: "Blogs",
-                column: "CategoryID");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Comments_BlogID",
-                table: "Comments",
-                column: "BlogID");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_HouseFeatures_FeatureId",
                 table: "HouseFeatures",
                 column: "FeatureId");
@@ -345,9 +252,9 @@ namespace RentHouse.Persistence.Migrations
                 column: "LocationID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_TagClouds_BlogID",
-                table: "TagClouds",
-                column: "BlogID");
+                name: "IX_Settings_BannerID",
+                table: "Settings",
+                column: "BannerID");
         }
 
         /// <inheritdoc />
@@ -357,10 +264,7 @@ namespace RentHouse.Persistence.Migrations
                 name: "Abouts");
 
             migrationBuilder.DropTable(
-                name: "Banners");
-
-            migrationBuilder.DropTable(
-                name: "Comments");
+                name: "Authors");
 
             migrationBuilder.DropTable(
                 name: "Contacts");
@@ -372,16 +276,13 @@ namespace RentHouse.Persistence.Migrations
                 name: "HouseFeatures");
 
             migrationBuilder.DropTable(
-                name: "Pricings");
-
-            migrationBuilder.DropTable(
                 name: "Services");
 
             migrationBuilder.DropTable(
-                name: "SocialMedias");
+                name: "Settings");
 
             migrationBuilder.DropTable(
-                name: "TagClouds");
+                name: "SocialMedias");
 
             migrationBuilder.DropTable(
                 name: "Testimonials");
@@ -393,16 +294,10 @@ namespace RentHouse.Persistence.Migrations
                 name: "Houses");
 
             migrationBuilder.DropTable(
-                name: "Blogs");
+                name: "Banners");
 
             migrationBuilder.DropTable(
                 name: "Locations");
-
-            migrationBuilder.DropTable(
-                name: "Authors");
-
-            migrationBuilder.DropTable(
-                name: "Categories");
         }
     }
 }

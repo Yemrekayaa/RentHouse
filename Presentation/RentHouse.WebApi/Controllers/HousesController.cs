@@ -3,14 +3,14 @@ using RentHouse.Application.Features.CQRS.Houses.Commands.Create;
 using RentHouse.Application.Features.CQRS.Houses.Commands.Remove;
 using RentHouse.Application.Features.CQRS.Houses.Commands.Update;
 using RentHouse.Application.Features.CQRS.Houses.Queries.GetById;
-using RentHouse.Application.Features.CQRS.Houses.Queries.GetCount;
 using RentHouse.Application.Features.CQRS.Houses.Queries.GetList;
 using RentHouse.Application.Features.CQRS.Houses.Queries.GetWithLocation;
-using RentHouse.Application.Features.CQRS.Houses.Queries.GetWithPricing;
+
 
 namespace RentHouse.WebApi.Controllers
 {
     [Route("api/[controller]")]
+    [ApiExplorerSettings(GroupName = "RentHouse")]
     [ApiController]
     public class HousesController : BaseController
     {
@@ -51,18 +51,7 @@ namespace RentHouse.WebApi.Controllers
             var values = await Mediator.Send(new GetHouseWithLocationQuery(count));
             return Ok(values);
         }
-        [HttpGet("with-price")]
-        public async Task<IActionResult> GetWithPrice([FromQuery] int? count)
-        {
-            var values = await Mediator.Send(new GetHouseWithPricingQuery(count));
-            return Ok(values);
-        }
 
-        [HttpGet("Count")]
-        public async Task<IActionResult> Count()
-        {
-            var value = await Mediator.Send(new GetHouseCountQuery());
-            return Ok(value);
-        }
+
     }
 }
