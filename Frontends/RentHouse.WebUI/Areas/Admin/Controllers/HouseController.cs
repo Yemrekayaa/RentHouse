@@ -110,15 +110,26 @@ namespace RentHouse.WebUI.Areas.Admin.Controllers
             return View(createReservationDto);
         }
 
-        [HttpPost("[Area]/[Controller]/ReservationCreate")]
-        public async Task<IActionResult> ReservationCreate(CreateReservationDto createReservationDto)
+        [HttpPost("[Area]/[Controller]/{id}/Reservation/Create")]
+        public async Task<IActionResult> ReservationCreate(CreateReservationDto createReservationDto, int id)
         {
             var response = await _apiService.RequestAsync(HttpMethod.Post, "Reservations", createReservationDto);
             if (response.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index");
+                return RedirectToAction("Reservation", "House", new { area = "Admin", id = id });
             }
             return View();
+        }
+
+        [HttpGet("[Area]/[Controller]/{houseId}/Reservation/Remove/{id}")]
+        public async Task<IActionResult> ReservationRemove(int id, int houseId)
+        {
+            var response = await _apiService.RequestAsync<object>(HttpMethod.Delete, $"Reservations/{id}");
+            if (response.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Reservation", "House", new { area = "Admin", id = houseId });
+            }
+            return RedirectToAction("Index");
         }
     }
 }

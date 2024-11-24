@@ -50,8 +50,8 @@
   
   .calendar_content div {
     float: left;
-    margin-left: -1px;
-    margin-top: -1px;
+/*    margin-left: -1px;
+    margin-top: -1px;*/
     border: 1px solid transparent;
     border-radius: 5px; }
   
@@ -67,12 +67,10 @@
   .calendar_content div.past-date {
     cursor: initial;
     color: #d5d5d5; }
-  
-  /* .calendar_content div.today {
-    font-weight: 700;
-    font-size: 18px;
-    color: #fff;
-    background-color: #bd83ce; } */
+
+    .calendar_content div.today {
+        border: 1px solid black !important;
+    } 
   
   .calendar_content div.selected {
     background-color: rgba(153, 153, 161, 0.2);

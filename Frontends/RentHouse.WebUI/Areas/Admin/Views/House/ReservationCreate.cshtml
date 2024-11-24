@@ -19,7 +19,7 @@
                             <div class="card-title">@house.name - Rezervasyon Ekle</div>
                             <div class="form-text">Ev hakkında bilgileri eksiksiz doldurmalısınız. Kaydet butonuna basarak işlemi tamamlayabilirsiniz.</div>
                         </div> <!--end::Header--> <!--begin::Form-->
-                        <form method="post" asp-area="Admin" asp-controller="House" asp-action="ReservationCreate">
+                        <form method="post" asp-area="Admin" asp-controller="House" asp-action="ReservationCreate" asp-route-id="@house.houseID">
                             <!--begin::Body-->
                             <div class="card-body">
                                 <input type="hidden" asp-for="HouseID">
@@ -28,7 +28,7 @@
                                      
                                     <div class="col">
                                         
-                                        <input class="form-control" type="text" id="startDate" asp-for="StartDate" placeholder="Başlangıç Tarihi" readonly>
+                                        <input class="form-control" type="text" id="startDate" asp-for="StartDate" placeholder="Başlangıç Tarihi">
                                     </div>
                                     
                                     <div class="col">
@@ -84,9 +84,21 @@
                     // Formatla ve inputlara yerleştir
                     $("#startDate").val(flatpickr.formatDate(startDate, "d/m/Y"));
                     $("#endDate").val(flatpickr.formatDate(endDate, "d/m/Y"));
+                } else if (selectedDates.length === 1) {
+                    const startDate = selectedDates[0];
+                    $("#startDate").val(flatpickr.formatDate(startDate, "d/m/Y"));
+                    $("#endDate").val(flatpickr.formatDate(startDate, "d/m/Y"));
                 }
             },
             
+        });
+
+        const endDatePicker = flatpickr("#endDate", {
+            dateFormat: "d/m/Y",
+            minDate: "today",
+            disable: disabled,
+            
+
         });
         
         
