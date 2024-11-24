@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LaYqXvQHhtudax/BHYWOU5K07f6X7gKy2JuClNtfsD8=",
+  "Hash": "qwEp2WsSn+6gjOG1ph11NET2bzMtMNSt3gIgxPRRhpQ=",
   "Source": "RentHouse.WebUI",
   "BasePath": "_content/RentHouse.WebUI",
   "Mode": "Default",
@@ -4368,6 +4368,25 @@
       "OriginalItemSpec": "wwwroot\\carbook-master\\css\\bootstrap-datepicker.css"
     },
     {
+      "Identity": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\css\\calendar.css",
+      "SourceId": "RentHouse.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\",
+      "BasePath": "_content/RentHouse.WebUI",
+      "RelativePath": "carbook-master/css/calendar.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\carbook-master\\css\\calendar.css"
+    },
+    {
       "Identity": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\css\\css\\bootstrap-reboot.css",
       "SourceId": "RentHouse.WebUI",
       "SourceType": "Discovered",
@@ -5658,6 +5677,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\carbook-master\\js\\bootstrap-datepicker.js"
+    },
+    {
+      "Identity": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\calendar.js",
+      "SourceId": "RentHouse.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\",
+      "BasePath": "_content/RentHouse.WebUI",
+      "RelativePath": "carbook-master/js/calendar.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\carbook-master\\js\\calendar.js"
     },
     {
       "Identity": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\google-map.js",
@@ -7750,6 +7788,25 @@
       "OriginalItemSpec": "wwwroot\\carbook-master\\services.html"
     },
     {
+      "Identity": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\css\\calendar.css",
+      "SourceId": "RentHouse.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\",
+      "BasePath": "_content/RentHouse.WebUI",
+      "RelativePath": "css/calendar.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\calendar.css"
+    },
+    {
       "Identity": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\favicon.ico",
       "SourceId": "RentHouse.WebUI",
       "SourceType": "Discovered",
@@ -8128,6 +8185,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\person_4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\js\\calendar.js",
+      "SourceId": "RentHouse.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\",
+      "BasePath": "_content/RentHouse.WebUI",
+      "RelativePath": "js/calendar.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\calendar.js"
     },
     {
       "Identity": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\js\\site.js",

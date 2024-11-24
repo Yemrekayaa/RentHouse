@@ -17,7 +17,8 @@
 
     <div class="app-content mt-4">
         <!--begin::Container-->
-        <div class="container-fluid">
+        <div class="container-fluid"
+            
             <div class="row">
                 <div class="col-md-12">
                     <div class="card mb-4">
@@ -38,7 +39,9 @@
                                         <div class="position-absolute top-0 start-0 bg-dark text-white p-1 text-center fw-bold" style="font-size: 16px; min-width: 30px; height:32px; border-radius: 5px;">
                                             #@item.houseID
                                         </div>
+                                            <a asp-action="Reservation" asp-route-id="@item.houseID">
                                         <img src="@item.coverImageUrl" class="card-img-top" alt="Bungalov Resmi" style="object-fit: cover;height: 350px;">
+                                            </a>
                                             <div class="card-body">
                                                 <h5 class="card-title float-none">@item.name</h5>
                                                 <p class="card-text text-muted">@shortDesc</p>
@@ -53,7 +56,7 @@
                                                     </div>
                                                 </div>
                                             <div class="d-flex btn-group flex-grow-1 mt-auto" role="group">
-                                                <button class="btn btn-outline-secondary btn-sm"><i class="fas fa-info-circle"></i> Detaylar</button>
+                                                <a class="btn btn-outline-secondary btn-sm" asp-action="Reservation" asp-route-id="@item.houseID"><i class="fas fa-info-circle"></i> Rezervasyon</a>
                                                 <a class="btn btn-outline-primary btn-sm" asp-action="Update" asp-route-id="@item.houseID"><i class="fas fa-edit"></i> Düzenle</a>
                                                 <a class="btn btn-outline-danger btn-sm" asp-action="Remove" asp-route-id="@item.houseID"><i class="fas fa-trash"></i> Sil</a>
                                                 </div>

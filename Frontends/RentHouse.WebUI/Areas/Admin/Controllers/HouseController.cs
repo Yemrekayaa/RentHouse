@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using RentHouse.Dto.HouseDtos;
 using RentHouse.Dto.LocationDto;
+using RentHouse.Dto.ReservationDto;
 using RentHouse.WebUI.Services;
 
 namespace RentHouse.WebUI.Areas.Admin.Controllers
@@ -85,6 +86,39 @@ namespace RentHouse.WebUI.Areas.Admin.Controllers
             return View();
         }
 
+        [HttpGet("[Area]/[Controller]/{id}/Reservation")]
+        public async Task<IActionResult> Reservation(int id)
+        {
+            var houseResponse = await _apiService.GetAsync<ResultHouseWithLocationDto>($"Houses/{id}/with-location");
+            ViewBag.House = houseResponse;
 
+            var response = await _apiService.GetAsync<List<ResultReservationDto>>($"Houses/{id}/Reservations");
+            return View(response);
+        }
+
+        [HttpGet("[Area]/[Controller]/{id}/Reservation/Create")]
+        public async Task<IActionResult> ReservationCreate(int id)
+        {
+            var houseResponse = await _apiService.GetAsync<ResultHouseWithLocationDto>($"Houses/{id}/with-location");
+            ViewBag.House = houseResponse;
+
+            var reservationsResponse = await _apiService.GetAsync<List<ResultReservationDto>>($"Houses/{id}/Reservations");
+            ViewBag.Reservations = reservationsResponse;
+
+            var createReservationDto = new CreateReservationDto();
+            createReservationDto.HouseID = houseResponse.houseID;
+            return View(createReservationDto);
+        }
+
+        [HttpPost("[Area]/[Controller]/ReservationCreate")]
+        public async Task<IActionResult> ReservationCreate(CreateReservationDto createReservationDto)
+        {
+            var response = await _apiService.RequestAsync(HttpMethod.Post, "Reservations", createReservationDto);
+            if (response.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
     }
 }

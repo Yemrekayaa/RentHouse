@@ -62,6 +62,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG91c2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/House/Reservation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG91c2VcUmVzZXJ2YXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/House/ReservationCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG91c2VcUmVzZXJ2YXRpb25DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/House/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG91c2VcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -100,6 +108,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Location/UpdateLocationPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9jYXRpb25cVXBkYXRlTG9jYXRpb25QYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Reservation/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmVzZXJ2YXRpb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Reservation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmVzZXJ2YXRpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Areas/Admin/Views/Service/Index.cshtml]
@@ -156,6 +172,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Views/Default/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Views/House/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Yunus Emre/source/repos/RentHouse/Frontends/RentHouse.WebUI/Views/House/Index.cshtml]

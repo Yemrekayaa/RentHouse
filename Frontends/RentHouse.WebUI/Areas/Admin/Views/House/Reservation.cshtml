@@ -1,0 +1,157 @@
+﻿@model List<RentHouse.Dto.ReservationDto.ResultReservationDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
+    var house = ViewBag.House as ResultHouseWithLocationDto;
+}
+
+
+<main class="app-main">
+
+    <div class="app-content mt-4">
+        <!--begin::Container-->
+        <div class="container-fluid">
+            
+            <div class="row d-flex">
+                <div class="col-lg d-flex">
+                    <div class="card mb-4 flex-fill">
+                        <div class="card-header bg-body-secondary" data-bs-theme="dark">
+                            <h3 class="card-title float-start text-white">@house.name</h3>
+                        </div> <!-- /.card-header -->
+                        <div class="row g-0 d-flex flex-grow-1">
+                            <div class="col-md-4 d-flex align-items-stretch">
+                                <img src="@house.coverImageUrl" alt="..." style="object-fit: cover; height: 100%; width: 100%;">
+                            </div>
+                            <div class="col-md-8 d-flex flex-column">
+                                <div class="card-body flex-grow-1">
+                                    <h5 class="card-title fw-bold me-2">@house.name</h5>
+                                    <small class="float-none fs-7 ">@house.locationName</small>
+                                    <p class="card-text float-none">
+                                        @house.description
+                                    </p>
+                                </div>
+                                <div class="price-section d-flex justify-content-around align-items-center p-3 border-top">
+                                    <div class="weekday-price">
+                                        <span class="fw-bold">@house.WeekdayPrice.ToString("0")₺</span>
+                                        <small class="text-muted">/ Hafta İçi</small>
+                                    </div>
+                                    <div class="weekend-price">
+                                        <span class="fw-bold">@house.WeekendPrice.ToString("0")₺</span>
+                                        <small class="text-muted">/ Hafta Sonu</small>
+                                    </div>
+                                </div>
+                                <div class="card-footer mt-auto">
+                                    <div class="float-end">
+                                        <a asp-controller="House" asp-action="Details" asp-route-id="@house.houseID" class="btn btn-secondary btn-sm">Detaylar</a>
+                                        <a href="#" class="btn btn-primary btn-sm">Rezervasyon Yap</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg d-flex">
+                    <div class="card mb-4 flex-fill">
+                        <div class="card-header bg-body-secondary" data-bs-theme="dark">
+                            <h3 class="card-title float-start text-white">Rezervasyon Takvimi</h3>
+                        </div> <!-- /.card-header -->
+                        <div class="card-body p-0 m-0 calendar-section">
+                            <div class="row no-gutters">
+                                <div class="col-md">
+                                    <div class="calendar calendar-first" id="calendar_first">
+                                        <div class="calendar_header">
+                                            <button class="switch-month switch-left">
+                                                <i class="fa fa-chevron-left"></i>
+                                            </button>
+                                            <h2></h2>
+                                            <button class="switch-month switch-right">
+                                                <i class="fa fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+                                        <div class="calendar_weekdays"></div>
+                                        <div class="calendar_content"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Calendar -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card mb-4">
+                        <div class="card-header bg-body-secondary " data-bs-theme="dark">
+                            <h3 class="card-title float-star text-white">Rezervasyonlar</h3>
+                            <a class="btn btn-success float-end px-3"><span class="fa-solid fa-plus"></span> Rezervasyon Ekle</a>
+                        </div> <!-- /.card-header -->
+                       
+                            <div class="card-body p-0">
+                                <div class="table-responsive d-none d-lg-block">
+                                    <table class="table table-bordered m-0">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 10px">#</th>
+                                                <th>Ev</th>
+                                                <th>Giriş Tarihi</th>
+                                                <th>Çıkış Tarihi</th>
+                                                <th>Not</th>
+                                                <th>Onay Durumu</th>
+                                                <th style="width: 40px">Label</th>
+                                            </tr>
+                                        </thead>
+                                        @foreach (var item in Model)
+                                        {
+                                            <tbody>
+                                                <tr class="align-middle">
+                                                    <td>@item.ReservationID</td>
+                                                    <td>@house.name</td>
+                                                    <td>
+                                                        @item.StartDate.ToString("d MMMM yyyy")
+                                                    </td>
+                                                    <td>
+                                                        @item.EndDate.ToString("M MMMM yyyy")
+                                                    </td>
+                                                    <td>@item.Notes</td>
+                                                    <td>@item.IsConfirmed</td>
+                                                </tr>
+                                            </tbody>
+                                        }
+
+                                    </table>
+                                </div>
+                            </div> <!-- /.card-body -->
+                           
+                            
+                        
+                        <div class="card-footer clearfix">
+                            <ul class="pagination pagination-sm m-0 p-0 float-end">
+                                <li class="page-item"> <a class="page-link" href="#">«</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">1</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">2</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">3</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">»</a> </li>
+                            </ul>
+                        </div>
+                    
+                </div>
+            </div>
+        </div> <!--end::Container-->
+    </div> <!--end::App Content-->
+</main>
+
+<script>
+
+    $(document).ready(function () {
+        var calendarValues = @Html.Raw(Json.Serialize(Model));
+        calendarValues.forEach(function (item) {
+            var startDate = new Date(item.startDate);
+            var endDate = new Date(item.endDate);
+            selectDateRange(startDate, endDate);
+        });
+
+    });
+
+
+
+</script>

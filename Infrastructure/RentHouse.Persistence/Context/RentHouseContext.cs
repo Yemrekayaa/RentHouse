@@ -22,5 +22,6 @@ namespace RentHouse.Persistence.Context
         public DbSet<Testimonial> Testimonials { get; set; }
         public DbSet<Author> Authors { get; set; }
         public DbSet<Setting> Settings { get; set; }
+        public DbSet<Reservation> Reservations { get; set; }
     }
 }

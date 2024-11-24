@@ -2,8 +2,11 @@
 
 namespace RentHouse.Application.Interfaces
 {
-    public interface IHouseRepository
-    {
-        Task<List<House>> GetHouseListWithLocationAsync(int? count = null);
-    }
+	public interface IHouseRepository
+	{
+		Task<List<House>> GetHouseListWithLocationAsync(int? count = null);
+		Task<House> GetHouseWithLocationAsync(int id);
+
+	}
+
 }

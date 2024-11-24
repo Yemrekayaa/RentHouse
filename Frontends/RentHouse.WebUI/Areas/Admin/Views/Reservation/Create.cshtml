@@ -1,0 +1,75 @@
+﻿@model RentHouse.Dto.ReservationDto.CreateReservationDto
+@{
+    ViewData["Title"] = "CreateReservation";
+    Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
+}
+
+<main class="app-main">
+
+    <div class="app-content mt-4">
+        <!--begin::Container-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card mb-4">
+                        <!--begin::Header-->
+                        <div class="card-header d-grid">
+                            <div class="card-title">Yeni Ev Ekle</div>
+                            <div class="form-text">Ev hakkında bilgileri eksiksiz doldurmalısınız. Kaydet butonuna basarak işlemi tamamlayabilirsiniz.</div>
+                        </div> <!--end::Header--> <!--begin::Form-->
+                        <form method="post" enctype="multipart/form-data">
+                            <!--begin::Body-->
+                            <div class="card-body">
+                                
+                                @* <div class="mb-3">
+                                    <label for="LocationLabel" class="form-label">Ev</label>
+                                    @Html.DropDownListFor(x => x.HouseID,(List<SelectListItem>)ViewBag.LocationValues,new {@class="form-control"})
+                                </div> *@
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <label asp-for="StartDate" class="form-label">Start</label>
+                                        <input class="form-control" type="date" asp-for="StartDate" id="startDate">
+                                    </div>
+                                    <div class="col">
+                                        <label asp-for="EndDate" class="form-label">End</label>
+                                        <input class="form-control " type="date" asp-for="EndDate" id="endDate">
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label asp-for="Notes" class="form-label">Notlar</label>
+                                    <input class="form-control" type="text" asp-for="Notes">
+                                </div>
+
+                            
+                                
+                            </div> <!--end::Body--> <!--begin::Footer-->
+                            <div class="card-footer"> <button type="submit" class="btn btn-primary">Submit</button> </div> <!--end::Footer-->
+                        </form> <!--end::Form-->
+                    </div>
+                </div>
+            </div>
+        </div> <!--end::Container-->
+    </div> <!--end::App Content-->
+</main>
+
+<script>
+    $(document).ready(function () {
+        // Başlangıç tarihi seçici
+        const startDatePicker = flatpickr("#startDate", {
+            dateFormat: "d/m/Y",
+            defaultDate: Date.now(),
+            minDate: "today",
+            onChange: function (selectedDates, dateStr, instance) {
+                // Başlangıç tarihi seçildiğinde bitiş tarihini güncelle
+                endDatePicker.set('minDate', dateStr); // Bitiş tarihi için minimum tarihi ayarlama
+            }
+        });
+
+        // Bitiş tarihi seçici
+        const endDatePicker = flatpickr("#endDate", {
+            dateFormat: "d/m/Y", // Tarih formatı
+            minDate: new Date() // Başlangıçta geçerli tarih
+        });
+    });
+</script>

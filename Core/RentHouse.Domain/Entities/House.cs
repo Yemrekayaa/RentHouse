@@ -15,5 +15,6 @@ namespace RentHouse.Domain.Entities
         public List<HouseFeature> HouseFeatures { get; set; }
         public decimal WeekdayPrice { get; set; }
         public decimal WeekendPrice { get; set; }
+        public List<Reservation> Reservations { get; set; }
     }
 }

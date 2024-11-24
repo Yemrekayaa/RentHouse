@@ -913,6 +913,10 @@
       "PackagePath": "staticwebassets\\carbook-master\\css\\bootstrap\\bootstrap-reboot.css"
     },
     {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\css\\calendar.css",
+      "PackagePath": "staticwebassets\\carbook-master\\css\\calendar.css"
+    },
+    {
       "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\css\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\carbook-master\\css\\css\\bootstrap-reboot.css"
     },
@@ -1183,6 +1187,10 @@
     {
       "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\carbook-master\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\calendar.js",
+      "PackagePath": "staticwebassets\\carbook-master\\js\\calendar.js"
     },
     {
       "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\carbook-master\\js\\google-map.js",
@@ -1625,6 +1633,10 @@
       "PackagePath": "staticwebassets\\carbook-master\\services.html"
     },
     {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\css\\calendar.css",
+      "PackagePath": "staticwebassets\\css\\calendar.css"
+    },
+    {
       "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -1703,6 +1715,10 @@
     {
       "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\person_4.jpg",
       "PackagePath": "staticwebassets\\images\\person_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\js\\calendar.js",
+      "PackagePath": "staticwebassets\\js\\calendar.js"
     },
     {
       "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\js\\site.js",

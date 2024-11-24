@@ -247,6 +247,36 @@ namespace RentHouse.Persistence.Migrations
                     b.ToTable("Locations");
                 });
 
+            modelBuilder.Entity("RentHouse.Domain.Entities.Reservation", b =>
+                {
+                    b.Property<int>("ReservationID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ReservationID"));
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("HouseID")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Notes")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("ReservationID");
+
+                    b.HasIndex("HouseID");
+
+                    b.ToTable("Reservations");
+                });
+
             modelBuilder.Entity("RentHouse.Domain.Entities.Service", b =>
                 {
                     b.Property<int>("ServiceID")
@@ -364,6 +394,17 @@ namespace RentHouse.Persistence.Migrations
                     b.Navigation("House");
                 });
 
+            modelBuilder.Entity("RentHouse.Domain.Entities.Reservation", b =>
+                {
+                    b.HasOne("RentHouse.Domain.Entities.House", "House")
+                        .WithMany("Reservations")
+                        .HasForeignKey("HouseID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("House");
+                });
+
             modelBuilder.Entity("RentHouse.Domain.Entities.Setting", b =>
                 {
                     b.HasOne("RentHouse.Domain.Entities.Banner", "Banner")
@@ -383,6 +424,8 @@ namespace RentHouse.Persistence.Migrations
             modelBuilder.Entity("RentHouse.Domain.Entities.House", b =>
                 {
                     b.Navigation("HouseFeatures");
+
+                    b.Navigation("Reservations");
                 });
 #pragma warning restore 612, 618
         }
