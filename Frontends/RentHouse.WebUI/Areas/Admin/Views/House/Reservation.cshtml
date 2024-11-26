@@ -3,6 +3,7 @@
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
     var house = ViewBag.House as ResultHouseWithLocationDto;
+    var confirmedIcon = "";
 }
 
 
@@ -42,8 +43,8 @@
                                 </div>
                                 <div class="card-footer mt-auto">
                                     <div class="float-end">
-                                        <a asp-controller="House" asp-action="Details" asp-route-id="@house.houseID" class="btn btn-secondary btn-sm">Detaylar</a>
-                                        <a href="#" class="btn btn-primary btn-sm">Rezervasyon Yap</a>
+                                        <a asp-controller="House" asp-action="Details" asp-route-id="@house.houseID" class="btn btn-secondary btn-sm">Sayfaya Git</a>
+                                        <a asp-controller="Reservation" asp-action="Create" asp-route-houseID="@house.houseID" class="btn btn-success btn-sm">Rezervasyon Ekle</a>
                                     </div>
                                 </div>
                             </div>
@@ -83,7 +84,7 @@
                     <div class="card mb-4">
                         <div class="card-header bg-body-secondary " data-bs-theme="dark">
                             <h3 class="card-title float-star text-white">Rezervasyonlar</h3>
-                            <a class="btn btn-success float-end px-3" href="Reservation/Create"><span class="fa-solid fa-plus"></span> Rezervasyon Ekle</a>
+                            <a class="btn btn-success float-end px-3" asp-controller="Reservation" asp-action="Create" asp-route-houseID="@house.houseID"><span class="fa-solid fa-plus"></span> Rezervasyon Ekle</a>
                         </div> <!-- /.card-header -->
                        
                             <div class="card-body p-0">
@@ -96,13 +97,16 @@
                                                 <th>Giriş Tarihi</th>
                                                 <th>Çıkış Tarihi</th>
                                                 <th>Not</th>
-                                                <th>Onay Durumu</th>
-                                                <th style="width: 40px">Label</th>
+                                                <th style="width: 40px">Onay</th>
+                                                <th style="width: 100px"></th>
                                             </tr>
                                         </thead>
                                         @foreach (var item in Model)
                                         {
-                                            <tbody>
+                                        {
+                                            confirmedIcon = item.IsConfirmed ? "bi bi-check-square text-success" : "bi bi-x-square text-danger";
+                                        }
+                                        <tbody>
                                                 <tr class="align-middle">
                                                     <td>@item.ReservationID</td>
                                                     <td>@house.name</td>
@@ -113,8 +117,18 @@
                                                         @item.EndDate.ToString("dd MMMM yyyy")
                                                     </td>
                                                     <td>@item.Notes</td>
-                                                    <td>@item.IsConfirmed</td>
-                                                <td><a asp-area="Admin" asp-controller="House" asp-action="ReservationRemove" asp-route-houseId="@house.houseID" asp-route-id="@item.ReservationID" class="btn btn-danger">Sil</a></td>
+                                                <td class="text-center p-0"><i class="@confirmedIcon fs-3"></i></td>
+                                                <td class="text-center p-0 py-1">
+                                                    <div class="btn-group">
+                                                        <a asp-area="Admin" asp-controller="Reservation" asp-action="Remove" asp-route-houseId="@house.houseID" asp-route-id="@item.ReservationID" class="btn btn-danger">
+                                                            <i class="bi bi-trash"></i>
+                                                        </a>
+                                                        <a asp-area="Admin" asp-controller="Reservation" asp-action="Update" asp-route-houseId="@house.houseID" asp-route-id="@item.ReservationID" class="btn btn-primary">
+                                                            <i class="bi bi-pen"></i>
+                                                        </a>
+                                                    </div>
+                                                    
+                                                </td>
                                                 </tr>
                                             </tbody>
                                         }
@@ -150,9 +164,22 @@
             var endDate = new Date(item.endDate);
             selectDateRange(startDate, endDate);
         });
+        var showToast = '@TempData["ShowToast"]' == 'True';
+        console.log(showToast);
+        var toastTitle = '@TempData["ShowToast"]'
+        console.log(toastTitle);
+        if (showToast) {
+            console.log("test");
+            $('#toastNotification .toast-body').html('@TempData["ToastMessage"]');
+            var toastElement = document.getElementById('toastNotification');
+            var toast = new bootstrap.Toast(toastElement);
+            toast.show();
+        } 
 
     });
 
 
 
 </script>
+
+@await Html.PartialAsync("ToastPartial")

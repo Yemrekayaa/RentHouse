@@ -2,6 +2,8 @@
 @{
     ViewData["Title"] = "CreateReservation";
     Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
+    var reservations = ViewBag.Reservations as List<RentHouse.Dto.ReservationDto.ResultReservationDto>;
+    var house = ViewBag.House as ResultHouseWithLocationDto;
 }
 
 <main class="app-main">
@@ -14,37 +16,44 @@
                     <div class="card mb-4">
                         <!--begin::Header-->
                         <div class="card-header d-grid">
-                            <div class="card-title">Yeni Ev Ekle</div>
-                            <div class="form-text">Ev hakkında bilgileri eksiksiz doldurmalısınız. Kaydet butonuna basarak işlemi tamamlayabilirsiniz.</div>
+                            <div class="card-title">@house.name - Rezervasyon Ekle</div>
+                            <div class="form-text">Lütfen rezervasyonla ilgili tüm bilgileri eksiksiz doldurun. İşlemi tamamlamak için 'Kaydet' butonuna tıklayın.</div>
                         </div> <!--end::Header--> <!--begin::Form-->
-                        <form method="post" enctype="multipart/form-data">
+                        <form method="post" asp-area="Admin" asp-controller="Reservation" asp-action="Create" asp-route-houseId="@house.houseID">
                             <!--begin::Body-->
                             <div class="card-body">
-                                
-                                @* <div class="mb-3">
-                                    <label for="LocationLabel" class="form-label">Ev</label>
-                                    @Html.DropDownListFor(x => x.HouseID,(List<SelectListItem>)ViewBag.LocationValues,new {@class="form-control"})
-                                </div> *@
-                                <div class="row mb-3">
-                                    <div class="col">
-                                        <label asp-for="StartDate" class="form-label">Start</label>
-                                        <input class="form-control" type="date" asp-for="StartDate" id="startDate">
-                                    </div>
-                                    <div class="col">
-                                        <label asp-for="EndDate" class="form-label">End</label>
-                                        <input class="form-control " type="date" asp-for="EndDate" id="endDate">
-                                    </div>
+                                <input type="hidden" asp-for="HouseID">
+                                <label class="form-label mb-0">Rezervasyon Tarihleri</label>
+                                <div class="form-text">Rezervasyon tarihlerinizi seçin. Tek bir gün seçmek için o günün üzerine çift tıklayın.</div>
+                                <div class="mb-3">
+                            
+                                        <input class="form-control" type="text" id="dates" placeholder="Tarihleri Seçiniz" value="">
+
+                                        <input type="hidden" id="startDate" asp-for="StartDate">
+                                        <input type="hidden" id="endDate" asp-for="EndDate">
+                                    
                                 </div>
                                 
+
                                 <div class="mb-3">
-                                    <label asp-for="Notes" class="form-label">Notlar</label>
+                                    <label asp-for="Notes" class="form-label mb-0">Notlar</label>
+                                    <div class="form-text">Rezervasyonla ilgili önemli bilgileri veya özel notları buraya yazabilirsiniz.</div>
+                                    
                                     <input class="form-control" type="text" asp-for="Notes">
                                 </div>
+                                <div class="float-end">
+                                    <!-- Tüm içeriği sağa yaslamak için buraya text-end ekledik -->
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" asp-for="IsConfirmed">
+                                        <label class="form-check-label" asp-for="IsConfirmed">Onaylandı mı?</label>
+                                    </div>
+                                    <div class="form-text mb-0">
+                                        Eğer rezervasyonunuz kesin olarak yapılacaksa işaretleyin.
+                                    </div>
+                                </div>
 
-                            
-                                
                             </div> <!--end::Body--> <!--begin::Footer-->
-                            <div class="card-footer"> <button type="submit" class="btn btn-primary">Submit</button> </div> <!--end::Footer-->
+                            <div class="card-footer "> <button type="submit" class="btn btn-primary float-end">Kaydet</button> </div> <!--end::Footer-->
                         </form> <!--end::Form-->
                     </div>
                 </div>
@@ -52,24 +61,58 @@
         </div> <!--end::Container-->
     </div> <!--end::App Content-->
 </main>
-
 <script>
     $(document).ready(function () {
-        // Başlangıç tarihi seçici
-        const startDatePicker = flatpickr("#startDate", {
-            dateFormat: "d/m/Y",
-            defaultDate: Date.now(),
-            minDate: "today",
-            onChange: function (selectedDates, dateStr, instance) {
-                // Başlangıç tarihi seçildiğinde bitiş tarihini güncelle
-                endDatePicker.set('minDate', dateStr); // Bitiş tarihi için minimum tarihi ayarlama
+        flatpickr.localize(flatpickr.l10ns.tr);
+        var reservations = @Html.Raw(Json.Serialize(reservations));
+        var disabled = [];
+        reservations.forEach(function (item) {
+            
+            var dates = {
+                from: formatDate(new Date(item.startDate)),
+                to: formatDate(new Date(item.endDate))
             }
+            disabled.push(dates);
+        });
+        
+
+        const startDatePicker = flatpickr("#dates", {
+            mode: "range",
+            // defaultDate: null,
+            dateFormat: "d/m/Y",
+            minDate: "today",
+            disable: disabled,
+            onChange: function (selectedDates, dateStr, instance) {
+                if (selectedDates.length === 2) {
+                    // Seçilen tarihleri ayır
+                    const startDate = selectedDates[0];
+                    const endDate = selectedDates[1];
+
+                    // Formatla ve inputlara yerleştir
+                    $("#startDate").val(flatpickr.formatDate(startDate, "d/m/Y"));
+                    $("#endDate").val(flatpickr.formatDate(endDate, "d/m/Y"));
+
+                } 
+            },
+            
         });
 
-        // Bitiş tarihi seçici
-        const endDatePicker = flatpickr("#endDate", {
-            dateFormat: "d/m/Y", // Tarih formatı
-            minDate: new Date() // Başlangıçta geçerli tarih
-        });
+        // const endDatePicker = flatpickr("#endDate", {
+        //     dateFormat: "d/m/Y",
+        //     minDate: "today",
+        //     disable: disabled,
+            
+
+        // });
+        
+        
+
+        function formatDate(date) {
+            const day = String(date.getDate()).padStart(2, '0'); // Gün
+            const month = String(date.getMonth() + 1).padStart(2, '0'); // Ay (0-11 arası olduğu için 1 ekliyoruz)
+            const year = date.getFullYear(); // Yıl
+            return `${day}/${month}/${year}`; // "dd/MM/yyyy" formatında döndür
+        }
+
     });
 </script>

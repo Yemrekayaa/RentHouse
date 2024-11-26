@@ -180,8 +180,14 @@ namespace RentHouse.Persistence.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<decimal>("Latitude")
+                        .HasColumnType("decimal(18,8)");
+
                     b.Property<int>("LocationID")
                         .HasColumnType("int");
+
+                    b.Property<decimal>("Longitude")
+                        .HasColumnType("decimal(18,8)");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");

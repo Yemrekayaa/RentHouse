@@ -14,5 +14,7 @@ namespace RentHouse.Dto.HouseDtos
         public string bigImageUrl { get; set; }
         public decimal WeekdayPrice { get; set; }
         public decimal WeekendPrice { get; set; }
+        public decimal Latitude { get; set; }
+        public decimal Longitude { get; set; }
     }
 }

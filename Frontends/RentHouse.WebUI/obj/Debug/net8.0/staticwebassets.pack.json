@@ -1701,6 +1701,18 @@
       "PackagePath": "staticwebassets\\images\\house\\cover-7.jpg"
     },
     {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\icons\\area.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\area.svg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\icons\\bed.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\bed.svg"
+    },
+    {
+      "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\icons\\room.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\room.svg"
+    },
+    {
       "Id": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\images\\person_1.jpg",
       "PackagePath": "staticwebassets\\images\\person_1.jpg"
     },

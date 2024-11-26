@@ -1,0 +1,127 @@
+﻿@model RentHouse.Dto.ReservationDto.UpdateReservationDto
+@{
+    ViewData["Title"] = "CreateReservation";
+    Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
+    var reservations = ViewBag.Reservations as List<RentHouse.Dto.ReservationDto.ResultReservationDto>;
+    var house = ViewBag.House as ResultHouseWithLocationDto;
+}
+
+<main class="app-main">
+
+    <div class="app-content mt-4">
+        <!--begin::Container-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card mb-4">
+                        <!--begin::Header-->
+                        <div class="card-header d-grid">
+                            <div class="card-title">@house.name - Rezervasyon Düzenle</div>
+                            <div class="form-text">Lütfen rezervasyonla ilgili tüm bilgileri eksiksiz doldurun. İşlemi tamamlamak için 'Kaydet' butonuna tıklayın.</div>
+                        </div> <!--end::Header--> <!--begin::Form-->
+                        <form method="post" action="/Admin/Reservation/Update">
+                            <!--begin::Body-->
+                            <div class="card-body">
+                                <input type="hidden" asp-for="ReservationID">
+                                <input type="hidden" asp-for="HouseID">
+                                <label class="form-label mb-0">Rezervasyon Tarihleri</label>
+                                <div class="form-text">Rezervasyon tarihlerinizi seçin. Tek bir gün seçmek için o günün üzerine çift tıklayın.</div>
+                                <div class="mb-3">
+
+                                    <input class="form-control" type="text" id="dates" placeholder="Tarihleri Seçiniz" value="">
+
+                                    <input type="hidden" id="startDate" asp-for="StartDate">
+                                    <input type="hidden" id="endDate" asp-for="EndDate">
+                                    
+                                </div>
+                                
+
+                                <div class="mb-3">
+                                    <label asp-for="Notes" class="form-label mb-0">Notlar</label>
+                                    <div class="form-text">Rezervasyonla ilgili önemli bilgileri veya özel notları buraya yazabilirsiniz.</div>
+                                    
+                                    <input class="form-control" type="text" asp-for="Notes">
+                                </div>
+                                <div class="float-end">
+                                    <!-- Tüm içeriği sağa yaslamak için buraya text-end ekledik -->
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" asp-for="IsConfirmed">
+                                        <label class="form-check-label" asp-for="IsConfirmed">Onaylandı mı?</label>
+                                    </div>
+                                    <div class="form-text mb-0">
+                                        Eğer rezervasyonunuz kesin olarak yapılacaksa işaretleyin.
+                                    </div>
+                                </div>
+
+                            </div> <!--end::Body--> <!--begin::Footer-->
+                            <div class="card-footer "> <button type="submit" class="btn btn-primary float-end">Kaydet</button> </div> <!--end::Footer-->
+                        </form> <!--end::Form-->
+                    </div>
+                </div>
+            </div>
+        </div> <!--end::Container-->
+    </div> <!--end::App Content-->
+</main>
+<script>
+    $(document).ready(function () {
+        flatpickr.localize(flatpickr.l10ns.tr);
+        var reservations = @Html.Raw(Json.Serialize(reservations));
+        var disabled = [];
+        var currentReservation = @Html.Raw(Json.Serialize(Model));
+        var currentStartDate = formatDate(new Date(currentReservation.startDate), "d/m/Y");
+        var currentEndDate = formatDate(new Date(currentReservation.endDate), "d/m/Y");
+
+        reservations.forEach(function (item) {
+            var startDate = formatDate(new Date(item.startDate));
+            var endDate = formatDate(new Date(item.endDate));
+            if (startDate != currentStartDate && endDate != currentEndDate) {
+                var dates = {
+                    from: startDate,
+                    to: endDate
+                }
+                disabled.push(dates);
+            }
+            
+            
+        });
+        
+
+        const startDatePicker = flatpickr("#dates", {
+            mode: "range",
+            defaultDate: [currentStartDate, currentEndDate],
+            dateFormat: "d/m/Y",
+            minDate: "today",
+            disable: disabled,
+            onChange: function (selectedDates, dateStr, instance) {
+                if (selectedDates.length === 2) {
+                    // Seçilen tarihleri ayır
+                    const startDate = selectedDates[0];
+                    const endDate = selectedDates[1];
+
+                    // Formatla ve inputlara yerleştir
+                    $("#startDate").val(flatpickr.formatDate(startDate, "d/m/Y"));
+                    $("#endDate").val(flatpickr.formatDate(endDate, "d/m/Y"));
+                }
+            },
+            
+        });
+
+        // const endDatePicker = flatpickr("#endDate", {
+        //     dateFormat: "d/m/Y",
+        //     minDate: "today",
+        //     disable: disabled,
+            
+
+        // });
+        
+        
+
+        function formatDate(date) {
+            const day = String(date.getDate()).padStart(2, '0'); // Gün
+            const month = String(date.getMonth() + 1).padStart(2, '0'); // Ay (0-11 arası olduğu için 1 ekliyoruz)
+            const year = date.getFullYear(); // Yıl
+            return `${day}/${month}/${year}`; // "dd/MM/yyyy" formatında döndür
+        }
+
+    });
+</script>

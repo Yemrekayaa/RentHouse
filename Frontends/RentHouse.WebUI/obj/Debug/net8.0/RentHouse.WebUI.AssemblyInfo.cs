@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RentHouse.WebUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+915eb020154f175e8c7f1dee3e9d0357bbef8ea8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6fdb951f2ce98d07f91d5b46d71a9916578ec9a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("RentHouse.WebUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RentHouse.WebUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

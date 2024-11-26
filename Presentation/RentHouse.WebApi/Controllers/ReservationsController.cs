@@ -3,7 +3,8 @@ using RentHouse.Application.Features.CQRS.Reservations.Commands.Create;
 using RentHouse.Application.Features.CQRS.Reservations.Commands.Remove;
 using RentHouse.Application.Features.CQRS.Reservations.Commands.Update;
 using RentHouse.Application.Features.CQRS.Reservations.Queries.GetById;
-using RentHouse.Application.Features.CQRS.Reservations.Queries.GetList;
+using RentHouse.Application.Features.CQRS.Reservations.Queries.GetByIdWithHouse;
+using RentHouse.Application.Features.CQRS.Reservations.Queries.GetListWithHouse;
 
 namespace RentHouse.WebApi.Controllers
 {
@@ -15,7 +16,7 @@ namespace RentHouse.WebApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetList()
         {
-            var values = await Mediator.Send(new GetListReservationQuery());
+            var values = await Mediator.Send(new GetReservationListWithHouseQuery());
             return Ok(values);
         }
 
@@ -42,6 +43,19 @@ namespace RentHouse.WebApi.Controllers
         {
             await Mediator.Send(new RemoveReservationCommand(id));
             return Ok();
+        }
+
+        [HttpGet("{id}/with-house")]
+        public async Task<IActionResult> GetByIdWithHouse(int id)
+        {
+            var value = await Mediator.Send(new GetReservationByIdWithHouseQuery(id));
+            return Ok(value);
+        }
+        [HttpGet("with-house")]
+        public async Task<IActionResult> GetByIdWithHouse()
+        {
+            var values = await Mediator.Send(new GetReservationListWithHouseQuery());
+            return Ok(values);
         }
     }
 }

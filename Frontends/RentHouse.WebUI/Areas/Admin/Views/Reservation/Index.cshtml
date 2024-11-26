@@ -1,4 +1,4 @@
-﻿@model List<RentHouse.Dto.ReservationDto.ResultReservationDto>
+﻿@model List<RentHouse.Dto.ReservationDto.ResultReservationWithHouseDto>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
@@ -35,7 +35,7 @@
                                     <tbody>
                                         <tr class="align-middle">
                                             <td>@item.ReservationID</td>
-                                            <td>Ev İsmi Gelecek</td>
+                                            <td>@item.HouseName</td>
                                             <td>
                                                 @item.StartDate.ToString("d MMMM yyyy")
                                             </td>

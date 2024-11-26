@@ -16,5 +16,7 @@ namespace RentHouse.Domain.Entities
         public decimal WeekdayPrice { get; set; }
         public decimal WeekendPrice { get; set; }
         public List<Reservation> Reservations { get; set; }
+        public decimal Latitude { get; set; }
+        public decimal Longitude { get; set; }
     }
 }

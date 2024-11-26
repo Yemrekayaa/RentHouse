@@ -39,12 +39,17 @@
                                         <div class="position-absolute top-0 start-0 bg-dark text-white p-1 text-center fw-bold" style="font-size: 16px; min-width: 30px; height:32px; border-radius: 5px;">
                                             #@item.houseID
                                         </div>
+                                        <div style="height:350px">
                                             <a asp-action="Reservation" asp-route-id="@item.houseID">
                                         <img src="@item.coverImageUrl" class="card-img-top" alt="Bungalov Resmi" style="object-fit: cover;height: 350px;">
                                             </a>
+                                            </div>
                                             <div class="card-body">
-                                                <h5 class="card-title float-none">@item.name</h5>
-                                                <p class="card-text text-muted">@shortDesc</p>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <h5 class="card-title me-2">@item.name</h5>
+                                                        <small class="fs-7">@item.locationName</small>
+                                                    </div>
+                                                    <p class="card-text text-muted ">@shortDesc</p>
                                                 <div class="d-flex justify-content-around my-2 flex-column flex-md-row">
                                                     <div class="text-center text-md-start">
                                                         <span class="fw-bold">@item.WeekdayPrice.ToString("0")₺</span>

@@ -5,8 +5,8 @@ C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Domain\obj\Debug\net8.
 C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Domain\obj\Debug\net8.0\RentHouse.Domain.AssemblyInfoInputs.cache
 C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Domain\obj\Debug\net8.0\RentHouse.Domain.AssemblyInfo.cs
 C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Domain\obj\Debug\net8.0\RentHouse.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Domain\obj\Debug\net8.0\RentHouse.Domain.sourcelink.json
 C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Domain\obj\Debug\net8.0\RentHouse.Domain.dll
 C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Domain\obj\Debug\net8.0\refint\RentHouse.Domain.dll
 C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Domain\obj\Debug\net8.0\RentHouse.Domain.pdb
 C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Domain\obj\Debug\net8.0\ref\RentHouse.Domain.dll
-C:\Users\Yunus Emre\source\repos\RentHouse\Core\RentHouse.Domain\obj\Debug\net8.0\RentHouse.Domain.sourcelink.json

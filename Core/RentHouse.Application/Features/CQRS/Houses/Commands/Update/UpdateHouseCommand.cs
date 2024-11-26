@@ -18,6 +18,9 @@ namespace RentHouse.Application.Features.CQRS.Houses.Commands.Update
         public string BigImageUrl { get; set; }
         public decimal WeekdayPrice { get; set; }
         public decimal WeekendPrice { get; set; }
+        public decimal Latitude { get; set; }
+        public decimal Longitude { get; set; }
+
 
         public class UpdateHouseCommandHandler : IRequestHandler<UpdateHouseCommand>
         {

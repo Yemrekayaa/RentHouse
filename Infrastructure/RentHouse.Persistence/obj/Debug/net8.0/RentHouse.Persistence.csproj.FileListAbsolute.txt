@@ -11,10 +11,10 @@ C:\Users\Yunus Emre\source\repos\RentHouse\Infrastructure\RentHouse.Persistence\
 C:\Users\Yunus Emre\source\repos\RentHouse\Infrastructure\RentHouse.Persistence\obj\Debug\net8.0\RentHouse.Persistence.AssemblyInfoInputs.cache
 C:\Users\Yunus Emre\source\repos\RentHouse\Infrastructure\RentHouse.Persistence\obj\Debug\net8.0\RentHouse.Persistence.AssemblyInfo.cs
 C:\Users\Yunus Emre\source\repos\RentHouse\Infrastructure\RentHouse.Persistence\obj\Debug\net8.0\RentHouse.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Yunus Emre\source\repos\RentHouse\Infrastructure\RentHouse.Persistence\obj\Debug\net8.0\RentHouse.Persistence.sourcelink.json
 C:\Users\Yunus Emre\source\repos\RentHouse\Infrastructure\RentHouse.Persistence\obj\Debug\net8.0\RentHous.A10CEB2F.Up2Date
 C:\Users\Yunus Emre\source\repos\RentHouse\Infrastructure\RentHouse.Persistence\obj\Debug\net8.0\RentHouse.Persistence.dll
 C:\Users\Yunus Emre\source\repos\RentHouse\Infrastructure\RentHouse.Persistence\obj\Debug\net8.0\refint\RentHouse.Persistence.dll
 C:\Users\Yunus Emre\source\repos\RentHouse\Infrastructure\RentHouse.Persistence\obj\Debug\net8.0\RentHouse.Persistence.pdb
 C:\Users\Yunus Emre\source\repos\RentHouse\Infrastructure\RentHouse.Persistence\obj\Debug\net8.0\RentHouse.Persistence.genruntimeconfig.cache
 C:\Users\Yunus Emre\source\repos\RentHouse\Infrastructure\RentHouse.Persistence\obj\Debug\net8.0\ref\RentHouse.Persistence.dll
-C:\Users\Yunus Emre\source\repos\RentHouse\Infrastructure\RentHouse.Persistence\obj\Debug\net8.0\RentHouse.Persistence.sourcelink.json
