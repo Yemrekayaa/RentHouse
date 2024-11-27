@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dkrTFZE4VYjtC09jxr5CutPq/tW+UmQCSj6/vnuU8DM=",
+  "Hash": "J8C11exHoOh5qWWVckEcvI4eZ4Wcx/xYUkEXRzsiw1s=",
   "Source": "RentHouse.WebUI",
   "BasePath": "_content/RentHouse.WebUI",
   "Mode": "Default",
@@ -7807,6 +7807,25 @@
       "OriginalItemSpec": "wwwroot\\css\\calendar.css"
     },
     {
+      "Identity": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\css\\style.css",
+      "SourceId": "RentHouse.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\",
+      "BasePath": "_content/RentHouse.WebUI",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
       "Identity": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\favicon.ico",
       "SourceId": "RentHouse.WebUI",
       "SourceType": "Discovered",
@@ -8261,25 +8280,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\calendar.js"
-    },
-    {
-      "Identity": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\js\\site.js",
-      "SourceId": "RentHouse.WebUI",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\",
-      "BasePath": "_content/RentHouse.WebUI",
-      "RelativePath": "js/site.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
       "Identity": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

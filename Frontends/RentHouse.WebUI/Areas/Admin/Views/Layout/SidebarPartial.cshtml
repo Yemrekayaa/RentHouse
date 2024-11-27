@@ -39,33 +39,47 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link active">
-                        <i class="nav-icon bi bi-speedometer"></i>
-                        <p>
-                            Dashboard
-                            <i class="nav-arrow bi bi-chevron-right"></i>
-                        </p>
+                    <a asp-controller="Reservation" asp-action="Index" class="nav-link">
+                        <i class="nav-icon bi bi-geo-alt"></i>
+                        <p>Reservasyonlar</p>
                     </a>
-                    <ul class="nav nav-treeview">
+                </li>
+                
+
+               
+                    
                         <li class="nav-item">
-                            <a href="./index.html" class="nav-link active">
-                                <i class="nav-icon bi bi-circle"></i>
-                                <p>Dashboard v1</p>
+                            <a asp-controller="Banner" asp-action="Index" class="nav-link">
+                                <i class="nav-icon bi bi-geo-alt"></i>
+                                <p>Banner Alanı</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="./index2.html" class="nav-link">
-                                <i class="nav-icon bi bi-circle"></i>
-                                <p>Dashboard v2</p>
+                            <a asp-controller="About" asp-action="Index" class="nav-link">
+                                <i class="nav-icon bi bi-geo-alt"></i>
+                                <p>Hakkımızda</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="./index3.html" class="nav-link">
-                                <i class="nav-icon bi bi-circle"></i>
-                                <p>Dashboard v3</p>
+                            <a asp-controller="Service" asp-action="Index" class="nav-link">
+                                <i class="nav-icon bi bi-geo-alt"></i>
+                                <p>Servisler</p>
                             </a>
                         </li>
-                    </ul>
+                <li class="nav-item">
+                    <a asp-controller="Contact" asp-action="Index" class="nav-link">
+                        <i class="nav-icon bi bi-geo-alt"></i>
+                        <p>İletişim</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a asp-controller="Testimonial" asp-action="Index" class="nav-link">
+                        <i class="nav-icon bi bi-geo-alt"></i>
+                        <p>Referanslar</p>
+                    </a>
+                </li>
+                        
+                   
                 </li>
             </ul> 
             <!--end::Sidebar Menu-->

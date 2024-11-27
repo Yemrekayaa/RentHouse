@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C287657-C78C-44A3-A020-D1D7ADEA6C90}|Frontends\\RentHouse.WebUI\\RentHouse.WebUI.csproj|c:\\users\\yunus emre\\source\\repos\\renthouse\\frontends\\renthouse.webui\\views\\house\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C287657-C78C-44A3-A020-D1D7ADEA6C90}|Frontends\\RentHouse.WebUI\\RentHouse.WebUI.csproj|solutionrelative:frontends\\renthouse.webui\\views\\house\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C287657-C78C-44A3-A020-D1D7ADEA6C90}|Frontends\\RentHouse.WebUI\\RentHouse.WebUI.csproj|c:\\users\\yunus emre\\source\\repos\\renthouse\\frontends\\renthouse.webui\\areas\\admin\\views\\house\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C287657-C78C-44A3-A020-D1D7ADEA6C90}|Frontends\\RentHouse.WebUI\\RentHouse.WebUI.csproj|solutionrelative:frontends\\renthouse.webui\\areas\\admin\\views\\house\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8C287657-C78C-44A3-A020-D1D7ADEA6C90}|Frontends\\RentHouse.WebUI\\RentHouse.WebUI.csproj|c:\\users\\yunus emre\\source\\repos\\renthouse\\frontends\\renthouse.webui\\areas\\admin\\views\\house\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8C287657-C78C-44A3-A020-D1D7ADEA6C90}|Frontends\\RentHouse.WebUI\\RentHouse.WebUI.csproj|solutionrelative:frontends\\renthouse.webui\\areas\\admin\\views\\house\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31EB1C2D-6221-483A-904E-7F1FAD64A4B8}|Infrastructure\\RentHouse.Persistence\\RentHouse.Persistence.csproj|c:\\users\\yunus emre\\source\\repos\\renthouse\\infrastructure\\renthouse.persistence\\context\\renthousecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31EB1C2D-6221-483A-904E-7F1FAD64A4B8}|Infrastructure\\RentHouse.Persistence\\RentHouse.Persistence.csproj|solutionrelative:infrastructure\\renthouse.persistence\\context\\renthousecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C287657-C78C-44A3-A020-D1D7ADEA6C90}|Frontends\\RentHouse.WebUI\\RentHouse.WebUI.csproj|c:\\users\\yunus emre\\source\\repos\\renthouse\\frontends\\renthouse.webui\\views\\house\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C287657-C78C-44A3-A020-D1D7ADEA6C90}|Frontends\\RentHouse.WebUI\\RentHouse.WebUI.csproj|solutionrelative:frontends\\renthouse.webui\\views\\house\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C287657-C78C-44A3-A020-D1D7ADEA6C90}|Frontends\\RentHouse.WebUI\\RentHouse.WebUI.csproj|c:\\users\\yunus emre\\source\\repos\\renthouse\\frontends\\renthouse.webui\\areas\\admin\\views\\layout\\headerpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C287657-C78C-44A3-A020-D1D7ADEA6C90}|Frontends\\RentHouse.WebUI\\RentHouse.WebUI.csproj|solutionrelative:frontends\\renthouse.webui\\areas\\admin\\views\\layout\\headerpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C287657-C78C-44A3-A020-D1D7ADEA6C90}|Frontends\\RentHouse.WebUI\\RentHouse.WebUI.csproj|c:\\users\\yunus emre\\source\\repos\\renthouse\\frontends\\renthouse.webui\\wwwroot\\css\\style.css||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C287657-C78C-44A3-A020-D1D7ADEA6C90}|Frontends\\RentHouse.WebUI\\RentHouse.WebUI.csproj|solutionrelative:frontends\\renthouse.webui\\wwwroot\\css\\style.css||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,53 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RentHouseContext.cs",
-              "DocumentMoniker": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Infrastructure\\RentHouse.Persistence\\Context\\RentHouseContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\RentHouse.Persistence\\Context\\RentHouseContext.cs",
-              "ToolTip": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Infrastructure\\RentHouse.Persistence\\Context\\RentHouseContext.cs",
-              "RelativeToolTip": "Infrastructure\\RentHouse.Persistence\\Context\\RentHouseContext.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAowCIAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T00:52:07.517Z"
+              "DocumentIndex": 2,
+              "Title": "HeaderPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\Areas\\Admin\\Views\\Layout\\HeaderPartial.cshtml",
+              "RelativeDocumentMoniker": "Frontends\\RentHouse.WebUI\\Areas\\Admin\\Views\\Layout\\HeaderPartial.cshtml",
+              "ToolTip": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\Areas\\Admin\\Views\\Layout\\HeaderPartial.cshtml",
+              "RelativeToolTip": "Frontends\\RentHouse.WebUI\\Areas\\Admin\\Views\\Layout\\HeaderPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-27T08:41:12.782Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "Frontends\\RentHouse.WebUI\\wwwroot\\css\\style.css",
+              "ToolTip": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "Frontends\\RentHouse.WebUI\\wwwroot\\css\\style.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-27T08:40:43.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\Areas\\Admin\\Views\\House\\Create.cshtml",
               "RelativeDocumentMoniker": "Frontends\\RentHouse.WebUI\\Areas\\Admin\\Views\\House\\Create.cshtml",
               "ToolTip": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\Areas\\Admin\\Views\\House\\Create.cshtml",
               "RelativeToolTip": "Frontends\\RentHouse.WebUI\\Areas\\Admin\\Views\\House\\Create.cshtml",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAAAFYAAAA5AAAA",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAYwI8AAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T00:28:05.068Z"
+              "WhenOpened": "2024-11-26T00:28:05.068Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Update.cshtml",
-              "DocumentMoniker": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\Areas\\Admin\\Views\\House\\Update.cshtml",
-              "RelativeDocumentMoniker": "Frontends\\RentHouse.WebUI\\Areas\\Admin\\Views\\House\\Update.cshtml",
-              "ToolTip": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\Areas\\Admin\\Views\\House\\Update.cshtml",
-              "RelativeToolTip": "Frontends\\RentHouse.WebUI\\Areas\\Admin\\Views\\House\\Update.cshtml",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAFQAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T00:27:49.211Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\Views\\House\\Details.cshtml",
               "RelativeDocumentMoniker": "Frontends\\RentHouse.WebUI\\Views\\House\\Details.cshtml",
               "ToolTip": "C:\\Users\\Yunus Emre\\source\\repos\\RentHouse\\Frontends\\RentHouse.WebUI\\Views\\House\\Details.cshtml",
               "RelativeToolTip": "Frontends\\RentHouse.WebUI\\Views\\House\\Details.cshtml",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAAAIYAAAAIAAAA",
+              "ViewState": "AQIAAKUAAAAAAAAAAAAAALIAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-25T23:55:46.284Z",
               "EditorCaption": ""
