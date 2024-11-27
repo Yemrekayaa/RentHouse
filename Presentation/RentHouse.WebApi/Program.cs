@@ -34,6 +34,8 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddApplicationServices();
 builder.Services.AddPersistenceServices();
 
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

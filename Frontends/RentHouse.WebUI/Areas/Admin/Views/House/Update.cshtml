@@ -74,18 +74,22 @@
 
                                     </div>
                                 </div>
-                                <div class="row mb-3">
-                                    <div class="col">
-                                        <label asp-for="Latitude" class="form-label">Enlem</label>
-                                        <input type="text" class="form-control" asp-for="Latitude">
-
-                                    </div>
-                                    <div class="col">
-                                        <label asp-for="Longitude" class="form-label">Boylam</label>
-                                        <input type="text" class="form-control" asp-for="Longitude">
+                                <div class="mb-3">
+                                    <label class="form-label">Enlem ve Boylam</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="latLng" value="40.430988528548944, 29.723164534706456">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button" style="border-top-left-radius: 0; border-bottom-left-radius: 0;" id="googleMapsButton">
+                                                Getir
+                                            </button>
+                                        </div>
 
                                     </div>
                                 </div>
+                                <input type="hidden" class="form-control" asp-for="Latitude">
+                                <input type="hidden" class="form-control" asp-for="Longitude">
+
+                                <div id="map" class="mb-3 map-border" style="width: 100%; height:500px;"></div>
                             </div> <!--end::Body--> <!--begin::Footer-->
                             <div class="card-footer"> <button type="submit" class="btn btn-primary">Submit</button> </div> <!--end::Footer-->
                         </form> <!--end::Form-->
@@ -96,3 +100,62 @@
     </div> <!--end::App Content-->
 </main>
 
+<script>
+
+    $(document).ready(function () {
+        // Map Settings
+        var defaultLocation = [parseFloat('@Model.Latitude'.replace(",", ".")), parseFloat('@Model.Longitude'.replace(",", "."))]
+        console.log('@Model.Latitude'.replace(",","."));
+
+        var map = L.map('map', {
+            doubleClickZoom: false
+        }).setView(defaultLocation, 16);
+
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            maxZoom: 19
+        }).addTo(map);
+
+        var latitudeInput = $('#Latitude');
+        var longitudeInput = $('#Longitude');
+        var latLngInput = $('#latLng');
+        var marker = L.marker(defaultLocation).addTo(map);
+
+        changeMarkerPosition(defaultLocation[0], defaultLocation[1]);
+
+
+        map.on('click', function (e) {
+            var clickedLatLng = e.latlng; // Tıklanan koordinatlar
+            changeMarkerPosition(clickedLatLng.lat, clickedLatLng.lng);
+        });
+
+
+        $('#googleMapsButton').click(function () {
+            var latLng = latLngInput.val().replace(/\s+/g, '').split(",");
+            changeMarkerPosition(parseFloat(latLng[0]), parseFloat(latLng[1]));
+        });
+
+
+        function changeMarkerPosition(lat, lng) {
+            var newLat = lat.toFixed(8);
+            var newLng = lng.toFixed(8);
+            if (marker) {
+                map.removeLayer(marker);
+            }
+            latitudeInput.val(newLat.toString().replace('.', ','));
+            longitudeInput.val(newLng.toString().replace('.', ','));
+            var googleMap = 'http://maps.apple.com/?q=' + newLat + ', ' + newLng;
+            var appleMap = 'http://maps.apple.com/?q=' + newLat + ', ' + newLng;
+            latLngInput.val(newLat + ', ' + newLng);
+            marker = L.marker([newLat, newLng]).addTo(map)
+                .bindPopup('<a href = "' + googleMap + '"> Harita Linki </a>')
+                .openPopup();
+        }
+
+
+    });
+
+
+
+</script>

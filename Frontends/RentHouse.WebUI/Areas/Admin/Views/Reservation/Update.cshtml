@@ -27,8 +27,17 @@
                                 <label class="form-label mb-0">Rezervasyon Tarihleri</label>
                                 <div class="form-text">Rezervasyon tarihlerinizi seçin. Tek bir gün seçmek için o günün üzerine çift tıklayın.</div>
                                 <div class="mb-3">
-
-                                    <input class="form-control" type="text" id="dates" placeholder="Tarihleri Seçiniz" value="">
+                                    @{
+                                        if (Model.EndDate.Date < DateTime.Now.Date)
+                                        {
+                                            <input class="form-control" type="text" id="dates" placeholder="Tarihleri Seçiniz" value="@Model.StartDate.ToString("dd/MM/yyyy") - @Model.EndDate.ToString("dd/MM/yyyy")" disabled>
+                                        }
+                                        else
+                                        {
+                                            <input class="form-control" type="text" id="dates" placeholder="Tarihleri Seçiniz" value="">
+                                        }
+                                    }
+                                    
 
                                     <input type="hidden" id="startDate" asp-for="StartDate">
                                     <input type="hidden" id="endDate" asp-for="EndDate">

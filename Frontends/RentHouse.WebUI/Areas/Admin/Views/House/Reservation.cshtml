@@ -4,6 +4,7 @@
     Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
     var house = ViewBag.House as ResultHouseWithLocationDto;
     var confirmedIcon = "";
+    var reservationStatus = "";
 }
 
 
@@ -105,9 +106,17 @@
                                         {
                                         {
                                             confirmedIcon = item.IsConfirmed ? "bi bi-check-square text-success" : "bi bi-x-square text-danger";
+                                            if (item.EndDate.Date < DateTime.Now.Date)
+                                            {
+                                                reservationStatus = "table-secondary"; // Rezervasyon tamamlandı
+                                            }
+                                            else if (item.StartDate.Date <= DateTime.Now.Date && item.EndDate.Date >= DateTime.Now.Date)
+                                            {
+                                                reservationStatus = "table-success"; // Rezervasyon aktif
+                                            }
                                         }
                                         <tbody>
-                                                <tr class="align-middle">
+                                            <tr class="align-middle @reservationStatus">
                                                     <td>@item.ReservationID</td>
                                                     <td>@house.name</td>
                                                     <td>
