@@ -1,13 +1,29 @@
 ﻿using AutoMapper;
 using MediatR;
+using RentHouse.Application.Common.Pagination;
+using RentHouse.Application.Common.Sort;
+using RentHouse.Application.Features.Filters.Houses;
 using RentHouse.Application.Interfaces;
 using RentHouse.Domain.Entities;
 
 namespace RentHouse.Application.Features.CQRS.Houses.Queries.GetList
 {
-    public class GetListHouseQuery : IRequest<List<GetListHouseResponse>>
+    public class GetListHouseQuery : IRequest<PaginatedResult<GetListHouseResponse>>
     {
-        public class GetListHouseQueryHandler : IRequestHandler<GetListHouseQuery, List<GetListHouseResponse>>
+        public PaginationQuery PaginationQuery { get; }
+        public SortingQuery SortQuery { get; }
+        public HouseFilterByDateDto HouseFilterByDateDto { get; }
+
+        public GetListHouseQuery(PaginationQuery paginationQuery, SortingQuery sortQuery, HouseFilterByDateDto houseFilterByDateDto)
+        {
+            PaginationQuery = paginationQuery;
+            SortQuery = sortQuery;
+            HouseFilterByDateDto = houseFilterByDateDto;
+        }
+
+
+
+        public class GetListHouseQueryHandler : IRequestHandler<GetListHouseQuery, PaginatedResult<GetListHouseResponse>>
         {
             private readonly IRepository<House> _repository;
             private readonly IMapper _mapper;
@@ -18,12 +34,18 @@ namespace RentHouse.Application.Features.CQRS.Houses.Queries.GetList
                 _mapper = mapper;
             }
 
-            public async Task<List<GetListHouseResponse>> Handle(GetListHouseQuery request, CancellationToken cancellationToken)
+            public async Task<PaginatedResult<GetListHouseResponse>> Handle(GetListHouseQuery request, CancellationToken cancellationToken)
             {
-                var entities = await _repository.GetAllAsync();
+                if (request.SortQuery.OrderBy == "Id")
+                {
+                    request.SortQuery.OrderBy = "HouseId";
+                }
 
-                var response = _mapper.Map<List<GetListHouseResponse>>(entities);
-                return response;
+                var entities = await _repository.GetAllAsync();
+                var totalCount = await _repository.GetCountAsync();
+                var response = _mapper.Map<IEnumerable<GetListHouseResponse>>(entities);
+
+                return new PaginatedResult<GetListHouseResponse>(response, totalCount, request.PaginationQuery.PageNumber, request.PaginationQuery.PageSize);
             }
         }
 

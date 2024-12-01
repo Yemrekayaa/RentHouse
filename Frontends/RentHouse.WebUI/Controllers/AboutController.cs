@@ -2,12 +2,13 @@
 
 namespace RentHouse.WebUI.Controllers
 {
-    public class AboutController : Controller
-    {
-        public IActionResult Index()
-        {
-            ViewBag.name = "Hakkımızda";
-            return View();
-        }
-    }
+	public class AboutController : Controller
+	{
+		[Route("hakkimizda")]
+		public IActionResult Index()
+		{
+			ViewBag.name = "Hakkımızda";
+			return View();
+		}
+	}
 }

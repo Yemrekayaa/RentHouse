@@ -1,0 +1,125 @@
+﻿@model RentHouse.Dto.HouseDtos.HouseFilterByDate
+
+<style>
+    .flatpickr-day.range-start,
+    .flatpickr-day.range-end {
+        background: #4caf50;
+        color: white;
+    }
+
+    .flatpickr-day.in-range {
+        background: #c8e6c9;
+        color: #2e7d32;
+    }
+</style>
+
+<div class="col-md-4 d-flex align-items-center">
+	<form asp-controller="House" asp-action="Index" method="get" class="request-form ftco-animate bg-primary">
+		<h2>Evinizi bulun</h2>
+
+		<div class="d-flex">
+			<div class="form-group mr-2">
+				<label  class="label">Giriş Tarihi</label>
+				<input type="text" class="form-control" asp-for="StartDate" placeholder="Giriş Tarihi" readonly>
+			</div>
+			<div class="form-group ml-2">
+				<label  class="label">Çıkış Tarihi</label>
+				<input type="text" class="form-control" asp-for="EndDate" placeholder="Çıkış Tarihi" readonly>
+			</div>
+		</div>
+		<div class="form-group">
+			<input type="submit" value="Rent A House Now" class="btn btn-secondary py-3 px-4">
+		</div>
+	</form>
+</div>
+
+<script>
+    $(document).ready(function () {
+        flatpickr.localize(flatpickr.l10ns.tr);
+        let startDate = null; // Başlangıç tarihi
+        let endDate = null;   // Bitiş tarihi
+        const endDatePicker = flatpickr("#EndDate", {
+            dateFormat: "d/m/Y",
+            onReady: function (selectedDates, dateStr, instance) {
+                $(instance.calendarContainer).addClass("end-date-picker");
+            },
+            onChange: function (selectedDates) {
+                if (selectedDates.length > 0) {
+                    endDate = selectedDates[0];
+                    highlightRange("start-date-picker"); // Start takvimini güncelle
+                    highlightRange("end-date-picker");  // End takvimini güncelle
+                }
+            },
+
+        });
+
+        const startDatePicker = flatpickr("#StartDate", {
+            dateFormat: "d/m/Y",
+            minDate: "today",
+            onReady: function (selectedDates, dateStr, instance) {
+                $(instance.calendarContainer).addClass("start-date-picker");
+            },
+            onChange: function (selectedDates) {
+                if (selectedDates.length > 0) {
+                    startDate = selectedDates[0];
+                    endDatePicker.set("minDate", startDate); // Bitiş tarihine minimum sınır
+                    if (endDate && endDate < startDate) {
+                        endDatePicker.clear(); // Bitiş tarihi başlangıç tarihinden önceyse temizle
+                        endDate = null;
+                    }
+                    highlightRange("start-date-picker"); // Start takvimini güncelle
+                    highlightRange("end-date-picker");  // End takvimini güncelle
+                    endDatePicker.open(); // Başlangıç tarihinden sonra bitiş takvimini aç
+                }
+            },
+        });
+
+
+
+        function highlightRange(calendarClass) {
+            const calendarDays = $(`.${calendarClass} .flatpickr-day`);
+            calendarDays.each(function () {
+                const day = $(this);
+                const date = day[0].dateObj; // Flatpickr tarafından eklenen tarih objesi
+
+                // Tüm sınıfları temizle
+                day.removeClass("range-start range-end in-range");
+
+                if (startDate) {
+                    // Başlangıç ve bitiş tarihlerini ve aradaki günleri vurgula
+                    if (date.getTime() === startDate.getTime()) {
+                        day.addClass("range-start");
+                    }
+                    if (endDate && date.getTime() === endDate.getTime()) {
+                        day.addClass("range-end");
+                    }
+                    if (endDate && date > startDate && date < endDate) {
+                        day.addClass("in-range");
+                    }
+                }
+            });
+        }
+
+        $("form").on("submit", function (e) {
+            // Başlangıç tarihi ve bitiş tarihini düzenle
+            const startInput = $("#StartDate");
+            const endInput = $("#EndDate");
+
+            if (startDate) {
+                startInput.val(formatDate(startDate)); // StartDate formatla
+            }
+
+            if (endDate) {
+                endInput.val(formatDate(endDate)); // EndDate formatla
+            }
+        });
+
+        function formatDate(date) {
+            const day = String(date.getDate()).padStart(2, '0'); // Gün
+            const month = String(date.getMonth() + 1).padStart(2, '0'); // Ay (0-11 arası olduğu için 1 ekliyoruz)
+            const year = date.getFullYear(); // Yıl
+            return `${year}-${month}-${day}`; // "dd-MM-yyyy" formatında döndür
+        }
+
+    });
+</script>

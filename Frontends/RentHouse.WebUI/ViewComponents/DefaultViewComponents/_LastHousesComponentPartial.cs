@@ -1,29 +1,57 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
+using RentHouse.Dto;
 using RentHouse.Dto.HouseDtos;
+using RentHouse.WebUI.Services;
 
 namespace RentHouse.WebUI.ViewComponents.DefaultViewComponents
 {
     public class _LastHousesComponentPartial : ViewComponent
     {
-        private readonly IHttpClientFactory _httpClientFactory;
+        private readonly ApiService _apiService;
 
-        public _LastHousesComponentPartial(IHttpClientFactory httpClientFactory)
+        public _LastHousesComponentPartial(ApiService apiService)
         {
-            _httpClientFactory = httpClientFactory;
+            _apiService = apiService;
         }
 
-        public async Task<IViewComponentResult> InvokeAsync()
+        public async Task<IViewComponentResult> InvokeAsync(
+                [FromQuery] string startDate,
+                [FromQuery] string endDate,
+                int pageNumber = 1,
+                int pageSize = 5,
+                string orderBy = "Id",
+                bool isDescending = true)
+
         {
-            var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:7224/api/Houses/with-location?count=5");
-            if (responseMessage.IsSuccessStatusCode)
+            var queryParams = new List<string>
             {
-                var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<List<ResultHouseWithLocationDto>>(jsonData);
-                return View(values);
+            $"PageNumber={pageNumber}",
+            $"PageSize={pageSize}"
+            };
+
+
+            if (!string.IsNullOrEmpty(startDate))
+            {
+                queryParams.Add($"StartDate={startDate}");
             }
-            return View();
+
+            if (!string.IsNullOrEmpty(endDate))
+            {
+                queryParams.Add($"EndDate={endDate}");
+            }
+
+
+            if (!string.IsNullOrEmpty(orderBy))
+            {
+                queryParams.Add($"OrderBy={orderBy}");
+                queryParams.Add($"IsDescending={isDescending.ToString().ToLower()}");
+            }
+
+
+            var response = await _apiService.GetAsync<PaginationDto<ResultHouseWithLocationDto>>(
+                $"Houses/with-location?{string.Join("&", queryParams)}");
+
+            return View(response);
         }
     }
 }

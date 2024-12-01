@@ -1,14 +1,15 @@
-﻿@model List<RentHouse.Dto.HouseDtos.ResultHouseWithLocationDto>
+﻿@model PaginationDto<RentHouse.Dto.HouseDtos.ResultHouseWithLocationDto>
 
 @{
     ViewData["Title"] = "Houses";
     Layout = "~/Views/UILayout/Index.cshtml";
+    ViewBag.Name = "Evler";
 }
 
 <section class="ftco-section bg-light">
     <div class="container">
         <div class="row">
-            @foreach(var item in Model)
+            @foreach(var item in Model.items)
             {
                 <div class="col-md-4">
                     <div class="car-wrap rounded ftco-animate">
@@ -35,14 +36,23 @@
         <div class="row mt-5">
             <div class="col text-center">
                 <div class="block-27">
-                    <ul>
-                        <li><a href="#">&lt;</a></li>
-                        <li class="active"><span>1</span></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">&gt;</a></li>
+                    <ul>@if (Model.previousPageAvailable)
+                        {
+                            <li><a asp-action="Index" asp-route-pageNumber="@(Model.pageNumber - 1)" >&lt;</a></li>
+                        }
+                        @for (var pagen = 1; pagen <= Math.Ceiling((double)Model.totalCount / Model.pageSize); pagen++)
+                        {
+                            <li class="@(pagen == Model.pageNumber ? "active" : "")">
+                                <a asp-action="Index" asp-route-pageNumber="@pagen" >@pagen</a>
+                            </li>
+                        }
+                        
+                        
+                        @if (Model.nextPageAvailable)
+                        {
+                            <li><a asp-action="Index" asp-route-pageNumber="@(Model.pageNumber + 1)" >&gt;</a></li>
+                        }
+                        
                     </ul>
                 </div>
             </div>
