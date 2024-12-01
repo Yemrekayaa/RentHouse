@@ -8,12 +8,10 @@
 		<div class="collapse navbar-collapse" id="ftco-nav">
 			<ul class="navbar-nav ml-auto">
 				
-				<li class="nav-item"><a asp-controller="Default" class="nav-link">Ana Sayfa</a></li>
-				<li class="nav-item"><a href="index.html" class="nav-link">Ev Kirala</a></li>
-				<li class="nav-item"><a asp-controller="About" class="nav-link">Hakkımızda</a></li>
-@* 				<li class="nav-item"><a asp-controller="Services" class="nav-link">Hizmetler</a></li> *@
-				<li class="nav-item"><a asp-controller="House" class="nav-link">Evler</a></li>
-				<li class="nav-item"><a asp-controller="Contact" class="nav-link">İletişim</a></li>
+				<li class="nav-item"><a asp-controller="Default" asp-action="Index" class="nav-link">Ana Sayfa</a></li>
+				<li class="nav-item"><a asp-controller="House" asp-action="Index" class="nav-link">Evler</a></li>
+				<li class="nav-item"><a asp-controller="About" asp-action="Index" class="nav-link">Hakkımızda</a></li>
+				<li class="nav-item"><a asp-controller="Contact" asp-action="Index" class="nav-link">İletişim</a></li>
 				
 			</ul>
 		</div>
