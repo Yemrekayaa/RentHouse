@@ -8361,9 +8361,9 @@ h1, h2, h3, h4, h5,
     height: 850px; }
   @media (max-width: 991.98px) {
     .hero-wrap {
-      height: 1150px; }
+      height: 870px; }
       .hero-wrap .overlay {
-        height: 1150px; } }
+        height: 870px; } }
   .hero-wrap.hero-wrap-2 {
     height: 600px !important;
     position: relative; }
@@ -8375,10 +8375,10 @@ h1, h2, h3, h4, h5,
       height: 600px !important; }
 
 .slider-text {
-  height: 850px; }
+  height: 870px; }
   @media (max-width: 991.98px) {
     .slider-text {
-      height: 1150px; } }
+      height: 650px; } }
   .slider-text h1 {
     font-size: 44px;
     color: #fff;

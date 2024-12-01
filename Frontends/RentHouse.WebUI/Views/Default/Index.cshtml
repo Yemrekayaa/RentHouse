@@ -17,41 +17,40 @@
     	<div class="container">
     		<div class="row no-gutters">
     			<div class="col-md-12	featured-top">
-    				<div class="row no-gutters">
-						@await Component.InvokeAsync("_SearchHouseComponentPartial")
-	  					<div class="col-md-8 d-flex align-items-center">
-	  						<div class="services-wrap rounded-right w-100">
+    				<div class="row no-gutters ">				
+	  					<div class="col-md-10 d-flex align-items-center mx-auto">
+	  						<div class="services-wrap rounded w-100">
 	  							<h3 class="heading-section mb-4">Ev Kiralamanın En İyi Yolu</h3>
 	  							<div class="row d-flex mb-4">
 					          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
 					            <div class="services w-100 text-center">
-				              	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
+											<div class="icon d-flex align-items-center justify-content-center"><img src="~/images/icons/rent-date.svg" alt="Icon" width="48" height="48" /></span></div>
 				              	<div class="text w-100">
-					                <h3 class="heading mb-2">Choose Your Pickup Location</h3>
+									<h3 class="heading mb-2">İstediğiniz Tarihleri Seçin</h3>
 				                </div>
 					            </div>      
 					          </div>
 					          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
 					            <div class="services w-100 text-center">
-				              	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-handshake"></span></div>
+											<div class="icon d-flex align-items-center justify-content-center"><img src="~/images/icons/rent-deal.svg" alt="Icon" width="48" height="48" /></div>
 				              	<div class="text w-100">
-					                <h3 class="heading mb-2">Select the Best Deal</h3>
+					                <h3 class="heading mb-2">En İyi Fırsatı Seçin</h3>
 					              </div>
 					            </div>      
 					          </div>
 					          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
 					            <div class="services w-100 text-center">
-				              	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-rent"></span></div>
+											<div class="icon d-flex align-items-center justify-content-center"><img src="~/images/icons/rent-house.svg" alt="Icon" width="48" height="48" /></div>
 				              	<div class="text w-100">
-					                <h3 class="heading mb-2">Reserve Your Rental House</h3>
+												<h3 class="heading mb-2">Kiralık Evinizi Rezerve Edin</h3>
 					              </div>
 					            </div>      
 					          </div>
 					        </div>
-					        <p><a href="#" class="btn btn-primary py-3 px-4">Reserve Your Perfect House</a></p>
 	  						</div>
 	  					</div>
 	  				</div>
+					@await Component.InvokeAsync("_SearchHouseComponentPartial")
 				</div>
   		</div>
     </section>
