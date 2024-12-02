@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RentHouse.Dto;
 using RentHouse.Dto.HouseDtos;
 using RentHouse.Dto.ReservationDto;
 using RentHouse.WebUI.Services;
@@ -15,29 +16,21 @@ namespace RentHouse.WebUI.Areas.Admin.Controllers
             _apiService = apiService;
         }
 
-        public async Task<IActionResult> Index()
+
+        public async Task<IActionResult> Index([FromQuery] int pageNumber = 1, int pageSize = 20)
         {
-            var values = await _apiService.GetAsync<List<ResultReservationWithHouseDto>>("Reservations/with-house");
-            return View(values);
+            var queryParams = new List<string>
+            {
+            $"PageNumber={pageNumber}",
+            $"PageSize={pageSize}"
+            };
+
+            var response = await _apiService.GetAsync<PaginationDto<ResultReservationWithHouseDto>>(
+                $"Reservations/with-house?{string.Join("&", queryParams)}");
+
+            return View(response);
         }
 
-        //public async Task<IActionResult> Create()
-        //{
-        //    var createReservationDto = new CreateReservationDto();
-        //    createReservationDto.StartDate = DateTime.Now;
-        //    createReservationDto.EndDate = DateTime.Now.AddDays(1);
-        //    return View(createReservationDto);
-        //}
-        //[HttpPost]
-        //public async Task<IActionResult> Create(CreateReservationDto createReservationDto)
-        //{
-        //    var response = await _apiService.RequestAsync(HttpMethod.Post, "Reservations", createReservationDto);
-        //    if (response.IsSuccessStatusCode)
-        //    {
-        //        return RedirectToAction("Index");
-        //    }
-        //    return RedirectToAction("Index");
-        //}
 
 
         public async Task<IActionResult> Update(int id)
@@ -47,8 +40,8 @@ namespace RentHouse.WebUI.Areas.Admin.Controllers
             var houseResponse = await _apiService.GetAsync<ResultHouseWithLocationDto>($"Houses/{reservationResponse.HouseID}/with-location");
             ViewBag.House = houseResponse;
 
-            var reservationListResponse = await _apiService.GetAsync<List<ResultReservationDto>>($"Houses/{reservationResponse.HouseID}/Reservations");
-            ViewBag.Reservations = reservationListResponse;
+            var reservationsResponse = await _apiService.GetAsync<PaginationDto<ResultReservationDto>>($"Houses/{reservationResponse.HouseID}/Reservations?PageSize={int.MaxValue}");
+            ViewBag.Reservations = reservationsResponse.Items;
 
             return View(reservationResponse);
         }
@@ -80,8 +73,8 @@ namespace RentHouse.WebUI.Areas.Admin.Controllers
             var houseResponse = await _apiService.GetAsync<ResultHouseWithLocationDto>($"Houses/{houseId}/with-location");
             ViewBag.House = houseResponse;
 
-            var reservationsResponse = await _apiService.GetAsync<List<ResultReservationDto>>($"Houses/{houseId}/Reservations");
-            ViewBag.Reservations = reservationsResponse;
+            var reservationsResponse = await _apiService.GetAsync<PaginationDto<ResultReservationDto>>($"Houses/{houseId}/Reservations?PageSize={int.MaxValue}");
+            ViewBag.Reservations = reservationsResponse.Items;
 
             var createReservationDto = new CreateReservationDto();
             createReservationDto.HouseID = houseResponse.houseID;

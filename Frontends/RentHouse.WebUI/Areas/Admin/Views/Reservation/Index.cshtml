@@ -1,4 +1,4 @@
-﻿@model List<RentHouse.Dto.ReservationDto.ResultReservationWithHouseDto>
+﻿@model PaginationDto<RentHouse.Dto.ReservationDto.ResultReservationWithHouseDto>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
@@ -32,7 +32,7 @@
                                             <th style="width: 100px"></th>
                                         </tr>
                                     </thead>
-                                    @foreach (var item in Model)
+                                    @foreach (var item in Model.Items)
                                     {
                                         {
                                             confirmedIcon = item.IsConfirmed ? "bi bi-check-square text-success" : "bi bi-x-square text-danger";
@@ -75,14 +75,8 @@
                                 </table>
                             </div>
                         </div> <!-- /.card-body -->
-                        <div class="card-footer clearfix">
-                            <ul class="pagination pagination-sm m-0 float-end">
-                                <li class="page-item"> <a class="page-link" href="#">«</a> </li>
-                                <li class="page-item"> <a class="page-link" href="#">1</a> </li>
-                                <li class="page-item"> <a class="page-link" href="#">2</a> </li>
-                                <li class="page-item"> <a class="page-link" href="#">3</a> </li>
-                                <li class="page-item"> <a class="page-link" href="#">»</a> </li>
-                            </ul>
+                        <div class="card-footer clearfix d-flex justify-content-center">
+                            @await Component.InvokeAsync("_Pagination",Model)
                         </div>
                     </div>
                 </div>

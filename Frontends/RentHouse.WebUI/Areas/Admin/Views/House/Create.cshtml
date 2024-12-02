@@ -13,13 +13,25 @@
                 <div class="col-md-12">
                     <div class="card mb-4">
                         <!--begin::Header-->
-                        <div class="card-header d-grid">
+                        <div class="card-header d-grid pb-0">
                             <div class="card-title">Yeni Ev Ekle</div>
                             <div class="form-text">Ev hakkında bilgileri eksiksiz doldurmalısınız. Kaydet butonuna basarak işlemi tamamlayabilirsiniz.</div>
+                            <ul class="nav nav-tabs mt-3 border-bottom-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Genel Bilgiler</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link link-secondary" href="#">Görseller</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                            </ul>
                         </div> <!--end::Header--> <!--begin::Form-->
                         <form method="post" enctype="multipart/form-data">
                             <!--begin::Body-->
                             <div class="card-body">
+                                
                                 <div class="mb-3">
                                     <label  class="form-label">Ev İsmi</label>
                                     <input class="form-control" type="text" placeholder="Eve bir isim giriniz" asp-for="Name">
@@ -92,6 +104,7 @@
 
                                 <div id="map" class="mb-3 map-border" style="width: 100%; height:500px;"></div>
                                 
+
                             </div> <!--end::Body--> <!--begin::Footer-->
                             <div class="card-footer"> <button type="submit" class="btn btn-primary float-end">Kaydet</button> </div> <!--end::Footer-->
                         </form> <!--end::Form-->

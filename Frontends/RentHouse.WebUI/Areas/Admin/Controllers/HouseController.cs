@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using RentHouse.Dto;
+using RentHouse.Dto.FeatureDtos;
 using RentHouse.Dto.HouseDtos;
 using RentHouse.Dto.LocationDto;
 using RentHouse.Dto.ReservationDto;
@@ -17,10 +19,44 @@ namespace RentHouse.WebUI.Areas.Admin.Controllers
             _apiService = apiService;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(
+                [FromQuery] string startDate,
+                [FromQuery] string endDate,
+                int pageNumber = 1,
+                int pageSize = 8,
+                string orderBy = "",
+                bool isDescending = false)
         {
-            var values = await _apiService.GetAsync<List<ResultHouseWithLocationDto>>("Houses/with-location");
-            return View(values);
+
+            var queryParams = new List<string>
+            {
+            $"PageNumber={pageNumber}",
+            $"PageSize={pageSize}"
+            };
+
+
+            if (!string.IsNullOrEmpty(startDate))
+            {
+                queryParams.Add($"StartDate={startDate}");
+            }
+
+            if (!string.IsNullOrEmpty(endDate))
+            {
+                queryParams.Add($"EndDate={endDate}");
+            }
+
+
+            if (!string.IsNullOrEmpty(orderBy))
+            {
+                queryParams.Add($"OrderBy={orderBy}");
+                queryParams.Add($"IsDescending={isDescending.ToString().ToLower()}");
+            }
+
+
+            var response = await _apiService.GetAsync<PaginationDto<ResultHouseWithLocationDto>>(
+                $"Houses/with-location?{string.Join("&", queryParams)}");
+
+            return View(response);
         }
         [HttpGet]
         public async Task<IActionResult> Create()
@@ -32,6 +68,8 @@ namespace RentHouse.WebUI.Areas.Admin.Controllers
                                                        Text = x.Name,
                                                        Value = x.LocationID.ToString()
                                                    }).ToList();
+            var featureValues = await _apiService.GetAsync<IEnumerable<ResultFeatureDto>>("Features");
+            ViewBag.FeatureValues = featureValues;
             ViewBag.LocationValues = locationValues;
             return View();
         }
@@ -87,12 +125,22 @@ namespace RentHouse.WebUI.Areas.Admin.Controllers
         }
 
         [HttpGet("[Area]/[Controller]/{id}/Reservation")]
-        public async Task<IActionResult> Reservation(int id)
+        public async Task<IActionResult> Reservation([FromRoute] int id, [FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 20)
         {
             var houseResponse = await _apiService.GetAsync<ResultHouseWithLocationDto>($"Houses/{id}/with-location");
             ViewBag.House = houseResponse;
+            var queryParams = new List<string>
+            {
+            $"PageNumber={pageNumber}",
+            $"PageSize={pageSize}"
+            };
 
-            var response = await _apiService.GetAsync<List<ResultReservationDto>>($"Houses/{id}/Reservations");
+            var response = await _apiService.GetAsync<PaginationDto<ResultReservationDto>>(
+                $"Houses/{id}/Reservations?{string.Join("&", queryParams)}");
+
+            var calendarValues = await _apiService.GetAsync<PaginationDto<ResultReservationDto>>(
+                $"Houses/{id}/Reservations?PageSize{int.MaxValue}");
+            ViewBag.Calendar = calendarValues;
             return View(response);
         }
 

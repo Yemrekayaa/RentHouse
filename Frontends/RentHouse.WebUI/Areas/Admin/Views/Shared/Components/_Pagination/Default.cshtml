@@ -1,0 +1,16 @@
+﻿@model PaginationDtoBase
+
+<ul class="pagination pagination-md m-0">
+    
+    <li class="page-item @(Model.previousPageAvailable ? "" : "disabled")"> <a class="page-link" asp-area="Admin" asp-route-pageNumber="@(Model.pageNumber - 1)">«</a> </li>
+    
+    @for (var pagen = 1; pagen <= Math.Ceiling((double)Model.totalCount / Model.pageSize); pagen++)
+    {
+        <li class="page-item @(pagen == Model.pageNumber ? "active" : "")"> <a class="page-link" asp-area="Admin" asp-route-pageNumber="@pagen">@pagen</a> </li>
+    }
+
+    
+    <li class="page-item @(Model.nextPageAvailable ? "" : "disabled")"> <a class="page-link" asp-area="Admin" asp-route-pageNumber="@(Model.pageNumber + 1)">»</a> </li>
+    
+
+</ul>

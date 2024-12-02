@@ -1,36 +1,40 @@
 using AutoMapper;
 using MediatR;
+using RentHouse.Application.Common.Pagination;
 using RentHouse.Application.Interfaces;
 
 namespace RentHouse.Application.Features.CQRS.Reservations.Queries.GetLisyByHouseId
 {
-	public class GetReservationsByHouseIdQuery : IRequest<List<GetReservationsByHouseIdResponse>>
-	{
-		public int Id { get; set; }
+    public class GetReservationsByHouseIdQuery : IRequest<PaginatedResult<GetReservationsByHouseIdResponse>>
+    {
+        public int Id { get; set; }
+        public PaginationQuery Pagination { get; set; }
 
-		public GetReservationsByHouseIdQuery(int id)
-		{
-			Id = id;
-		}
+        public GetReservationsByHouseIdQuery(int id, PaginationQuery pagination)
+        {
+            Id = id;
+            Pagination = pagination;
+        }
 
-		public class GetByIdReservationQueryHandler : IRequestHandler<GetReservationsByHouseIdQuery, List<GetReservationsByHouseIdResponse>>
-		{
-			private readonly IReservationRepository _repository;
-			private readonly IMapper _mapper;
+        public class GetByIdReservationQueryHandler : IRequestHandler<GetReservationsByHouseIdQuery, PaginatedResult<GetReservationsByHouseIdResponse>>
+        {
+            private readonly IReservationRepository _repository;
+            private readonly IMapper _mapper;
 
-			public GetByIdReservationQueryHandler(IReservationRepository repository, IMapper mapper)
-			{
-				_repository = repository;
-				_mapper = mapper;
-			}
+            public GetByIdReservationQueryHandler(IReservationRepository repository, IMapper mapper)
+            {
+                _repository = repository;
+                _mapper = mapper;
+            }
 
-			public async Task<List<GetReservationsByHouseIdResponse>> Handle(GetReservationsByHouseIdQuery request, CancellationToken cancellationToken)
-			{
-				var entity = await _repository.GetListWithHouseByHouse(request.Id);
+            public async Task<PaginatedResult<GetReservationsByHouseIdResponse>> Handle(GetReservationsByHouseIdQuery request, CancellationToken cancellationToken)
+            {
+                var entity = await _repository.GetListWithHouseByHouse(request.Id, request.Pagination);
+                var totalCount = await _repository.GetWithHouseByHouseCount(request.Id);
+                var response = _mapper.Map<IEnumerable<GetReservationsByHouseIdResponse>>(entity);
 
-				var response = _mapper.Map<List<GetReservationsByHouseIdResponse>>(entity);
-				return response;
-			}
-		}
-	}
+                return new PaginatedResult<GetReservationsByHouseIdResponse>(response, totalCount, request.Pagination.PageNumber, request.Pagination.PageSize);
+            }
+        }
+    }
 }
