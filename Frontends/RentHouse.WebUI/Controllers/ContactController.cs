@@ -13,7 +13,8 @@ namespace RentHouse.WebUI.Controllers
         {
             _httpClientFactory = httpClientFactory;
         }
-        [HttpGet]
+
+        [HttpGet("iletisim")]
         public IActionResult Index()
         {
             ViewBag.name = "İletişim";

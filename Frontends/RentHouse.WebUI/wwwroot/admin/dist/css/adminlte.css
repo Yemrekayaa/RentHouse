@@ -15420,3 +15420,14 @@ html.maximized-card {
     .services.services-2 .icon span {
         color: #fff;
     }
+#features-container .btn-check:checked + label {
+    background-color: green !important;
+    border-color: green !important;
+    color: white !important;
+}
+
+#features-container .btn-check:not(:checked) + label {
+    background-color: transparent !important;
+    border-color: gray !important;
+    color: gray !important;
+}

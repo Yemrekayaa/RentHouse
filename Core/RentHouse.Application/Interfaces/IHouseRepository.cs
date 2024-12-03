@@ -13,6 +13,9 @@ namespace RentHouse.Application.Interfaces
         Task<IEnumerable<House>> GetAvailableHousesAsync(DateTime startDate, DateTime endDate);
         Task<IEnumerable<House>> GetAvailableHousesWithLocationAsync(DateTime startDate, DateTime endDate, PaginationQuery paginationQuery, SortingQuery sortingQuery);
         Task<int> GetAvailableHousesWithLocationCountAsync(DateTime startDate, DateTime endDate);
+        Task<House> GetHouseWithFeaturesByIdAsync(int id);
+        Task<int> CreateAsync(House house);
+        Task<int> UpdateAsync(House house);
     }
 
 }

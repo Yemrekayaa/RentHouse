@@ -102,5 +102,32 @@ namespace RentHouse.Persistence.Repositories
 
         }
 
+        public async Task<House> GetHouseWithFeaturesByIdAsync(int id)
+        {
+            var value = await _context.Houses
+                .Where(x => x.HouseID == id)
+                .Include(x => x.Location)
+                .Include(x => x.HouseFeatures)
+                .ThenInclude(y => y.Feature)
+                .FirstOrDefaultAsync();
+
+            return value;
+        }
+
+        public async Task<int> CreateAsync(House house)
+        {
+            await _context.Houses.AddAsync(house);
+
+            await _context.SaveChangesAsync();
+
+            return house.HouseID;
+        }
+
+        public async Task<int> UpdateAsync(House house)
+        {
+            _context.Houses.Update(house);
+            await _context.SaveChangesAsync();
+            return house.HouseID;
+        }
     }
 }

@@ -1,8 +1,21 @@
-﻿@model UpdateHouseDto
+﻿@model UpdateHouseWithFeatureDto
 @{
     ViewData["Title"] = "UpdateHouse";
     Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
+    var features = ViewBag.FeatureValues as IEnumerable<RentHouse.Dto.FeatureDtos.ResultFeatureDto>;
 }
+
+<style>
+    .nav-tabs .nav-link {
+        color: white !important;
+    }
+
+        .nav-tabs .nav-link.active {
+            color: #010000 !important;
+        }
+
+</style>
+
 
 <main class="app-main">
 
@@ -11,89 +24,184 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="card mb-4">
-                        <!--begin::Header-->
-                        <div class="card-header d-grid">
-                            <div class="card-title">Evi Düzenle</div>
-                            <div class="form-text">Ev hakkında bilgileri eksiksiz doldurmalısınız. Kaydet butonuna basarak işlemi tamamlayabilirsiniz.</div>
-                        </div> <!--end::Header--> <!--begin::Form-->
-                        <form method="post" enctype="multipart/form-data">
-                            <input type="hidden" asp-for="HouseID" value="@Model.HouseID"/>
-                            <div class="card-body">
-                                <div class="mb-3">
-                                    <label asp-for="Name" class="form-label">Ev İsmi</label>
-                                    <input class="form-control" type="text" placeholder="Eve bir isim giriniz" asp-for="Name">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="LocationLabel" class="form-label">Konum</label>
-                                    @Html.DropDownListFor(x => x.LocationID, (List<SelectListItem>)ViewBag.LocationValues, new { @class = "form-control" })
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-4">
-                                        <label asp-for="Area" class="form-label">Alanı</label>
-                                        <div class="input-group">
-                                            <input type="number" class="form-control" asp-for="Area"> <span class="input-group-text">m2</span>
+                    <form method="post" asp-area="Admin" asp-controller="House" asp-action="Update" enctype="multipart/form-data">
+                        <div class="card mb-4">
+                            <!--begin::Header-->
+                            <div class="card-header d-grid pb-0  bg-body-secondary" data-bs-theme="dark">
+                                <div class="card-title text-white">Evi Düzenle</div>
+                                <div class="form-text">Ev hakkında bilgileri eksiksiz doldurmalısınız. Kaydet butonuna basarak işlemi tamamlayabilirsiniz.</div>
+                                <ul class="nav nav-tabs mt-3 border-bottom-0" id="houseTabs" role="tablist" data-bs-theme="light">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" type="button" role="tab" aria-controls="general" aria-selected="true">Genel Özellikler</button>
+                                    </li>
+
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="features-tab" data-bs-toggle="tab" data-bs-target="#features" type="button" role="tab" aria-controls="features" aria-selected="false">Özellikler</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="images-tab" data-bs-toggle="tab" data-bs-target="#images" type="button" role="tab" aria-controls="images" aria-selected="false">Görseller</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="prices-tab" data-bs-toggle="tab" data-bs-target="#prices" type="button" role="tab" aria-controls="prices" aria-selected="false">Fiyatlar</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="locations-tab" data-bs-toggle="tab" data-bs-target="#locations" type="button" role="tab" aria-controls="locations" aria-selected="false">Konum</button>
+                                    </li>
+
+                                </ul>
+                            </div> <!--end::Header--> <!--begin::Form-->
+                            <!--begin::Body-->
+
+                            <div class="tab-content mt-3" id="houseTabsContent">
+                                <!-- Genel Özellikler -->
+                                <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
+                                    <!-- Genel Özellikler İçeriği -->
+                                    <div class="mb-3 card-body">
+                                        <div class="mb-3">
+                                            <label class="form-label">Ev İsmi</label>
+                                            <input class="form-control" type="text" placeholder="Eve bir isim giriniz" asp-for="Name" required>
+                                            <input type="hidden" asp-for="HouseID"/>
                                         </div>
-
-                                    </div>
-                                    <div class="col-4">
-                                        <label asp-for="NumberOfRooms" class="form-label">Oda Sayısı</label>
-                                        <input type="number" class="form-control" asp-for="NumberOfRooms">
-                                    </div>
-                                    <div class="col-4">
-                                        <label asp-for="NumberOfBeds" class="form-label">Yatak Sayısı</label>
-                                        <input type="number" class="form-control" asp-for="NumberOfBeds">
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label asp-for="Description" class="form-label">Açıklama</label>
-                                    <textarea class="form-control" asp-for="Description"></textarea>
-                                </div>
-
-                                <div class="mb-3">
-                                    <label asp-for="BigImageUrl" class="form-label">Büyük Resim Url</label>
-                                    <input class="form-control" type="text" asp-for="BigImageUrl">
-                                </div>
-                                <div class="mb-3">
-                                    <label asp-for="CoverImageUrl" class="form-label">Küçük Resim Url</label>
-                                    <input class="form-control" type="text" asp-for="CoverImageUrl">
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col">
-                                        <label asp-for="WeekdayPrice" class="form-label">Hafta İçi Fiyat</label>
-                                        <div class="input-group">
-                                            <input type="number" class="form-control" asp-for="WeekdayPrice"> <span class="input-group-text">₺</span>
+                                        <div class="mb-3">
+                                            <label class="form-label">Açıklama</label>
+                                            <textarea class="form-control" asp-for="Description"></textarea>
                                         </div>
+                                        <div class="row mb-3">
+                                            <div class="col-md">
+                                                <label class="form-label">Alanı</label>
+                                                <div class="input-group">
+                                                    <input type="number" class="form-control" asp-for="Area"> <span class="input-group-text">m2</span>
+                                                </div>
 
-                                    </div>
-                                    <div class="col">
-                                        <label asp-for="WeekendPrice" class="form-label">Hafta Sonu Fiyat</label>
-                                        <div class="input-group">
-                                            <input type="number" class="form-control" asp-for="WeekendPrice"><span class="input-group-text">₺</span>
+                                            </div>
+                                            <div class="col-md">
+                                                <label class="form-label">Oda Sayısı</label>
+                                                <input type="number" class="form-control" asp-for="NumberOfRooms">
+                                            </div>
+                                            <div class="col-md">
+                                                <label class="form-label">Yatak Sayısı</label>
+                                                <input type="number" class="form-control" asp-for="NumberOfBeds">
+                                            </div>
                                         </div>
-
+                                    </div>
+                                    <!-- Diğer alanlar -->
+                                    <div class="card-footer">
+                                        <button type="button" class="btn btn-primary float-end next-tab" data-bs-target="#features">İleri</button>
                                     </div>
                                 </div>
-                                <div class="mb-3">
-                                    <label class="form-label">Enlem ve Boylam</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" id="latLng" value="40.430988528548944, 29.723164534706456">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary" type="button" style="border-top-left-radius: 0; border-bottom-left-radius: 0;" id="googleMapsButton">
-                                                Getir
-                                            </button>
-                                        </div>
 
+                                <!-- Özellikler -->
+                                <div class="tab-pane fade" id="features" role="tabpanel" aria-labelledby="features-tab">
+                                    <div class="mb-3 card-body">
+                                        <h5>Ev Özelliklerini Düzenle</h5>
+                                        <div id="features-container">
+                                            <div class="d-flex flex-wrap">
+                                                @for (int i = 0; i < Model.HouseFeatures.Count(); i++)
+                                                {
+                                                    <div class="me-3 mb-2">
+                                                        <input type="hidden" asp-for="@Model.HouseFeatures[i].FeatureId" />
+                                                        <input type="hidden" asp-for="@Model.HouseFeatures[i].HouseFeatureId" />
+                                                        <input type="checkbox"
+                                                               class="btn-check"
+                                                               id="btn-check-@Model.HouseFeatures[i].FeatureId"
+                                                               asp-for="HouseFeatures[i].Available">
+
+                                                        <label class="btn btn-outline-secondary" for="btn-check-@Model.HouseFeatures[i].FeatureId">
+                                                            @(features.FirstOrDefault(x => x.FeatureID == Model.HouseFeatures[i].FeatureId)?.Name)
+                                                        </label>
+                                                    </div>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button type="button" class="btn btn-secondary float-start prev-tab" data-bs-target="#general">Geri</button>
+                                        <button type="button" class="btn btn-primary float-end next-tab" data-bs-target="#images">İleri</button>
                                     </div>
                                 </div>
-                                <input type="hidden" class="form-control" asp-for="Latitude">
-                                <input type="hidden" class="form-control" asp-for="Longitude">
 
-                                <div id="map" class="mb-3 map-border" style="width: 100%; height:500px;"></div>
-                            </div> <!--end::Body--> <!--begin::Footer-->
-                            <div class="card-footer"> <button type="submit" class="btn btn-primary">Submit</button> </div> <!--end::Footer-->
-                        </form> <!--end::Form-->
-                    </div>
+                                <!-- Görseller -->
+                                <div class="tab-pane fade" id="images" role="tabpanel" aria-labelledby="images-tab">
+                                    <div class="mb-3 card-body">
+                                        <div class="mb-3">
+                                            <label class="form-label">Büyük Resim Url</label>
+                                            <input class="form-control" type="text" asp-for="BigImageUrl">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Küçük Resim Url</label>
+                                            <input class="form-control" type="text" asp-for="CoverImageUrl">
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button type="button" class="btn btn-secondary prev-tab" data-bs-target="#general">Geri</button>
+                                        <button type="button" class="btn btn-primary float-end next-tab" data-bs-target="#prices">İleri</button>
+                                    </div>
+                                </div>
+
+                                <!-- Fiyatlar -->
+                                <div class="tab-pane fade" id="prices" role="tabpanel" aria-labelledby="prices-tab">
+                                    <!-- Fiyatlar İçeriği -->
+                                    <div class="mb-3 card-body">
+                                        <div class="row mb-3">
+                                            <div class="col">
+                                                <label class="form-label">Hafta İçi Fiyat</label>
+                                                <div class="input-group">
+                                                    <input type="number" class="form-control" asp-for="WeekdayPrice"> <span class="input-group-text">₺</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="col">
+                                                <label class="form-label">Hafta Sonu Fiyat</label>
+                                                <div class="input-group">
+                                                    <input type="number" class="form-control" asp-for="WeekendPrice"><span class="input-group-text">₺</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button type="button" class="btn btn-secondary float-start prev-tab" data-bs-target="#images">Geri</button>
+
+                                        <button type="button" class="btn btn-primary float-end next-tab" data-bs-target="#locations">İleri</button>
+                                    </div>
+                                </div>
+                                <!-- Konum -->
+                                <div class="tab-pane fade" id="locations" role="tabpanel" aria-labelledby="locations-tab">
+                                    <!-- Konum -->
+                                    <div class="mb-3 card-body">
+                                        <div class="mb-3">
+                                            <label for="LocationLabel" class="form-label">Konum</label>
+                                            @Html.DropDownListFor(x => x.LocationID, (List<SelectListItem>)ViewBag.LocationValues, new { @class = "form-control" })
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Enlem ve Boylam</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="latLng" value="40.430988528548944, 29.723164534706456">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-primary" type="button" style="border-top-left-radius: 0; border-bottom-left-radius: 0;" id="googleMapsButton">
+                                                        Getir
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <input type="hidden" class="form-control" asp-for="Latitude">
+                                        <input type="hidden" class="form-control" asp-for="Longitude">
+
+                                        <div id="map" class="mb-3 map-border" style="width: 100%; height:500px;"></div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button type="button" class="btn btn-secondary float-start prev-tab" data-bs-target="#images">Geri</button>
+
+                                        <button type="submit" class="btn btn-success float-end">Kaydet</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </form> <!--end::Form-->
                 </div>
             </div>
         </div> <!--end::Container-->
@@ -152,8 +260,31 @@
                 .bindPopup('<a href = "' + googleMap + '"> Harita Linki </a>')
                 .openPopup();
         }
+        $('#locations-tab').on('shown.bs.tab', function (e) {
+            map.invalidateSize();
+            marker.closePopup();
+            marker.openPopup();
+        });
 
+        $(".next-tab").on("click", function () {
+            const target = $(this).data("bs-target");
+            if ($(target).length > 0) {
 
+                $(target + "-tab[data-bs-target='" + target + "']").tab("show");
+            } else {
+                console.error("Target tab not found:", target);
+            }
+        });
+
+        $(".prev-tab").on("click", function () {
+            const target = $(this).data("bs-target");
+            if ($(target).length > 0) {
+                $(target + "-tab[data-bs-target='" + target + "']").tab("show");
+            } else {
+                console.error("Target tab not found:", target);
+            }
+        });
+        
     });
 
 

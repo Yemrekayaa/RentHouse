@@ -1,4 +1,5 @@
 using AutoMapper;
+using RentHouse.Application.Common.HouseFeature;
 using RentHouse.Application.Features.CQRS.Houses.Commands.Create;
 using RentHouse.Application.Features.CQRS.Houses.Commands.Update;
 using RentHouse.Application.Features.CQRS.Houses.Queries.GetById;
@@ -24,6 +25,14 @@ namespace RentHouse.Application.Features.CQRS.Houses
             CreateMap<GetHouseWithLocationByIdResponse, House>().ReverseMap();
             CreateMap<House, GetHouseWithLocationByDateResponse>().ForMember(destinationMember => destinationMember.LocationName,
                           memberOptions => memberOptions.MapFrom(sourceMember => sourceMember.Location.Name)); ;
+            CreateMap<CreateHouseFeatureDto, HouseFeature>()
+            .ForMember(dest => dest.FeatureId, opt => opt.MapFrom(src => src.FeatureId))
+            .ForMember(dest => dest.Available, opt => opt.MapFrom(src => src.Available));
+            CreateMap<CreateHouseWithFeaturesCommand, House>().ReverseMap();
+            CreateMap<UpdateHouseWithFeaturesCommand, House>().ReverseMap();
+            CreateMap<UpdateHouseFeatureDto, HouseFeature>()
+            .ForMember(dest => dest.FeatureId, opt => opt.MapFrom(src => src.FeatureId))
+            .ForMember(dest => dest.Available, opt => opt.MapFrom(src => src.Available));
         }
     }
 }

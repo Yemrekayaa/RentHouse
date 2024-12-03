@@ -8,6 +8,7 @@ using RentHouse.Application.Features.CQRS.Houses.Commands.Update;
 using RentHouse.Application.Features.CQRS.Houses.Queries.GetById;
 using RentHouse.Application.Features.CQRS.Houses.Queries.GetList;
 using RentHouse.Application.Features.CQRS.Houses.Queries.GetListWithLocationByDate;
+using RentHouse.Application.Features.CQRS.Houses.Queries.GetWithFeaturesById;
 using RentHouse.Application.Features.CQRS.Houses.Queries.GetWithLocationById;
 using RentHouse.Application.Features.CQRS.Reservations.Queries.GetLisyByHouseId;
 using RentHouse.Application.Features.Filters.Houses;
@@ -90,6 +91,25 @@ namespace RentHouse.WebApi.Controllers
             return Ok(values);
         }
 
+        [HttpGet("{id}/with-features")]
+        public async Task<IActionResult> GetWithFeatures(int id)
+        {
+            var value = await Mediator.Send(new GetHouseWithFeaturesByIdQuery(id));
+            return Ok(value);
+        }
+
+        [HttpPost("with-features")]
+        public async Task<IActionResult> CreateWithFeatures(CreateHouseWithFeaturesCommand createHouseWithFeaturesCommand)
+        {
+            await Mediator.Send(createHouseWithFeaturesCommand);
+            return Ok();
+        }
+        [HttpPut("with-features")]
+        public async Task<IActionResult> UpdateWithFeatures(UpdateHouseWithFeaturesCommand updateHouseWithFeaturesCommand)
+        {
+            await Mediator.Send(updateHouseWithFeaturesCommand);
+            return Ok();
+        }
 
     }
 }

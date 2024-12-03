@@ -6,3 +6,15 @@
     box-shadow: var(--bs-box-shadow-inset);
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
+#features-container .btn-check:checked + label {
+    background-color: green !important;
+    border-color: green !important;
+    color: white !important;
+}
+
+#features-container .btn-check:not(:checked) + label {
+    background-color: transparent !important;
+    border-color: gray !important;
+    color: gray !important;
+}

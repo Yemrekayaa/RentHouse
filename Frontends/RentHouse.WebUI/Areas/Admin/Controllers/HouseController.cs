@@ -71,15 +71,26 @@ namespace RentHouse.WebUI.Areas.Admin.Controllers
             var featureValues = await _apiService.GetAsync<IEnumerable<ResultFeatureDto>>("Features");
             ViewBag.FeatureValues = featureValues;
             ViewBag.LocationValues = locationValues;
-            return View();
+            var createHouseWithFeatureDto = new CreateHouseWithFeatureDto();
+            createHouseWithFeatureDto.HouseFeatures = new List<CreateHouseWithFeatureListDto>();
+            foreach (var item in featureValues)
+            {
+                createHouseWithFeatureDto.HouseFeatures.Add(new CreateHouseWithFeatureListDto
+                {
+                    Available = false,
+                    FeatureId = item.FeatureID
+                });
+            }
+            return View(createHouseWithFeatureDto);
         }
         [HttpPost]
-        public async Task<IActionResult> Create(CreateHouseDto createHouseDto)
+        public async Task<IActionResult> Create(CreateHouseWithFeatureDto createHouseWithFeatureDto)
         {
-            var response = await _apiService.RequestAsync(HttpMethod.Post, "Houses", createHouseDto);
+
+            var response = await _apiService.RequestAsync(HttpMethod.Post, "Houses/with-features", createHouseWithFeatureDto);
             if (response.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "House", new { area = "Admin" });
             }
             return View();
         }
@@ -89,11 +100,11 @@ namespace RentHouse.WebUI.Areas.Admin.Controllers
             var response = await _apiService.RequestAsync<object>(HttpMethod.Delete, $"Houses/{id}");
             if (response.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "House", new { area = "Admin" });
             }
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "House", new { area = "Admin" });
         }
-
+        [HttpGet]
         public async Task<IActionResult> Update(int? id)
         {
             if (id == null) return RedirectToAction("Index");
@@ -106,22 +117,24 @@ namespace RentHouse.WebUI.Areas.Admin.Controllers
                                                    }).ToList();
             ViewBag.LocationValues = locationValues;
 
+            var featureValues = await _apiService.GetAsync<IEnumerable<ResultFeatureDto>>("Features");
+            ViewBag.FeatureValues = featureValues;
 
-            var houseValues = await _apiService.GetAsync<UpdateHouseDto>($"Houses/{id}");
+            var houseValues = await _apiService.GetAsync<UpdateHouseWithFeatureDto>($"Houses/{id}/with-features");
 
             return View(houseValues);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Update(UpdateHouseDto updateHouseDto)
+        public async Task<IActionResult> Update(UpdateHouseWithFeatureDto updateHouseWithFeatureDto)
         {
 
-            var response = await _apiService.RequestAsync(HttpMethod.Put, "Houses", updateHouseDto);
+            var response = await _apiService.RequestAsync(HttpMethod.Put, "Houses/with-features", updateHouseWithFeatureDto);
             if (response.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "House", new { area = "Admin" });
             }
-            return View();
+            return RedirectToAction("Index", "House", new { area = "Admin" });
         }
 
         [HttpGet("[Area]/[Controller]/{id}/Reservation")]
