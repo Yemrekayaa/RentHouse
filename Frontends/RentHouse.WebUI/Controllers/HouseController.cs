@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RentHouse.Dto;
 using RentHouse.Dto.HouseDtos;
-using RentHouse.Dto.HouseFeatureDtos;
 using RentHouse.Dto.ReservationDto;
 using RentHouse.WebUI.Services;
 
@@ -50,7 +49,7 @@ namespace RentHouse.WebUI.Controllers
             }
 
 
-            var response = await _apiService.GetAsync<PaginationDto<ResultHouseWithLocationDto>>(
+            var response = await _apiService.GetAsync<PaginationDto<ResultHouseWithFeaturesDto>>(
                 $"Houses/with-location?{string.Join("&", queryParams)}");
 
             return View(response);
@@ -65,10 +64,8 @@ namespace RentHouse.WebUI.Controllers
 
             ViewBag.CalendarValues = calendarValues.Items;
 
-            var featureValues = await _apiService.GetAsync<List<ResultHouseFeatureDto>>($"Houses/{id}/Features");
-            ViewBag.FeatureValues = featureValues;
 
-            var values = await _apiService.GetAsync<ResultHouseWithLocationDto>($"Houses/{id}/with-location");
+            var values = await _apiService.GetAsync<ResultHouseWithFeaturesDto>($"Houses/{id}/with-features");
             return View(values);
         }
 

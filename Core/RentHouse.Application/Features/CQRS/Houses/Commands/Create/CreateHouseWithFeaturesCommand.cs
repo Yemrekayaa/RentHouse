@@ -1,6 +1,7 @@
 using AutoMapper;
 using MediatR;
 using RentHouse.Application.Common.HouseFeature;
+using RentHouse.Application.Features.CQRS.HouseImages.Queries.GetByHouse;
 using RentHouse.Application.Interfaces;
 using RentHouse.Domain.Entities;
 
@@ -15,7 +16,7 @@ namespace RentHouse.Application.Features.CQRS.Houses.Commands.Create
         public int Area { get; set; }
         public byte NumberOfRooms { get; set; }
         public byte NumberOfBeds { get; set; }
-        public string BigImageUrl { get; set; }
+        public List<GetHouseImagesByHouseResponse> HouseImages { get; set; }
         public decimal WeekdayPrice { get; set; }
         public decimal WeekendPrice { get; set; }
         public decimal Latitude { get; set; }

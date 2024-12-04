@@ -1,16 +1,39 @@
-﻿@model ResultHouseWithLocationDto
+﻿@model ResultHouseWithFeaturesDto
 @{
 	ViewBag.name = Model.name;
 	var houses = ViewBag.CalendarValues as List<RentHouse.Dto.ReservationDto.ResultReservationDto>;
-	var features = ViewBag.FeatureValues as List<RentHouse.Dto.HouseFeatureDtos.ResultHouseFeatureDto>;
+	var features = Model.HouseFeatures;
+	var images = Model.HouseImages;
 	Layout = "~/Views/UILayout/Index.cshtml";
 }
+
+<style>
+	div.slider .slick-dots{
+		bottom:0;
+	}
+
+	div.slider .slick-dots {
+		bottom: 0;
+	}
+
+	.slick-dots li.slick-active button:before 
+	{
+		color: #1089ff;
+	}
+</style>
 <section class="ftco-section ftco-car-details">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-md-12">
 				<div class="car-details">
-					<div class="img rounded" style="background-image: url(@Model.bigImageUrl);"></div>
+					<div class="rounded slider ">
+						@foreach(var item in images)
+						{
+							<div><img src="@item.ImageUrl"></div>
+
+						}
+					</div>
+					
 					<div class="text text-center">
 						<h2>@Model.name</h2>
 						<span class="subheading">@Model.locationName.ToUpper()</span>
@@ -204,12 +227,22 @@
 		marker.on('popupopen', function () {
 			var popupElement = document.querySelector('.leaflet-popup-content-wrapper');
 			if (popupElement) {
-				popupElement.style.cursor = 'pointer'; // İmleç görselini değiştir
+				popupElement.style.cursor = 'pointer'; 
 				popupElement.onclick = function () {
-					window.open(googleMapsLink, '_blank'); // Yeni sekmede aç
+					window.open(googleMapsLink, '_blank'); 
 				};
 			}
 		});
+
+		$('.slider').slick({
+			autoplay: true,
+			dots: true,
+			arrows: true,
+			pauseOnHover: true,
+			pauseOnDotsHover: true
+		});
+			
+
 		
 	});
 

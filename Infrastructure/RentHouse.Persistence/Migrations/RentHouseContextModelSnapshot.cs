@@ -211,9 +211,6 @@ namespace RentHouse.Persistence.Migrations
                     b.Property<int>("Area")
                         .HasColumnType("int");
 
-                    b.Property<string>("BigImageUrl")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("CoverImageUrl")
                         .HasColumnType("nvarchar(max)");
 
@@ -275,6 +272,27 @@ namespace RentHouse.Persistence.Migrations
                     b.HasIndex("HouseId");
 
                     b.ToTable("HouseFeatures");
+                });
+
+            modelBuilder.Entity("RentHouse.Domain.Entities.HouseImage", b =>
+                {
+                    b.Property<int>("HouseImageID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("HouseImageID"));
+
+                    b.Property<int>("HouseID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("HouseImageID");
+
+                    b.HasIndex("HouseID");
+
+                    b.ToTable("HouseImages");
                 });
 
             modelBuilder.Entity("RentHouse.Domain.Entities.Location", b =>
@@ -451,6 +469,17 @@ namespace RentHouse.Persistence.Migrations
                     b.Navigation("House");
                 });
 
+            modelBuilder.Entity("RentHouse.Domain.Entities.HouseImage", b =>
+                {
+                    b.HasOne("RentHouse.Domain.Entities.House", "House")
+                        .WithMany("HouseImages")
+                        .HasForeignKey("HouseID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("House");
+                });
+
             modelBuilder.Entity("RentHouse.Domain.Entities.Reservation", b =>
                 {
                     b.HasOne("RentHouse.Domain.Entities.House", "House")
@@ -486,6 +515,8 @@ namespace RentHouse.Persistence.Migrations
             modelBuilder.Entity("RentHouse.Domain.Entities.House", b =>
                 {
                     b.Navigation("HouseFeatures");
+
+                    b.Navigation("HouseImages");
 
                     b.Navigation("Reservations");
                 });

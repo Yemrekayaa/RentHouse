@@ -10,7 +10,6 @@ namespace RentHouse.Application.Features.CQRS.Houses.Queries.GetById
         public int Area { get; set; }
         public byte NumberOfRooms { get; set; }
         public byte NumberOfBeds { get; set; }
-        public string BigImageUrl { get; set; }
         public decimal WeekdayPrice { get; set; }
         public decimal WeekendPrice { get; set; }
         public decimal Latitude { get; set; }

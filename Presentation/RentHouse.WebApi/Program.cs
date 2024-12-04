@@ -3,10 +3,21 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using RentHouse.Application;
 using RentHouse.Persistence;
+using RentHouse.SignalR.Hubs;
 using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy("CorsPolicy", builder =>
+    {
+        builder.AllowAnyMethod()
+        .AllowAnyHeader()
+        .SetIsOriginAllowed((host) => true)
+        .AllowCredentials();
+    });
+});
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -84,10 +95,12 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+app.UseCors("CorsPolicy");
+
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
-
+app.MapHub<HouseHub>("/househub");
 app.Run();

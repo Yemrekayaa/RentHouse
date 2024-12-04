@@ -1,6 +1,9 @@
+using RentHouse.Dto.HouseFeatureDtos;
+using RentHouse.Dto.HouseImagesDtos;
+
 namespace RentHouse.Dto.HouseDtos
 {
-    public class ResultHouseWithLocationDto
+    public class ResultHouseWithFeaturesDto
     {
         public int houseID { get; set; }
         public int locationID { get; set; }
@@ -11,7 +14,8 @@ namespace RentHouse.Dto.HouseDtos
         public int area { get; set; }
         public int numberOfRooms { get; set; }
         public int numberOfBeds { get; set; }
-        public string bigImageUrl { get; set; }
+        public List<ResultHouseImagesDto> HouseImages { get; set; }
+        public List<ResultHouseFeatureDto> HouseFeatures { get; set; }
         public decimal WeekdayPrice { get; set; }
         public decimal WeekendPrice { get; set; }
         public decimal Latitude { get; set; }

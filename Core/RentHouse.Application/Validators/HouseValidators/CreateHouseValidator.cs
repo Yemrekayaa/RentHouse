@@ -27,8 +27,7 @@ namespace RentHouse.Application.Validators.HouseValidators
             RuleFor(x => x.NumberOfBeds)
                 .GreaterThan((byte)0).WithMessage("Yatak sayýsý sýfýrdan büyük olmalýdýr.");
 
-            RuleFor(x => x.BigImageUrl)
-                .NotEmpty().WithMessage("Büyük görsel URL'si boþ býrakýlamaz.");
+
 
             RuleFor(x => x.WeekdayPrice)
                 .GreaterThan(0).WithMessage("Hafta içi fiyatý sýfýrdan büyük olmalýdýr.");

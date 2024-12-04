@@ -36,7 +36,7 @@ namespace RentHouse.WebUI.Areas.Admin.Controllers
         {
             var reservationResponse = await _apiService.GetAsync<UpdateReservationDto>($"Reservations/{id}");
 
-            var houseResponse = await _apiService.GetAsync<ResultHouseWithLocationDto>($"Houses/{reservationResponse.HouseID}/with-location");
+            var houseResponse = await _apiService.GetAsync<ResultHouseWithFeaturesDto>($"Houses/{reservationResponse.HouseID}/with-location");
             ViewBag.House = houseResponse;
 
             var reservationsResponse = await _apiService.GetAsync<PaginationDto<ResultReservationDto>>($"Houses/{reservationResponse.HouseID}/Reservations?PageSize={int.MaxValue}");
@@ -69,7 +69,7 @@ namespace RentHouse.WebUI.Areas.Admin.Controllers
 
         public async Task<IActionResult> Create(int houseId)
         {
-            var houseResponse = await _apiService.GetAsync<ResultHouseWithLocationDto>($"Houses/{houseId}/with-location");
+            var houseResponse = await _apiService.GetAsync<ResultHouseWithFeaturesDto>($"Houses/{houseId}/with-location");
             ViewBag.House = houseResponse;
 
             var reservationsResponse = await _apiService.GetAsync<PaginationDto<ResultReservationDto>>($"Houses/{houseId}/Reservations?PageSize={int.MaxValue}");

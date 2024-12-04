@@ -48,7 +48,7 @@ namespace RentHouse.WebUI.ViewComponents.DefaultViewComponents
             }
 
 
-            var response = await _apiService.GetAsync<PaginationDto<ResultHouseWithLocationDto>>(
+            var response = await _apiService.GetAsync<PaginationDto<ResultHouseWithFeaturesDto>>(
                 $"Houses/with-location?{string.Join("&", queryParams)}");
 
             return View(response);

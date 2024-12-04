@@ -2,7 +2,7 @@
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
-    var house = ViewBag.House as ResultHouseWithLocationDto;
+    var house = ViewBag.House as ResultHouseWithFeaturesDto;
     var confirmedIcon = "";
     var reservationStatus = "";
     var calendarValues = ViewBag.Calendar.Items as IEnumerable<RentHouse.Dto.ReservationDto.ResultReservationDto>;
@@ -45,7 +45,7 @@
                                 </div>
                                 <div class="card-footer mt-auto">
                                     <div class="float-end">
-                                        <a asp-controller="House" asp-action="Details" asp-route-id="@house.houseID" class="btn btn-secondary btn-sm">Sayfaya Git</a>
+                                        <a asp-area="" asp-controller="House" asp-action="Details" asp-route-name="@(SlugHelper.GenerateSlug(house.name))" asp-route-id="@house.houseID" class="btn btn-secondary btn-sm">Sayfaya Git</a>
                                         <a asp-controller="Reservation" asp-action="Create" asp-route-houseID="@house.houseID" class="btn btn-success btn-sm">Rezervasyon Ekle</a>
                                     </div>
                                 </div>

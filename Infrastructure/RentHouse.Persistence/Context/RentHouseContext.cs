@@ -25,6 +25,7 @@ namespace RentHouse.Persistence.Context
         public DbSet<Reservation> Reservations { get; set; }
         public DbSet<AppUser> AppUsers { get; set; }
         public DbSet<AppRole> AppRoles { get; set; }
+        public DbSet<HouseImage> HouseImages { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

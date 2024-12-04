@@ -1,4 +1,4 @@
-﻿@model PaginationDto<ResultHouseWithLocationDto>
+﻿@model PaginationDto<ResultHouseWithFeaturesDto>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
@@ -6,7 +6,8 @@
 }
 <style>
     .house-card {
-        width: 350px; 
+        min-width: 350px;
+        max-width: 450px;
         margin: 5px;
         margin-bottom: 1rem;
         
@@ -27,7 +28,7 @@
                             <a class="btn btn-success float-end px-3" asp-action="Create"><span class="fa-solid fa-plus"></span> Ev Ekle</a>
                         </div> <!-- /.card-header -->
                         <div class="card-body">
-                            <div class="d-flex flex-wrap justify-content-evenly">
+                            <div class="d-flex flex-wrap justify-content-center">
                                 @foreach (var item in Model.Items)
                                 {
                                     {
@@ -35,7 +36,7 @@
 
                                         shortDesc = @item.description.Length > maxLength ? (@item.description.Substring(0, maxLength) + "..") : @item.description;
                                     }
-                                        <div class="card house-card">
+                                            <div class="card house-card">
                                         <div class="position-absolute top-0 start-0 bg-dark text-white p-1 text-center fw-bold" style="font-size: 16px; min-width: 30px; height:32px; border-radius: 5px;">
                                             #@item.houseID
                                         </div>

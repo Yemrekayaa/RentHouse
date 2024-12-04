@@ -15,6 +15,8 @@ namespace RentHouse.Persistence
             services.AddScoped<IReservationRepository, ReservationRepository>();
             services.AddScoped<IStatisticRepository, StatisticRepository>();
             services.AddScoped<IHouseFeatureRepository, HouseFeatureRepository>();
+
+            services.AddSignalR();
             return services;
         }
     }

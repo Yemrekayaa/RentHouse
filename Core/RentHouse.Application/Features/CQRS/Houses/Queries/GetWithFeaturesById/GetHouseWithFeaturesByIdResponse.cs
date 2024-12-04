@@ -1,3 +1,5 @@
+using RentHouse.Application.Features.CQRS.HouseImages.Queries.GetByHouse;
+
 namespace RentHouse.Application.Features.CQRS.Houses.Queries.GetWithFeaturesById
 {
     public class GetHouseWithFeaturesByIdResponse
@@ -11,7 +13,7 @@ namespace RentHouse.Application.Features.CQRS.Houses.Queries.GetWithFeaturesById
         public int Area { get; set; }
         public byte NumberOfRooms { get; set; }
         public byte NumberOfBeds { get; set; }
-        public string BigImageUrl { get; set; }
+        public List<GetHouseImagesByHouseResponse> HouseImages { get; set; }
         public List<GetHouseWithFeaturesByIdFeatureListResponse> HouseFeatures { get; set; }
         public decimal WeekdayPrice { get; set; }
         public decimal WeekendPrice { get; set; }

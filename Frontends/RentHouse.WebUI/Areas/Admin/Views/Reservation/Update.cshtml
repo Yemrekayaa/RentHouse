@@ -3,7 +3,7 @@
     ViewData["Title"] = "CreateReservation";
     Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
     var reservations = ViewBag.Reservations as List<RentHouse.Dto.ReservationDto.ResultReservationDto>;
-    var house = ViewBag.House as ResultHouseWithLocationDto;
+    var house = ViewBag.House as ResultHouseWithFeaturesDto;
 }
 
 <main class="app-main">

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using RentHouse.Dto;
 using RentHouse.Dto.FeatureDtos;
 using RentHouse.Dto.HouseDtos;
+using RentHouse.Dto.HouseImagesDtos;
 using RentHouse.Dto.LocationDto;
 using RentHouse.Dto.ReservationDto;
 using RentHouse.WebUI.Services;
@@ -52,7 +53,7 @@ namespace RentHouse.WebUI.Areas.Admin.Controllers
             }
 
 
-            var response = await _apiService.GetAsync<PaginationDto<ResultHouseWithLocationDto>>(
+            var response = await _apiService.GetAsync<PaginationDto<ResultHouseWithFeaturesDto>>(
                 $"Houses/with-location?{string.Join("&", queryParams)}");
 
             return View(response);
@@ -85,6 +86,41 @@ namespace RentHouse.WebUI.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CreateHouseWithFeatureDto createHouseWithFeatureDto)
         {
+            var uploadedFiles = Request.Form.Files;
+            var imageUrls = new List<CreateHouseImagesDto>();
+
+            if (uploadedFiles.Count > 0)
+            {
+                string uploadFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/uploads");
+                if (!Directory.Exists(uploadFolder))
+                {
+                    Directory.CreateDirectory(uploadFolder);
+                }
+                foreach (var file in uploadedFiles)
+                {
+                    if (file.Length > 0 && file.ContentType.StartsWith("image/"))
+                    {
+
+                        string fileName = Path.GetFileName(file.FileName);
+                        string filePath = Path.Combine(uploadFolder, fileName);
+
+
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await file.CopyToAsync(stream);
+                        }
+
+
+                        imageUrls.Add(new CreateHouseImagesDto
+                        {
+                            ImageUrl = "/images/uploads/" + fileName,
+                        });
+                    }
+                }
+            }
+
+            createHouseWithFeatureDto.HouseImages = imageUrls;
+            createHouseWithFeatureDto.CoverImageUrl = imageUrls[0].ImageUrl;
 
             var response = await _apiService.RequestAsync(HttpMethod.Post, "Houses/with-features", createHouseWithFeatureDto);
             if (response.IsSuccessStatusCode)
@@ -139,7 +175,7 @@ namespace RentHouse.WebUI.Areas.Admin.Controllers
         [HttpGet("[Area]/[Controller]/{id}/Reservation")]
         public async Task<IActionResult> Reservation([FromRoute] int id, [FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 20)
         {
-            var houseResponse = await _apiService.GetAsync<ResultHouseWithLocationDto>($"Houses/{id}/with-location");
+            var houseResponse = await _apiService.GetAsync<ResultHouseWithFeaturesDto>($"Houses/{id}/with-location");
             ViewBag.House = houseResponse;
             var queryParams = new List<string>
             {

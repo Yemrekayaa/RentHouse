@@ -107,6 +107,7 @@ namespace RentHouse.Persistence.Repositories
             var value = await _context.Houses
                 .Where(x => x.HouseID == id)
                 .Include(x => x.Location)
+                .Include(x => x.HouseImages)
                 .Include(x => x.HouseFeatures)
                 .ThenInclude(y => y.Feature)
                 .FirstOrDefaultAsync();

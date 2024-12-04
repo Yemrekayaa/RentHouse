@@ -1,3 +1,5 @@
+using RentHouse.Dto.HouseImagesDtos;
+
 namespace RentHouse.Dto.HouseDtos
 {
     public class UpdateHouseWithFeatureDto
@@ -10,7 +12,7 @@ namespace RentHouse.Dto.HouseDtos
         public int Area { get; set; }
         public byte NumberOfRooms { get; set; }
         public byte NumberOfBeds { get; set; }
-        public string BigImageUrl { get; set; }
+        public List<ResultHouseImagesDto> HouseImages { get; set; }
         public decimal WeekdayPrice { get; set; }
         public decimal WeekendPrice { get; set; }
         public List<UpdateHouseWithFeatureListDto> HouseFeatures { get; set; }

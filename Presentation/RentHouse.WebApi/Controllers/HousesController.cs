@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using RentHouse.Application.Common.Pagination;
 using RentHouse.Application.Common.Sort;
 using RentHouse.Application.Features.CQRS.HouseFeatures.Queries.GetByHouseId;
+using RentHouse.Application.Features.CQRS.HouseImages.Queries.GetByHouse;
 using RentHouse.Application.Features.CQRS.Houses.Commands.Create;
 using RentHouse.Application.Features.CQRS.Houses.Commands.Remove;
 using RentHouse.Application.Features.CQRS.Houses.Commands.Update;
@@ -112,6 +113,14 @@ namespace RentHouse.WebApi.Controllers
         {
             await Mediator.Send(updateHouseWithFeaturesCommand);
             return Ok();
+        }
+
+        [AllowAnonymous]
+        [HttpGet("{id}/HouseImages")]
+        public async Task<IActionResult> GetHouseImages(int id)
+        {
+            var values = await Mediator.Send(new GetHouseImagesByHouseQuery(id));
+            return Ok(values);
         }
 
     }
