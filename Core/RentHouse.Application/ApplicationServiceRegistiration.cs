@@ -1,3 +1,5 @@
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
@@ -12,6 +14,13 @@ namespace RentHouse.Application
             {
                 configuration.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
             });
+
+            services.AddFluentValidationAutoValidation()
+                .AddFluentValidationClientsideAdapters();
+
+            services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+
+
 
             return services;
         }

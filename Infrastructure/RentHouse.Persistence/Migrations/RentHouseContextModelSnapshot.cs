@@ -44,6 +44,46 @@ namespace RentHouse.Persistence.Migrations
                     b.ToTable("Abouts");
                 });
 
+            modelBuilder.Entity("RentHouse.Domain.Entities.AppRole", b =>
+                {
+                    b.Property<int>("AppRoleId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AppRoleId"));
+
+                    b.Property<string>("AppRoleName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("AppRoleId");
+
+                    b.ToTable("AppRoles");
+                });
+
+            modelBuilder.Entity("RentHouse.Domain.Entities.AppUser", b =>
+                {
+                    b.Property<int>("AppUserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AppUserId"));
+
+                    b.Property<int>("AppRoleId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("AppUserId");
+
+                    b.HasIndex("AppRoleId");
+
+                    b.ToTable("AppUsers");
+                });
+
             modelBuilder.Entity("RentHouse.Domain.Entities.Author", b =>
                 {
                     b.Property<int>("AuthorID")
@@ -370,6 +410,17 @@ namespace RentHouse.Persistence.Migrations
                     b.ToTable("Testimonials");
                 });
 
+            modelBuilder.Entity("RentHouse.Domain.Entities.AppUser", b =>
+                {
+                    b.HasOne("RentHouse.Domain.Entities.AppRole", "AppRole")
+                        .WithMany("AppUsers")
+                        .HasForeignKey("AppRoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AppRole");
+                });
+
             modelBuilder.Entity("RentHouse.Domain.Entities.House", b =>
                 {
                     b.HasOne("RentHouse.Domain.Entities.Location", "Location")
@@ -420,6 +471,11 @@ namespace RentHouse.Persistence.Migrations
                         .IsRequired();
 
                     b.Navigation("Banner");
+                });
+
+            modelBuilder.Entity("RentHouse.Domain.Entities.AppRole", b =>
+                {
+                    b.Navigation("AppUsers");
                 });
 
             modelBuilder.Entity("RentHouse.Domain.Entities.Feature", b =>

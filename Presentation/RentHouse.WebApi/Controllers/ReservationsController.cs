@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using RentHouse.Application.Common.Pagination;
 using RentHouse.Application.Features.CQRS.Reservations.Commands.Create;
 using RentHouse.Application.Features.CQRS.Reservations.Commands.Remove;
@@ -14,13 +15,14 @@ namespace RentHouse.WebApi.Controllers
     [ApiController]
     public class ReservationsController : BaseController
     {
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetList([FromQuery] PaginationQuery paginationQuery)
         {
             var values = await Mediator.Send(new GetReservationListWithHouseQuery(paginationQuery));
             return Ok(values);
         }
-
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -45,13 +47,14 @@ namespace RentHouse.WebApi.Controllers
             await Mediator.Send(new RemoveReservationCommand(id));
             return Ok();
         }
-
+        [AllowAnonymous]
         [HttpGet("{id}/with-house")]
         public async Task<IActionResult> GetByIdWithHouse(int id)
         {
             var value = await Mediator.Send(new GetReservationByIdWithHouseQuery(id));
             return Ok(value);
         }
+        [AllowAnonymous]
         [HttpGet("with-house")]
         public async Task<IActionResult> GetByIdWithHouse([FromQuery] PaginationQuery paginationQuery)
         {

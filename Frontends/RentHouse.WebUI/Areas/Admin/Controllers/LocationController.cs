@@ -4,8 +4,7 @@ using RentHouse.WebUI.Services;
 
 namespace RentHouse.WebUI.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    public class LocationController : Controller
+    public class LocationController : AdminBaseController
     {
         private readonly ApiService _apiService;
 

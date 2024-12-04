@@ -13,7 +13,8 @@ namespace RentHouse.Application.Interfaces
         Task CreateRangeAsync(List<T> entities);
         Task UpdateAsync(T entity);
         Task RemoveAsync(T entity);
-        Task<IEnumerable<T>> GetFilteredAsync(Expression<Func<T, bool>> filter);
+        Task<IEnumerable<T>> GetByFilterAsync(Expression<Func<T, bool>> filter);
+        Task<T> GetByFilterSingleAsync(Expression<Func<T, bool>> filter);
         Task<int> GetCountAsync();
         Task<List<T>> Where(Expression<Func<T, bool>> predicate);
 

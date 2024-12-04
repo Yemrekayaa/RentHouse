@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using RentHouse.Application.Features.CQRS.Locations.Commands.Create;
 using RentHouse.Application.Features.CQRS.Locations.Commands.Remove;
 using RentHouse.Application.Features.CQRS.Locations.Commands.Update;
@@ -12,13 +13,14 @@ namespace RentHouse.WebApi.Controllers
     [ApiController]
     public class LocationsController : BaseController
     {
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetList()
         {
             var values = await Mediator.Send(new GetListLocationQuery());
             return Ok(values);
         }
-
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {

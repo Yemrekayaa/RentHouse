@@ -2,14 +2,15 @@
 
 namespace RentHouse.WebUI.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    public class DefaultController : Controller
+
+    public class DefaultController : AdminBaseController
     {
 
         public IActionResult Index()
         {
 
-            return View();
+            //return View();
+            return RedirectToAction("Index", "House", new { area = "Admin" });
         }
 
 

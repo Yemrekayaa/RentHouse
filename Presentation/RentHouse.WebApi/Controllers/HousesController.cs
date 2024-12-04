@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using RentHouse.Application.Common.Pagination;
 using RentHouse.Application.Common.Sort;
 using RentHouse.Application.Features.CQRS.HouseFeatures.Queries.GetByHouseId;
@@ -21,6 +22,7 @@ namespace RentHouse.WebApi.Controllers
     [ApiController]
     public class HousesController : BaseController
     {
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetList(
             [FromQuery] PaginationQuery paginationQuery,
@@ -33,7 +35,7 @@ namespace RentHouse.WebApi.Controllers
             return Ok(result);
         }
 
-
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -58,7 +60,7 @@ namespace RentHouse.WebApi.Controllers
             await Mediator.Send(new RemoveHouseCommand(id));
             return Ok();
         }
-
+        [AllowAnonymous]
         [HttpGet("with-location")]
         public async Task<IActionResult> GetWithLocationByFilter(
             [FromQuery] PaginationQuery paginationQuery,
@@ -68,7 +70,7 @@ namespace RentHouse.WebApi.Controllers
             var result = await Mediator.Send(new GetHouseWithLocationByDateQuery(paginationQuery, sortQuery, houseFilter));
             return Ok(result);
         }
-
+        [AllowAnonymous]
         [HttpGet("{id}/with-location")]
         public async Task<IActionResult> GetWithLocation(int id)
         {
@@ -76,34 +78,35 @@ namespace RentHouse.WebApi.Controllers
             return Ok(value);
         }
 
-
+        [AllowAnonymous]
         [HttpGet("{id}/Reservations")]
         public async Task<IActionResult> GetReservations(int id, [FromQuery] PaginationQuery paginationQuery)
         {
             var values = await Mediator.Send(new GetReservationsByHouseIdQuery(id, paginationQuery));
             return Ok(values);
         }
-
+        [AllowAnonymous]
         [HttpGet("{id}/Features")]
         public async Task<IActionResult> GetFeatures(int id)
         {
             var values = await Mediator.Send(new GetHouseFeatureByHouseIdQuery(id));
             return Ok(values);
         }
-
+        [AllowAnonymous]
         [HttpGet("{id}/with-features")]
         public async Task<IActionResult> GetWithFeatures(int id)
         {
             var value = await Mediator.Send(new GetHouseWithFeaturesByIdQuery(id));
             return Ok(value);
         }
-
+        [AllowAnonymous]
         [HttpPost("with-features")]
         public async Task<IActionResult> CreateWithFeatures(CreateHouseWithFeaturesCommand createHouseWithFeaturesCommand)
         {
             await Mediator.Send(createHouseWithFeaturesCommand);
             return Ok();
         }
+
         [HttpPut("with-features")]
         public async Task<IActionResult> UpdateWithFeatures(UpdateHouseWithFeaturesCommand updateHouseWithFeaturesCommand)
         {

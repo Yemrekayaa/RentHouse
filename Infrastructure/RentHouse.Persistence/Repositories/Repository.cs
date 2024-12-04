@@ -29,11 +29,15 @@ namespace RentHouse.Persistence.Repositories
             return await _dbSet.ToListAsync();
         }
 
-        public async Task<IEnumerable<T>> GetFilteredAsync(Expression<Func<T, bool>> filter)
+        public async Task<IEnumerable<T>> GetByFilterAsync(Expression<Func<T, bool>> filter)
         {
             return await _dbSet.Where(filter).ToListAsync();
         }
 
+        public async Task<T> GetByFilterSingleAsync(Expression<Func<T, bool>> filter)
+        {
+            return await _dbSet.Where(filter).FirstOrDefaultAsync();
+        }
 
 
         public async Task<T> GetByIdAsync(int id)

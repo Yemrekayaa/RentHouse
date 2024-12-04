@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using RentHouse.Application.Features.CQRS.Services.Commands.Create;
 using RentHouse.Application.Features.CQRS.Services.Commands.Remove;
 using RentHouse.Application.Features.CQRS.Services.Commands.Update;
@@ -12,13 +13,14 @@ namespace RentHouse.WebApi.Controllers
     [ApiController]
     public class ServicesController : BaseController
     {
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetList()
         {
             var values = await Mediator.Send(new GetListServiceQuery());
             return Ok(values);
         }
-
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {

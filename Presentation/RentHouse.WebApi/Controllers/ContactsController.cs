@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using RentHouse.Application.Features.CQRS.Contacts.Commands.Create;
 using RentHouse.Application.Features.CQRS.Contacts.Commands.Remove;
 using RentHouse.Application.Features.CQRS.Contacts.Commands.Update;
@@ -25,6 +26,7 @@ namespace RentHouse.WebApi.Controllers
             var value = await Mediator.Send(new GetByIdContactQuery(id));
             return Ok(value);
         }
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateContactCommand command)
         {

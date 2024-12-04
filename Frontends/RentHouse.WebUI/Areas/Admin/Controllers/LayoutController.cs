@@ -2,8 +2,7 @@
 
 namespace RentHouse.WebUI.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    public class LayoutController : Controller
+    public class LayoutController : AdminBaseController
     {
         public IActionResult Index()
         {
