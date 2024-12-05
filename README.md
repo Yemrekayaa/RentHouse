@@ -58,6 +58,7 @@ Bu proje, bir ev kiralama sistemi geliştirmek amacıyla yapılmış bir uygulam
 - **Entity Framework Core**: Veritabanı işlemleri için **Entity Framework Core** kullanılmıştır. Bu ORM (Object-Relational Mapper) ile veritabanı işlemleri yüksek performansla yapılmaktadır.
 
 - **SQL Server**: Veritabanı yönetim sistemi olarak **SQL Server** kullanılmaktadır. Uygulama, verileri bu veritabanına kaydeder ve sorgularını gerçekleştirir.
+- **SignalR Entegrasyonu**: Proje, kullanıcılar ve admin arasında **gerçek zamanlı bildirimler** sağlamak amacıyla **SignalR** teknolojisini kullanmaktadır. SignalR entegrasyonu sayesinde: - Adminler, süresi dolmuş rezervasyonlar veya sistemdeki önemli gelişmeler hakkında anında bildirim alabilirler. - Kullanıcılar, seçtikleri evdeki rezervasyon durumunu veya evle ilgili diğer önemli bildirimleri anlık olarak alabilirler. - **Test Amaçlı Kullanım**: SignalR şu anda test aşamasında olup, İlerleyen zamanlarda SignalR tamamen entegre edilecektir.
 
 ### **Frontend**
 
