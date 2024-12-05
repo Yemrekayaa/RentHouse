@@ -120,16 +120,18 @@
 
                                     <!-- Görseller -->
                                     <div class="tab-pane fade" id="images" role="tabpanel" aria-labelledby="images-tab">
-                                        <div class="mb-3 card-body">
+                                    <div class="mb-3 card-body">
                                         <div class="mb-3">
-                                            <label for="images" class="form-label">Resimleri Yükle</label>
-                                            <input type="file" class="form-control" id="imageList" name="images" multiple onchange="previewImages()">
-                                            <small class="text-muted">Birden fazla resim seçmek için "Ctrl" tuşuna basılı tutarak seçim yapabilirsiniz.</small>
+                                            <label for="images" class="form-label">Görselleri Yükle</label>
+                                            <input type="file" class="form-control" id="imageList" name="images" multiple>
+                                            <small class="text-muted">Birden fazla görsel seçmek için "Ctrl" tuşuna basılı tutarak seçim yapabilirsiniz.</small>
+                                            <small class="text-muted">Kapak görseli, etrafında renkli bir çerçeveyle belirginleştirilmiştir. Görsellere tıklayarak kapak görselini kolayca değiştirebilirsiniz.</small>
                                         </div>
                                         <!-- Resim Önizleme Alanı -->
                                         <div id="preview" class="d-flex flex-wrap gap-2 mt-3"></div>
-
-                                        </div>
+                                        
+                                        <input type="hidden" id="CoverImageUrl" name="CoverImageUrl" value="@Model.CoverImageUrl" />
+                                    </div>
                                     <div class="card-footer">
                                         <button type="button" class="btn btn-secondary prev-tab" data-bs-target="#general">Geri</button>
                                         <button type="button" class="btn btn-primary float-end next-tab" data-bs-target="#prices">İleri</button>
@@ -282,45 +284,66 @@
                 .openPopup();
         }
 
-        
-    });
+        // Images
 
-    function previewImages() {
+
         const preview = $("#preview");
-        const files = $("#imageList")[0]?.files;
 
 
-        preview.empty();
 
-        if (!files || files.length === 0) {
-            preview.html("<p class='text-muted'>Resim seçilmedi.</p>");
-            return;
-        }
+        $("#imageList").on("change", function () {
+            const files = $("#imageList")[0]?.files;
 
-        
-        $.each(files, function (_, file) {
-            if (!file.type.startsWith("image/")) {
-                preview.append(`<p class="text-danger">Geçersiz dosya türü: ${file.name}</p>`);
+            preview.empty();
+
+            if (!files || files.length === 0) {
+                preview.append("<p class='text-muted'>Resim seçilmedi.</p>");
                 return;
             }
+            
+            $.each(files, function (_, file) {
+                if (!file.type.startsWith("image/")) {
+                    preview.append(`<p class="text-danger">Geçersiz dosya türü: ${file.name}</p>`);
+                    return;
+                }
 
-            const reader = new FileReader();
+                const reader = new FileReader();
 
-            reader.onload = function (e) {
-                const img = $("<img>")
-                    .attr("src", e.target.result)
-                    .attr("alt", file.name)
-                    .addClass("img-thumbnail")
-                    .css({
-                        width: "150px",
-                        height: "150px",
-                        margin: "5px",
-                    });
-                preview.append(img);
-            };
+                reader.onload = function (e) {
+                    const img = $("<div>").addClass("image-container").css("position", "relative");
 
-            reader.readAsDataURL(file);
+                    const image = $("<img>")
+                        .attr("src", e.target.result)
+                        .attr("alt", file.name)
+                        .addClass("img-thumbnail")
+                        .css({
+                            width: "150px",
+                            height: "150px",
+                            margin: "5px",
+                        });
+                    img.append(image).on("click", function (e) {        
+                        var index = $(e.target).parent().index();
+                        selectCoverImages(index);
+                    });;
+                    preview.append(img);
+                    selectCoverImages(0);
+                };
+                
+                reader.readAsDataURL(file);
+            });
+            
         });
-    }
+
+
+        function selectCoverImages(index) {
+            $(".image-container img").css("border-width", "");
+            $(".image-container img").removeClass("border-primary");
+            $('#preview img').eq(index).addClass("border-primary").css("border-width", "3px");
+            $("#CoverImageUrl").val(index);
+            console.log($("#CoverImageUrl").val());
+        }
+    });
+
+    
 
 </script>

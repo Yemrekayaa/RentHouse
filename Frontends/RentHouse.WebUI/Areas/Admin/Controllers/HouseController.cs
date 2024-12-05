@@ -101,7 +101,7 @@ namespace RentHouse.WebUI.Areas.Admin.Controllers
                     if (file.Length > 0 && file.ContentType.StartsWith("image/"))
                     {
 
-                        string fileName = Path.GetFileName(file.FileName);
+                        string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
                         string filePath = Path.Combine(uploadFolder, fileName);
 
 
@@ -143,6 +143,8 @@ namespace RentHouse.WebUI.Areas.Admin.Controllers
         public async Task<IActionResult> Update(int? id)
         {
             if (id == null) return RedirectToAction("Index");
+
+
             var locationResponse = await _apiService.GetAsync<List<ResultLocationDto>>("Locations");
             List<SelectListItem> locationValues = (from x in locationResponse
                                                    select new SelectListItem
@@ -163,6 +165,55 @@ namespace RentHouse.WebUI.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Update(UpdateHouseWithFeatureDto updateHouseWithFeatureDto)
         {
+            var uploadedFiles = Request.Form.Files;
+            var imageUrls = new List<UpdateHouseImagesDto>();
+
+            if (updateHouseWithFeatureDto.ExistingImages != null)
+            {
+                foreach (var existingImage in updateHouseWithFeatureDto.ExistingImages)
+                {
+                    imageUrls.Add(new UpdateHouseImagesDto
+                    {
+                        ImageUrl = existingImage
+                    });
+                }
+            }
+
+
+            if (uploadedFiles.Count > 0)
+            {
+                string uploadFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/uploads");
+                if (!Directory.Exists(uploadFolder))
+                {
+                    Directory.CreateDirectory(uploadFolder);
+                }
+                foreach (var file in uploadedFiles)
+                {
+                    if (file.Length > 0 && file.ContentType.StartsWith("image/"))
+                    {
+
+                        string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                        string filePath = Path.Combine(uploadFolder, fileName);
+
+
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await file.CopyToAsync(stream);
+                        }
+
+
+                        imageUrls.Add(new UpdateHouseImagesDto
+                        {
+
+                            ImageUrl = "/images/uploads/" + fileName,
+                        });
+                    }
+                }
+            }
+
+            updateHouseWithFeatureDto.HouseImages = imageUrls;
+            updateHouseWithFeatureDto.CoverImageUrl = imageUrls[int.Parse(updateHouseWithFeatureDto.CoverImageUrl)].ImageUrl;
+
 
             var response = await _apiService.RequestAsync(HttpMethod.Put, "Houses/with-features", updateHouseWithFeatureDto);
             if (response.IsSuccessStatusCode)

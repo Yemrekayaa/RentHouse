@@ -28,6 +28,7 @@ namespace RentHouse.Application.Features.CQRS.HouseFeatures.Commands
 
             public async Task Handle(UpdateHouseFeatureAvailableCommand request, CancellationToken cancellationToken)
             {
+
                 await _HouseFeatureRepository.ChangeAvailable(request.Id, request.Available);
 
             }

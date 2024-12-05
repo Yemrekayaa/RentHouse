@@ -12,12 +12,13 @@ namespace RentHouse.Dto.HouseDtos
         public int Area { get; set; }
         public byte NumberOfRooms { get; set; }
         public byte NumberOfBeds { get; set; }
-        public List<ResultHouseImagesDto> HouseImages { get; set; }
+        public List<UpdateHouseImagesDto> HouseImages { get; set; }
         public decimal WeekdayPrice { get; set; }
         public decimal WeekendPrice { get; set; }
         public List<UpdateHouseWithFeatureListDto> HouseFeatures { get; set; }
         public decimal Latitude { get; set; }
         public decimal Longitude { get; set; }
+        public List<string> ExistingImages { get; set; }
     }
 
     public class UpdateHouseWithFeatureListDto

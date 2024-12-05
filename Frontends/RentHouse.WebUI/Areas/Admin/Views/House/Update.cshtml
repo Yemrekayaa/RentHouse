@@ -124,14 +124,22 @@
                                 <div class="tab-pane fade" id="images" role="tabpanel" aria-labelledby="images-tab">
                                     <div class="mb-3 card-body">
                                         <div class="mb-3">
-                                            <label class="form-label">Büyük Resim Url</label>
-                                            <input class="form-control" type="text" asp-for="HouseImages">
+                                            <label for="images" class="form-label">Resimleri Yükle</label>
+                                            <input type="file" class="form-control" id="imageList" name="images" multiple>
+                                            <small class="text-muted">Birden fazla resim seçmek için "Ctrl" tuşuna basılı tutarak seçim yapabilirsiniz.</small>
                                         </div>
-                                        <div class="mb-3">
-                                            <label class="form-label">Küçük Resim Url</label>
-                                            <input class="form-control" type="text" asp-for="CoverImageUrl">
+                                        <!-- Resim Önizleme Alanı -->
+                                        <div id="preview" class="d-flex flex-wrap gap-2 mt-3"></div>
+                                        <input type="hidden" id="CoverImageUrl" name="CoverImageUrl" value="@Model.CoverImageUrl" />
+                                        <div id="existingImagesContainer">
+                                            @for (int i = 0; i < Model.HouseImages.Count; i++)
+                                            {
+                                                <input type="hidden" name="ExistingImages[@i]" value="@Model.HouseImages[i].ImageUrl" />
+                                            }
                                         </div>
                                     </div>
+                                    
+                                    
                                     <div class="card-footer">
                                         <button type="button" class="btn btn-secondary prev-tab" data-bs-target="#general">Geri</button>
                                         <button type="button" class="btn btn-primary float-end next-tab" data-bs-target="#prices">İleri</button>
@@ -193,7 +201,7 @@
                                     <div class="card-footer">
                                         <button type="button" class="btn btn-secondary float-start prev-tab" data-bs-target="#images">Geri</button>
 
-                                        <button type="submit" class="btn btn-success float-end">Kaydet</button>
+                                        <button type="submit" class="btn btn-success float-end" id="submitForm">Kaydet</button>
                                     </div>
                                 </div>
 
@@ -284,7 +292,143 @@
                 console.error("Target tab not found:", target);
             }
         });
+
+        // Images 
+
+        const existingImageUrls = @Html.Raw(Json.Serialize(Model.HouseImages));
         
+
+        const preview = $("#preview");
+
+        loadExistingImages();
+
+        function deleteImage(index) {
+            
+            if ($("#CoverImageUrl").val() != index) {
+                preview.find('.image-container').eq(index).remove();
+                existingImageUrls.splice(index, 1);
+
+                updateExistingImages();
+            }
+            
+        }
+
+        function updateExistingImages() {
+            const existingImagesContainer = $("#existingImagesContainer");
+            existingImagesContainer.empty();
+
+            $.each(existingImageUrls, function (index, item) {
+                existingImagesContainer.append(`<input type="hidden" name="existingImages[${index}]" value="${item.imageUrl}" />`);
+            });
+            
+        }
+
+        $("#imageList").on("change", function () {
+            const files = $("#imageList")[0]?.files;
+
+            preview.empty();
+
+            loadExistingImages();
+            if (!files || files.length === 0) {
+                preview.append("<p class='text-muted'>Resim seçilmedi.</p>");
+                return;
+            }
+
+            $.each(files, function (_, file) {
+                if (!file.type.startsWith("image/")) {
+                    preview.append(`<p class="text-danger">Geçersiz dosya türü: ${file.name}</p>`);
+                    return;
+                }
+
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    const img = $("<div>").addClass("image-container").css("position", "relative");
+
+                    const image = $("<img>")
+                        .attr("src", e.target.result)
+                        .attr("alt", file.name)
+                        .addClass("img-thumbnail")
+                        .css({
+                            width: "150px",
+                            height: "150px",
+                            margin: "5px",
+                        });
+                    img.append(image);
+                    preview.append(img);
+                    $('#preview img').on("click", function (e) {
+                        var index = $(e.target).parent().index();
+                        selectCoverImages(index);
+                    });
+                };
+                
+                reader.readAsDataURL(file);
+            });
+            
+        });
+
+        $("#submitForm").on("click", function () {
+            updateExistingImages();
+            $("form").submit();
+        });
+
+        function loadExistingImages(){
+            
+            if (existingImageUrls.length > 0) {
+                existingImageUrls.forEach(function (url, index) {
+                    const img = $("<div>").addClass("image-container").css("position", "relative");
+
+                    
+                    const isCoverImage = url.imageUrl === '@Model.CoverImageUrl'; 
+
+                    const image = $("<img>")
+                        .attr("src", url.imageUrl)
+                        .attr("alt", "Mevcut Resim")
+                        .addClass("img-thumbnail")
+                        .addClass(isCoverImage ? "border-primary" : "")
+                        .css({
+                            width: "150px",
+                            height: "150px",
+                            margin: "5px",
+                            borderWidth: isCoverImage ? "3px" : "" 
+                        });
+
+                    if (isCoverImage) {
+                        selectCoverImages(index);
+                    }
+
+                    const deleteButton = $("<button>")
+                        .attr("type", "button")
+                        .addClass("btn btn-danger btn-sm")
+                        .text("Sil")
+                        .css({
+                            position: "absolute",
+                            top: "5px",
+                            right: "5px",
+                        })
+                        .on("click", function (e) {
+                            deleteImage($(e.target).parent().index());
+                        });
+
+                    img.append(image).append(deleteButton);
+                    preview.append(img);
+                });
+            }
+            
+        }
+
+        $('#preview img').on("click", function (e) {
+            var index = $(e.target).parent().index();
+            selectCoverImages(index);
+        });
+
+        function selectCoverImages(index) {
+            $(".image-container img").css("border", "");
+            $('#preview img').eq(index).addClass("border-primary").css("border-width", "3px");
+            $("#CoverImageUrl").val(index);
+            console.log($("#CoverImageUrl").val());
+        }
+
     });
 
 

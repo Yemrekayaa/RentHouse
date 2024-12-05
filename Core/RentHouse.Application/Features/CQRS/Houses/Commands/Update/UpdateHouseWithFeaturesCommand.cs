@@ -1,6 +1,7 @@
 using AutoMapper;
 using MediatR;
 using RentHouse.Application.Common.HouseFeature;
+using RentHouse.Application.Features.CQRS.HouseImages.Queries.GetByHouse;
 using RentHouse.Application.Interfaces;
 
 namespace RentHouse.Application.Features.CQRS.Houses.Commands.Create
@@ -15,7 +16,7 @@ namespace RentHouse.Application.Features.CQRS.Houses.Commands.Create
         public int Area { get; set; }
         public byte NumberOfRooms { get; set; }
         public byte NumberOfBeds { get; set; }
-        public string BigImageUrl { get; set; }
+        public List<GetHouseImagesByHouseResponse> HouseImages { get; set; }
         public decimal WeekdayPrice { get; set; }
         public decimal WeekendPrice { get; set; }
         public decimal Latitude { get; set; }
@@ -36,6 +37,7 @@ namespace RentHouse.Application.Features.CQRS.Houses.Commands.Create
             public async Task Handle(UpdateHouseWithFeaturesCommand request, CancellationToken cancellationToken)
             {
                 var house = await _houseRepository.GetHouseWithFeaturesByIdAsync(request.HouseId);
+
                 _mapper.Map(request, house);
                 await _houseRepository.UpdateAsync(house);
 
