@@ -10,5 +10,6 @@ namespace RentHouse.Domain.Entities
         public DateTime EndDate { get; set; }
         public string Notes { get; set; }
         public bool IsConfirmed { get; set; }
+        public bool IsNotified { get; set; } = false;
     }
 }

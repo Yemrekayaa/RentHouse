@@ -12,6 +12,7 @@ namespace RentHouse.Application.Interfaces
 
         Task<IEnumerable<Reservation>> GetListWithHouseByHouse(int id, PaginationQuery paginationQuery);
         Task<int> GetWithHouseByHouseCount(int id);
+        Task<List<Reservation>> GetExpiredReservationsAsync();
     }
 
 }

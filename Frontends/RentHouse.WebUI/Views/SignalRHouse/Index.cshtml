@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
+
+@section Scripts{
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <script type="text/javascript">
+                            $(document).ready(() => {
+                                var connection = new signalR.HubConnectionBuilder().withUrl("https://localhost:7224/HouseHub").build();
+                                $("#constatus").text(connection.state);
+                                connection.start().then(() => {
+                                    $("#constatus").text(connection.state);
+                                    setInterval(() => {
+                                        connection.invoke("SendHouseCount");
+                                    }, 1000);
+                                }).catch((err) => { console.log(err) });
+
+                                connection.on("ReceiveHouseCount", (value) => {
+                                    $("#housecount").text(value);
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+<div class="row">
+    <div class="col-md-8 offset-2">
+        <div class="alert alert-info">Bağlantının Durumu: <strong id="constatus"></strong></div>
+    </div>
+    <div class="col-md-8 offset-2">
+        <div class="alert alert-danger">Ev Sayısı: <strong id="housecount"></strong></div>
+    </div>
+</div>

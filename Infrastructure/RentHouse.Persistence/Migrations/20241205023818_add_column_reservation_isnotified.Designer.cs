@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RentHouse.Persistence.Context;
 
@@ -11,9 +12,11 @@ using RentHouse.Persistence.Context;
 namespace RentHouse.Persistence.Migrations
 {
     [DbContext(typeof(RentHouseContext))]
-    partial class RentHouseContextModelSnapshot : ModelSnapshot
+    [Migration("20241205023818_add_column_reservation_isnotified")]
+    partial class add_column_reservation_isnotified
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

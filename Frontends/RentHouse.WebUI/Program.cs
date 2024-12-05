@@ -14,6 +14,7 @@ builder.Services.AddControllersWithViews().AddRazorOptions(options =>
 
 builder.Services.AddHttpClient();
 builder.Services.AddHttpContextAccessor();
+
 builder.Services.AddSingleton<ApiService>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddCookie

@@ -46,5 +46,10 @@ namespace RentHouse.Persistence.Repositories
         {
             return await _context.Reservations.Where(x => x.HouseID == id).CountAsync();
         }
+
+        public async Task<List<Reservation>> GetExpiredReservationsAsync()
+        {
+            return await _context.Reservations.Where(r => r.EndDate.Date < DateTime.Now.Date && !r.IsNotified).ToListAsync();
+        }
     }
 }

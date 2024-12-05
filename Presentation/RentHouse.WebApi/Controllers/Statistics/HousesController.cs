@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using RentHouse.Application.Features.CQRS.Houses.Queries.GetCount;
 
 namespace RentHouse.WebApi.Controllers.Statistics
@@ -10,7 +11,7 @@ namespace RentHouse.WebApi.Controllers.Statistics
 
     public class HousesController : BaseController
     {
-
+        [AllowAnonymous]
         [HttpGet("Count")]
         public async Task<IActionResult> Count()
         {
