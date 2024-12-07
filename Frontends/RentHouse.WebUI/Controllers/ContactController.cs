@@ -1,17 +1,18 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using RentHouse.Dto.ContactDtos;
+using RentHouse.WebUI.Services;
 using System.Text;
 
 namespace RentHouse.WebUI.Controllers
 {
     public class ContactController : Controller
     {
-        private readonly IHttpClientFactory _httpClientFactory;
+        private readonly ApiService _apiService;
 
-        public ContactController(IHttpClientFactory httpClientFactory)
+        public ContactController(ApiService apiService)
         {
-            _httpClientFactory = httpClientFactory;
+            _apiService = apiService;
         }
 
         [HttpGet("iletisim")]
@@ -24,11 +25,10 @@ namespace RentHouse.WebUI.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(CreateContactDto createContactDto)
         {
-            var client = _httpClientFactory.CreateClient();
+
             createContactDto.SendDate = DateTime.Now;
-            var jsonData = JsonConvert.SerializeObject(createContactDto);
-            StringContent content = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PostAsync("https://localhost:7224/api/Contacts", content);
+
+            var responseMessage = await _apiService.RequestAsync(HttpMethod.Post, "Contacts", createContactDto);
             if (responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index", "Default");
