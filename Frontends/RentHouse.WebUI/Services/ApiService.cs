@@ -1,24 +1,31 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
 using System.Text;
 
 namespace RentHouse.WebUI.Services
 {
+    public class ApiSettings
+    {
+        public string BaseUrl { get; set; }
+    }
+
     public class ApiService
     {
-        private readonly string apiUrl = "https://localhost:7224/api/";
+        private readonly string _apiBaseUrl;
 
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly IHttpContextAccessor _httpContextAccessor;
-        public ApiService(IHttpClientFactory httpClientFactory, IHttpContextAccessor httpContextAccessor)
+        public ApiService(IHttpClientFactory httpClientFactory, IHttpContextAccessor httpContextAccessor,IOptions<ApiSettings> options)
         {
             _httpClientFactory = httpClientFactory;
             _httpContextAccessor = httpContextAccessor;
+            _apiBaseUrl = options.Value.BaseUrl;
         }
 
         public async Task<HttpResponseMessage> RequestAsync<T>(HttpMethod method, string entityName, T? data = null) where T : class
         {
             var client = _httpClientFactory.CreateClient();
-            var request = new HttpRequestMessage(method, apiUrl + entityName);
+            var request = new HttpRequestMessage(method, _apiBaseUrl + entityName);
 
             var token = GetTokenFromClaims();
             if (!string.IsNullOrEmpty(token))

@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using RentHouse.Application;
 using RentHouse.Persistence;
+using RentHouse.Persistence.Context;
 using RentHouse.WebApi.Hubs;
 using System.Text;
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +19,9 @@ builder.Services.AddCors(opt =>
         .AllowCredentials();
     });
 });
+
+builder.Services.AddDbContext<RentHouseContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddHttpClient();
 

@@ -5,9 +5,9 @@ namespace RentHouse.Persistence.Context
 {
     public class RentHouseContext : DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public RentHouseContext(DbContextOptions<RentHouseContext> options) : base(options)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-GPR6UDE; initial Catalog=RentHouseDb; integrated Security=true;TrustServerCertificate=true;");
+
         }
         public DbSet<About> Abouts { get; set; }
         public DbSet<Banner> Banners { get; set; }
@@ -30,7 +30,7 @@ namespace RentHouse.Persistence.Context
         {
             base.OnModelCreating(modelBuilder);
 
-            // Price alanýný decimal(18,8) olarak ayarlýyoruz
+            // Price alanï¿½nï¿½ decimal(18,8) olarak ayarlï¿½yoruz
             modelBuilder.Entity<House>()
                 .Property(h => h.Longitude)
                 .HasColumnType("decimal(18,8)");
